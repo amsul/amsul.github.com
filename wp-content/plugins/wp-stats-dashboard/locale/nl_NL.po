@@ -1,0 +1,1955 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP-Stats-Dashboard\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-15 10:10+0100\n"
+"PO-Revision-Date: 2012-01-15 10:14+0100\n"
+"Last-Translator: Dave Ligthart <info@daveligthart.com>\n"
+"Language-Team: daveligthart.com <info@daveligthart.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+"X-Poedit-SearchPath-2: ../view\n"
+"X-Poedit-SearchPath-3: ../classes\n"
+"X-Poedit-SearchPath-4: ../classes/action\n"
+"X-Poedit-SearchPath-5: ../classes/widget\n"
+"X-Poedit-SearchPath-6: ../classes/util\n"
+"X-Poedit-SearchPath-7: ../view/admin\n"
+"X-Poedit-SearchPath-8: ../view/wp-stats-dashboard\n"
+
+#: ../classes/ajax.php:17
+msgid "You need to be administrator to view this content"
+msgstr "Je moet ingelogd zijn als admin om deze inhoud te bekijken"
+
+#: ../classes/ajax.php:195
+msgid "connected"
+msgstr "aangesloten"
+
+#: ../classes/ajax.php:204
+#: ../classes/ajax.php:208
+msgid "Reload"
+msgstr "Vernieuwen"
+
+#: ../classes/ajax.php:239
+msgid "Views"
+msgstr "Bezoeken"
+
+#: ../classes/action/WPSDAdminAction.php:179
+msgid "Couldn't activate WP-Stats-Dashboard: CURL extension not found. CURL is required to be installed on your server. Please ask your hosting provider to install PHP CURL for you."
+msgstr "Kan WP-Stats-Dashboard nog niet activeren: PHP CURL Extensie niet gevonden. Vraag aan je hosting dienstverlener om PHP CURL te activeren voor jouw account."
+
+#: ../classes/action/WPSDAdminAction.php:219
+msgid "WPSD"
+msgstr "WPSD"
+
+#: ../classes/action/WPSDAdminAction.php:223
+msgid "Rpc"
+msgstr "Rpc"
+
+#: ../classes/action/WPSDAdminAction.php:231
+#: ../classes/action/WPSDAdminAction.php:232
+msgid "Settings"
+msgstr "Instellingen"
+
+#: ../classes/action/WPSDAdminAction.php:239
+#: ../classes/action/WPSDAdminAction.php:240
+msgid "Profile finder"
+msgstr "Profiel zoeker"
+
+#: ../classes/action/WPSDAdminAction.php:247
+#: ../classes/action/WPSDAdminAction.php:248
+msgid "Export"
+msgstr "Exporteren"
+
+#: ../classes/action/WPSDAdminAction.php:264
+msgid "Dashboard Stats"
+msgstr "Dashboard Stats"
+
+#: ../classes/action/WPSDAdminAction.php:420
+msgid "Read more"
+msgstr "Lees meer"
+
+#: ../classes/action/WPSDAdminAction.php:592
+msgid "Rendering of stats failed."
+msgstr "Renderen van stats mislukt."
+
+#: ../classes/action/WPSDAdminAction.php:698
+#: ../classes/action/WPSDAdminAction.php:742
+#: ../classes/action/WPSDAdminAction.php:793
+#: ../classes/action/WPSDAdminAction.php:839
+#: ../classes/action/WPSDAdminAction.php:869
+#: ../classes/action/WPSDAdminAction.php:926
+msgid "Widget disabled check"
+msgstr "Widget niet geactiveerd check"
+
+#: ../classes/action/WPSDAdminAction.php:698
+#: ../classes/action/WPSDAdminAction.php:742
+#: ../classes/action/WPSDAdminAction.php:793
+#: ../classes/action/WPSDAdminAction.php:839
+#: ../classes/action/WPSDAdminAction.php:869
+#: ../classes/action/WPSDAdminAction.php:927
+msgid "settings"
+msgstr "instellingen"
+
+#: ../classes/action/WPSDAdminAction.php:945
+msgid "Rank"
+msgstr "Rang"
+
+#: ../classes/action/WPSDAdminAction.php:946
+msgid "WPSD Score"
+msgstr "WPSD Score"
+
+#: ../classes/action/WPSDAdminAction.php:947
+msgid "Author"
+msgstr "Auteur"
+
+#: ../classes/action/WPSDAdminAction.php:948
+msgid "Post Count"
+msgstr "Aantal Posts"
+
+#: ../classes/action/WPSDAdminAction.php:949
+msgid "Comments Received"
+msgstr "Reacties Ontvangen"
+
+#: ../classes/action/WPSDAdminAction.php:950
+msgid "Comments Placed"
+msgstr "Reacties Geplaatst"
+
+#: ../classes/action/WPSDAdminAction.php:951
+msgid "Klout Score"
+msgstr "Klout Score"
+
+#: ../classes/action/WPSDAdminAction.php:952
+msgid "Twitter Ratio"
+msgstr "Twitter Ratio"
+
+#: ../classes/action/WPSDAdminAction.php:1013
+msgid "No authors found with comments placed"
+msgstr "Geen auteurs gevonden die een reactie hebben geplaatst"
+
+#: ../classes/action/WPSDFrontEndAction.php:366
+msgid ""
+"The traffic rank is based on three months of aggregated historical traffic data from millions \n"
+"\t\t\t\t\tof Alexa Toolbar users and data obtained from other, diverse traffic data sources, and is a combined measure of \n"
+"\t\t\t\t\tpage views and users (reach)."
+msgstr ""
+
+#: ../classes/action/WPSDFrontEndAction.php:373
+msgid ""
+"PageRank is a numeric value that represents how important a page is on the web. \n"
+"\t\t\t\t\tGoogle figures that when one page links to another page, it is effectively casting a vote for the other page. \n"
+"\t\t\t\t\tThe more votes that are cast for a page, the more important the page must be."
+msgstr ""
+
+#: ../classes/action/WPSDFrontEndAction.php:379
+msgid "Engagement"
+msgstr "Engagement"
+
+#: ../classes/action/WPSDFrontEndAction.php:380
+msgid "The number of comments added to your blog."
+msgstr ""
+
+#: ../classes/action/WPSDFrontEndAction.php:385
+msgid "Number of search results in the Microsoft Bing search engine."
+msgstr ""
+
+#: ../classes/action/WPSDFrontEndAction.php:390
+msgid "The number of google backlinks. A backlink is any link received by a web page from another web page. The number of backlinks is one indication of the popularity or importance of that website or page in search engines."
+msgstr ""
+
+#: ../classes/action/WPSDFrontEndAction.php:395
+msgid "The number of Twitter followers."
+msgstr ""
+
+#: ../classes/action/WPSDFrontEndAction.php:400
+msgid "The number of Facebook likes."
+msgstr ""
+
+#: ../classes/action/WPSDFrontEndAction.php:405
+msgid "The number of LinkedIn connections"
+msgstr ""
+
+#: ../classes/action/WPSDFrontEndAction.php:410
+msgid ""
+"The Klout Score measures influence based on your ability to drive action. \n"
+"\t\t\t\t\tEvery time you create content or engage you influence others."
+msgstr ""
+
+#: ../classes/action/WPSDFrontEndAction.php:416
+msgid "The number of video views on Youtube."
+msgstr ""
+
+#: ../classes/util/WPSDUtils.php:36
+msgid "CURL extension not installed:"
+msgstr "CURL extensie niet geinstalleerd:"
+
+#: ../classes/util/WPSDUtils.php:37
+msgid "you must have CURL extension enabled in your php configuration"
+msgstr "de CURL extensie moet geactiveerd zijn in je PHP configuratie"
+
+#: ../classes/widget/WPSDAuthorWidget.php:18
+msgid "Displays the top 5 list of your blog's most popular authors"
+msgstr "Toon de top 5 auteurs lijst"
+
+#: ../classes/widget/WPSDAuthorWidget.php:20
+msgid "WPSD - Top 5 Authors"
+msgstr "WPSD - Top 5 Auteurs"
+
+#: ../classes/widget/WPSDAuthorWidget.php:65
+#: ../classes/widget/WPSDMetricsWidget.php:65
+#: ../classes/widget/WPSDMiniGraphWidget.php:46
+#: ../classes/widget/WPSDSocialProfilesWidget.php:68
+#: ../classes/widget/WPSDTotalViewsWidget.php:51
+msgid "Title:"
+msgstr "Titel:"
+
+#: ../classes/widget/WPSDAuthorWidget.php:67
+#: ../classes/widget/WPSDMetricsWidget.php:67
+#: ../classes/widget/WPSDMiniGraphWidget.php:48
+#: ../classes/widget/WPSDSocialProfilesWidget.php:70
+#: ../classes/widget/WPSDTotalViewsWidget.php:53
+msgid "Description:"
+msgstr "Beschrijving:"
+
+#: ../classes/widget/WPSDAuthorWidget.php:175
+msgid "Posts"
+msgstr "Posts"
+
+#: ../classes/widget/WPSDAuthorWidget.php:181
+msgid "Comments In"
+msgstr "Reacties in"
+
+#: ../classes/widget/WPSDAuthorWidget.php:187
+msgid "Comments Out"
+msgstr "Reacties Uit"
+
+#: ../classes/widget/WPSDAuthorWidget.php:216
+msgid "No authors found with comments placed..."
+msgstr "Geen auteurs gevonden die een reactie hebben geplaatst..."
+
+#: ../classes/widget/WPSDMetricsWidget.php:18
+msgid "Displays your social metrics"
+msgstr "Toont jouw sociale metriek"
+
+#: ../classes/widget/WPSDMetricsWidget.php:20
+msgid "WPSD - Social Metrics"
+msgstr "WPSD - Sociale Metriek"
+
+#: ../classes/widget/WPSDMetricsWidget.php:71
+msgid "Enable / Disable Metrics"
+msgstr "Aan / Uit Metriek"
+
+#: ../classes/widget/WPSDMiniGraphWidget.php:18
+msgid "Show a mini graph displaying your blog's daily views"
+msgstr "Toon een mini grafiek van het aantal bezoeken"
+
+#: ../classes/widget/WPSDMiniGraphWidget.php:20
+msgid "WPSD - Mini Graph"
+msgstr "WPSD - Mini Grafiek"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:18
+msgid "Displays your social profiles"
+msgstr "Toont uw sociale profielen"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:20
+msgid "WPSD - Social Profiles"
+msgstr "WPSD - Sociale Profielen"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:66
+msgid "Use the social profiles widget on your website to extend and optimize your social graph."
+msgstr "Gebruikt de sociale profielen widget op jouw website om je connectiviteit te vergroten."
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:74
+msgid "Enable Icon Images"
+msgstr "Aanzetten Icoontjes"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:76
+msgid "Enabled"
+msgstr "Aan"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:79
+msgid "Enable / Disable Profiles"
+msgstr "Aan / Uit Profielen"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:196
+msgid "Visit my"
+msgstr "Bezoek mijn"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:196
+msgid "profile"
+msgstr "profiel"
+
+#: ../classes/widget/WPSDTotalViewsWidget.php:18
+msgid "Displays your blog's total views"
+msgstr "Toont het totaal aantal bezoeken."
+
+#: ../classes/widget/WPSDTotalViewsWidget.php:20
+msgid "WPSD - Total Views"
+msgstr "WPSD - Totaal Bezoeken"
+
+#: ../classes/widget/WPSDTotalViewsWidget.php:49
+msgid "This widget will show your blogs total views."
+msgstr "Deze widget toont het totaal aantal bezoeken."
+
+#: ../classes/widget/admin/WPSDAuthorDashboardWidget.php:32
+msgid "Stats - Top 5 Authors"
+msgstr "Stats - Top 5 Auteurs"
+
+#: ../classes/widget/admin/WPSDAuthorDashboardWidget.php:69
+#: ../classes/widget/admin/WPSDBlogPulseConversationDashboardWidget.php:58
+#: ../classes/widget/admin/WPSDBlogPulseDashboardWidget.php:58
+#: ../classes/widget/admin/WPSDClicksDashboardWidget.php:55
+#: ../classes/widget/admin/WPSDCompeteDashboardWidget.php:58
+#: ../classes/widget/admin/WPSDOptimizeDashboardWidget.php:55
+msgid "loading"
+msgstr "laden"
+
+#: ../classes/widget/admin/WPSDBlogPulseConversationDashboardWidget.php:27
+msgid "Stats - BlogPulse.com Conversations"
+msgstr "Stats - BlogPulse.com Conversaties"
+
+#: ../classes/widget/admin/WPSDBlogPulseConversationDashboardWidget.php:65
+msgid "Track conversations about your blog"
+msgstr "De conversaties over uw blog bijhouden"
+
+#: ../classes/widget/admin/WPSDBlogPulseDashboardWidget.php:27
+msgid "Stats - BlogPulse.com"
+msgstr "Stats - BlogPulse.com"
+
+#: ../classes/widget/admin/WPSDClicksDashboardWidget.php:24
+msgid "Stats - Clicks"
+msgstr "Stats - Kliks"
+
+#: ../classes/widget/admin/WPSDCompeteDashboardWidget.php:27
+msgid "Stats - Compete.com"
+msgstr "Stats - Compete.com"
+
+#: ../classes/widget/admin/WPSDDashboardWidget.php:33
+msgid "Stats - Views per day"
+msgstr "Stats - Bezoeken per dag"
+
+#: ../classes/widget/admin/WPSDOptimizeDashboardWidget.php:24
+msgid "Stats - Optimization Suggestions"
+msgstr "Stats - Optimalisatie Suggesties"
+
+#: ../classes/widget/admin/WPSDOverviewDashboardWidget.php:27
+#: ../view/admin/admin_dashboard_page.php:181
+msgid "Stats - Social Media Metrics"
+msgstr "Stats - Sociale Metriek"
+
+#: ../classes/widget/admin/WPSDOverviewDashboardWidget.php:76
+msgid "WPSD_PLUGIN_URL not defined"
+msgstr "WPSD_PLUGIN_URL niet gedefinieerd"
+
+#: ../classes/widget/admin/WPSDPostViewsDashboardWidget.php:24
+#: ../view/admin/admin_config.php:186
+msgid "Stats - Post views"
+msgstr "Stats - Berichten"
+
+#: ../classes/widget/admin/WPSDReferrersDashboardWidget.php:24
+#: ../view/admin/admin_config.php:190
+#: ../view/admin/admin_dashboard_page.php:131
+msgid "Stats - Referrers"
+msgstr "Stats - Verwijzingen"
+
+#: ../classes/widget/admin/WPSDSearchTermsDashboardWidget.php:24
+#: ../view/admin/admin_config.php:198
+#: ../view/admin/admin_dashboard_page.php:145
+msgid "Stats - Search terms"
+msgstr "Stats - Zoektermen"
+
+#: ../view/admin/admin_ajax_trend_visualize.php:22
+msgid "day(x), amount(y)"
+msgstr "dag(x), aantal(y)"
+
+#: ../view/admin/admin_ajax_trend_visualize.php:48
+msgid "Trend"
+msgstr "Trend"
+
+#: ../view/admin/admin_config.php:42
+#: ../view/admin/admin_dashboard_page.php:41
+msgid "WP-Stats-Dashboard Options"
+msgstr "WP-Stats-Dashboard Opties"
+
+#: ../view/admin/admin_config.php:50
+msgid "WordPress.com Username or password is incorrect. Stats will not load. Please create an account at <a href=\"http://www.wordpress.com\" target=\"_blank\" title=\"wordpress.com\">http://www.wordpress.com</a> afterwards use those credentials below."
+msgstr "WordPress.com gebruikersnaam of wachtwoord is onjuist. Maak eerst een account aan op <a href=\"http://www.wordpress.com\" target=\"_blank\" title=\"wordpress.com\">http://www.wordpress.com</a> vul daarna de logingegevens hieronder in."
+
+#: ../view/admin/admin_config.php:53
+msgid "Saved"
+msgstr "Opgeslagen"
+
+#: ../view/admin/admin_config.php:67
+msgid "wp-content/cache does not exist:"
+msgstr "wp-content/cache bestaat niet:"
+
+#: ../view/admin/admin_config.php:69
+msgid "please make sure that the \"wp-content/cache\" directory is created"
+msgstr "zorg ervoor dat de  \"wp-content/cache\" directorie is aangemaakt"
+
+#: ../view/admin/admin_config.php:72
+msgid "please use your ftp browser to navigate to the \"wp-content\" folder and create a directory named \"cache\"."
+msgstr "gebruik je ftp browser om naar de \"wp-content\" directorie te navigeren om vervolgens de \"cache\" directorie daarin aan te maken."
+
+#: ../view/admin/admin_config.php:79
+msgid "wp-content/cache is not writable:"
+msgstr "wp-content/cache is niet schrijfbaar:"
+
+#: ../view/admin/admin_config.php:81
+msgid "please make sure that the \"wp-content/cache\" directory is writable by webserver."
+msgstr "zorg ervoor dat de \"wp-content/cache\" directorie schrijfbaar is voor de webserver."
+
+#: ../view/admin/admin_config.php:84
+msgid "please use your ftp client to navigate to the \"wp-content\" folder and change file permissions of the \"cache\" folder to (chmod) 777."
+msgstr "gebruik je ftp client om naar de \"wp-content\" directorie te navigeren om vervolgens de bestandsrechten van de \"cache\" directorie naar (chmod) 777 te zetten."
+
+#: ../view/admin/admin_config.php:91
+msgid "please install the wordpress.com stats plugin and follow the instructions it presents:"
+msgstr "installeer de wordpress.com stats plugin en volg de instructies."
+
+#: ../view/admin/admin_config.php:119
+msgid "Basic Settings"
+msgstr "Standaard Instellingen"
+
+#: ../view/admin/admin_config.php:126
+msgid "Blog ID"
+msgstr "Blog ID"
+
+#: ../view/admin/admin_config.php:138
+msgid "Install the Jetpack plugin"
+msgstr "Installeer de Jetpack plugin"
+
+#: ../view/admin/admin_config.php:139
+msgid "Make sure the Jetpack plugin is installed and configured. Your blog-id will be automatically filled in by this plugin."
+msgstr "Zorg dat de Jetpack plugin is geïnstalleerd en geconfigureerd. Het blog id zal automatisch worden ingevuld. "
+
+#: ../view/admin/admin_config.php:143
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: ../view/admin/admin_config.php:155
+msgid "WordPress.com Username"
+msgstr "WordPress.com Gebruikersnaam"
+
+#: ../view/admin/admin_config.php:156
+msgid "Enter your WordPress.com username"
+msgstr "Voer je WordPress.com gebruikersnaam in"
+
+#: ../view/admin/admin_config.php:160
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: ../view/admin/admin_config.php:170
+msgid "WordPress.com Password"
+msgstr "WordPress.com Wachtwoord"
+
+#: ../view/admin/admin_config.php:170
+msgid "Enter your WordPress.com password"
+msgstr "Voer je WordPress.com wachtwoord in"
+
+#: ../view/admin/admin_config.php:174
+msgid "Enabled / Disable <br/> Dashboard Widgets"
+msgstr "Aan / Uit <br/> Dashboard Widgets"
+
+#: ../view/admin/admin_config.php:182
+msgid "Stats - Overview"
+msgstr "Stats - Overzicht"
+
+#: ../view/admin/admin_config.php:202
+#: ../view/admin/admin_dashboard_page.php:66
+msgid "Stats - Trends"
+msgstr "Stats - Trends"
+
+#: ../view/admin/admin_config.php:223
+msgid "Default Trend Graph"
+msgstr "Standaard Trend Grafiek"
+
+#: ../view/admin/admin_config.php:229
+msgid "Default trends graph"
+msgstr "Standaard trends grafiek"
+
+#: ../view/admin/admin_config.php:229
+msgid "This graph will be displayed by default in the trends widget."
+msgstr "Selecteer de standaard grafiek om in de trendswidget af te beelden. "
+
+#: ../view/admin/admin_config.php:234
+msgid "Disable widgets on main dashboard page"
+msgstr "Uitzetten van widgets op de dashboardpagina."
+
+#: ../view/admin/admin_config.php:239
+msgid "Stats dashboard page"
+msgstr "Statistieken dashboard pagina"
+
+#: ../view/admin/admin_config.php:239
+msgid "The stats widgets will only be visible on the stats dashboard page."
+msgstr "De statistieken worden alleen op een aparte dashboard pagina getoond."
+
+#: ../view/admin/admin_config.php:253
+#: ../view/admin/admin_config.php:274
+#: ../view/admin/admin_config.php:385
+#: ../view/admin/admin_config.php:1607
+#: ../view/admin/admin_config.php:1629
+msgid "Save Changes"
+msgstr "Bewaren"
+
+#: ../view/admin/admin_config.php:260
+msgid "Visibility"
+msgstr "Zichtbaarheid"
+
+#: ../view/admin/admin_config.php:263
+msgid "Select the roles that will be able to view stats."
+msgstr "Selecteer de rollen die de statistieken mogen inzien."
+
+#: ../view/admin/admin_config.php:266
+msgid "Administrator"
+msgstr ""
+
+#: ../view/admin/admin_config.php:267
+msgid "Editor"
+msgstr ""
+
+#: ../view/admin/admin_config.php:269
+msgid "Contributor"
+msgstr ""
+
+#: ../view/admin/admin_config.php:270
+msgid "Subscriber"
+msgstr ""
+
+#: ../view/admin/admin_config.php:280
+msgid "Autopost settings"
+msgstr "Autopost instellingen"
+
+#: ../view/admin/admin_config.php:286
+msgid "Amplify username"
+msgstr "Amplify gebruikersnaam"
+
+#: ../view/admin/admin_config.php:296
+#: ../view/admin/admin_config.php:300
+msgid "Amplify"
+msgstr "Amplify"
+
+#: ../view/admin/admin_config.php:297
+msgid ""
+"Amplify username. e.g: \n"
+"\t\t\t\t\t\t\thttp://<strong>username</strong>.amplify.com."
+msgstr "Amplify gebruikersnaam. Voorbeeld: http://<strong>username</strong>.amplify.com."
+
+#: ../view/admin/admin_config.php:307
+msgid "Amplify Post Email"
+msgstr "Amplify Post Email"
+
+#: ../view/admin/admin_config.php:321
+msgid "Amplify Post by Email"
+msgstr "Amplify Post via Email"
+
+#: ../view/admin/admin_config.php:322
+msgid ""
+"Amplify Post by Email. Spread your content across twitter, facebook, posterous etc. You can find it under Settings / Post by Email. \n"
+"                  \t\tE.g abcdef@yourlog.amplify.com . The post excerpt is used for the autopost content. When writing a post please manually add an excerpt."
+msgstr "Amplify Post via Email. Verspreid jouw content via twitter, facebook, posterous etc.  De Instelllingen vind je via Settings / Post by Email. Voorbeeld: abcdef@yourlog.amplify.com . De samenvatting wordt gebruikt voor de inhoud.  Gaarne handmatig een samenvatting schrijven voor het artikel."
+
+#: ../view/admin/admin_config.php:325
+msgid "Amplify Post by Email Settings Page"
+msgstr "Amplify Post via Email Instellingen Pagina"
+
+#: ../view/admin/admin_config.php:333
+#: ../view/admin/admin_config.php:347
+msgid "Posterous username"
+msgstr "Posterous gebruikersnaam"
+
+#: ../view/admin/admin_config.php:348
+msgid "Posterous username. e.g: http://<strong>username</strong>.posterous.com. Registration required."
+msgstr "Posterous gebruikersnaam. Voorbeeld: http://<strong>username</strong>.posterous.com. Registratie vereist."
+
+#: ../view/admin/admin_config.php:350
+msgid "Posterous"
+msgstr "Posterous"
+
+#: ../view/admin/admin_config.php:357
+msgid "Posterous Post Email"
+msgstr "Posterous Post Email"
+
+#: ../view/admin/admin_config.php:370
+msgid "Posterous Post By Email."
+msgstr "Posterous Post via Email."
+
+#: ../view/admin/admin_config.php:371
+msgid " Make sure to add"
+msgstr "Zorg voor het toevoegen van"
+
+#: ../view/admin/admin_config.php:372
+msgid ""
+" to your posterous contact settings to allow posting. \n"
+"                  \t\tSpread your content across twitter, facebook, posterous.\n"
+"                  \t\tE.g abcdef@posterous.com. \n"
+"                  \t\tThe post excerpt is used for the autopost content. \n"
+"                  \t\tWhen writing a post please manually add an excerpt."
+msgstr "aan jouw posterous contact instellingen om het automatisch posten te activeren. Verspreid jouw content via twitter, facebook, posterous. Voorbeeld: abcdef@posterous.com. Graag handmatig een samenvatting toevoegen aan jouw post. Deze wordt namelijk gebruikt voor de autopost inhoud."
+
+#: ../view/admin/admin_config.php:378
+msgid "Posterous contact settings"
+msgstr "Posterous contact instellingen"
+
+#: ../view/admin/admin_config.php:391
+msgid "Profile Settings"
+msgstr "Profiel Instellingen"
+
+#: ../view/admin/admin_config.php:396
+msgid "Use <a href=\"?page=wpsd_profile_finder\">the profile finder</a> to quickly retrieve and save your profiles."
+msgstr "Gebruik de <a href=\"?page=wpsd_profile_finder\">profiel zoeker</a> om snel en eenvoudig je profielen op te halen en te bewaren. "
+
+#: ../view/admin/admin_config.php:406
+#: ../view/admin/admin_config.php:420
+msgid "Twitter username"
+msgstr "Twitter gebruikersnaam"
+
+#: ../view/admin/admin_config.php:421
+msgid "Twitter username for twitter socials metrics in the overview widget. Registration required."
+msgstr "Twitter gebruikersnaam voor twitter sociale metriek in de overzichts widget. Registratie vereist."
+
+#: ../view/admin/admin_config.php:423
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../view/admin/admin_config.php:431
+#: ../view/admin/admin_config.php:444
+msgid "LinkedIn username"
+msgstr "LinkedIn gebruikersnaam"
+
+#: ../view/admin/admin_config.php:445
+msgid "LinkedIn username for connection count in the overview widget. Registration required."
+msgstr "Linkedin gebruikersnaam voor het aantal connecties in de overzichtswidget. Registratie vereist."
+
+#: ../view/admin/admin_config.php:447
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../view/admin/admin_config.php:454
+msgid "LinkedIn Company username"
+msgstr "LinkedIn Bedrijfsnaam"
+
+#: ../view/admin/admin_config.php:468
+msgid "LinkedIn company username"
+msgstr "LinkedIn bedrijfsnaam"
+
+#: ../view/admin/admin_config.php:469
+msgid "Company username. e.g: http://www.linkedin.com/company/<strong>company-name</strong>. Registration required."
+msgstr "Bedrijfsnaam. e.g: http://www.linkedin.com/company/<strong>bedrijfsnaam</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:471
+msgid "LinkedIn Company"
+msgstr "LinkedIn Bedrijf"
+
+#: ../view/admin/admin_config.php:479
+msgid "FeedBurner"
+msgstr "FeedBurner"
+
+#: ../view/admin/admin_config.php:493
+msgid "Feedburner url"
+msgstr "FeedBurner url"
+
+#: ../view/admin/admin_config.php:494
+msgid "Feedburner url e.g: <strong>http://feeds.feedburner.com/username</strong>. Registration required."
+msgstr "Feedburner url e.g: <strong>http://feeds.feedburner.com/username</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:504
+msgid "Bit.ly username"
+msgstr "Bit.ly gebruikersnaam"
+
+#: ../view/admin/admin_config.php:517
+#: ../view/admin/admin_config.php:520
+msgid "Bit.ly"
+msgstr "Bit.ly"
+
+#: ../view/admin/admin_config.php:518
+msgid "Bit.ly username for click stats. API Key required. Case sensitive. Registration required."
+msgstr "Bit.ly gebruikersnaam voor klik statistieken. API sleutel vereist. Hoofdlettergevoelig. Registratie vereist."
+
+#: ../view/admin/admin_config.php:528
+#: ../view/admin/admin_config.php:542
+#: ../view/admin/admin_config.php:545
+msgid "Bit.ly api key"
+msgstr "Bit.ly api sleutel"
+
+#: ../view/admin/admin_config.php:543
+msgid "Bit.ly api key for click stats. Case sensitive."
+msgstr "Bit.ly api sleutel voor klik statistieken. Hoofdletter gevoelig."
+
+#: ../view/admin/admin_config.php:553
+msgid "Last.fm username"
+msgstr "Last.fm gebruikersnaam"
+
+#: ../view/admin/admin_config.php:567
+#: ../view/admin/admin_config.php:570
+msgid "Last.fm"
+msgstr "Last.fm"
+
+#: ../view/admin/admin_config.php:568
+msgid "Last.fm username for friend stats. Registration required."
+msgstr "Last.fm gebruikersnaam voor friend stats. Registratie vereist."
+
+#: ../view/admin/admin_config.php:580
+msgid "Facebook fan page id"
+msgstr "Facebook fan pagina id"
+
+#: ../view/admin/admin_config.php:593
+#: ../view/admin/admin_config.php:596
+msgid "Facebook"
+msgstr ""
+
+#: ../view/admin/admin_config.php:594
+msgid "Facebook page ID. (note: NOT the full url, only the id) e.g:<br/>http://www.facebook.com/pages/wp-stats-dashboard/<strong>123487341019112</strong>. Registration required."
+msgstr "Facebook pagina ID. (niet de volledige url, alleen het ID) Voorbeeld:<br/>http://www.facebook.com/pages/wp-stats-dashboard/<strong>123487341019112</strong> <a href=\"http://www.facebook.com/\" target=\"_blank\" title=\"facebook\">facebook</a>. "
+
+#: ../view/admin/admin_config.php:605
+msgid "Flickr username"
+msgstr "Flickr gebruikersnaam"
+
+#: ../view/admin/admin_config.php:617
+#: ../view/admin/admin_config.php:620
+msgid "Flickr"
+msgstr ""
+
+#: ../view/admin/admin_config.php:618
+msgid "Flickr username e.g: http://www.flickr.com/photos/<strong>username</strong>. Registration required."
+msgstr "Flickr gebruikersnaam. Voorbeeld: http://www.flickr.com/photos/<strong>username</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:629
+msgid "Diigo profile name"
+msgstr "Diigo profielnaam"
+
+#: ../view/admin/admin_config.php:642
+#: ../view/admin/admin_config.php:645
+msgid "Diigo"
+msgstr ""
+
+#: ../view/admin/admin_config.php:643
+msgid "Diigo profile name. e.g: http://www.diigo.com/profile/<strong>username</strong>. Registration required."
+msgstr "Diigo profielnaam. e.g: http://www.diigo.com/profile/<strong>username</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:654
+#: ../view/admin/admin_config.php:666
+#: ../view/admin/admin_config.php:670
+msgid "Brazen Careerist"
+msgstr "Brazen Careerist"
+
+#: ../view/admin/admin_config.php:667
+msgid "Brazen careerist profile name. e.g: http://www.brazencareerist.com/profile/<strong>username</strong>. Registration required."
+msgstr "Brazen careerist profielnaam. e.g: http://www.brazencareerist.com/profile/<strong>username</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:678
+msgid "Newsvine profile name"
+msgstr "Newsvine gebruikersnaam"
+
+#: ../view/admin/admin_config.php:690
+#: ../view/admin/admin_config.php:693
+msgid "Newsvine"
+msgstr ""
+
+#: ../view/admin/admin_config.php:691
+msgid "Newsvine profile name. e.g: http://<strong>username</strong>.newsvine.com/. Registration required."
+msgstr "Newsvine profielnaam. Voorbeeld: http://<strong>username</strong>.newsvine.com/. Registratie vereist."
+
+#: ../view/admin/admin_config.php:701
+msgid "Youtube username"
+msgstr "Youtube gebruikersnaam"
+
+#: ../view/admin/admin_config.php:714
+#: ../view/admin/admin_config.php:717
+msgid "Youtube"
+msgstr "Youtube"
+
+#: ../view/admin/admin_config.php:715
+msgid "Youtube username. e.g: http://www.youtube.com/<strong>username</strong>. Registration required."
+msgstr "Youtube gebruikersnaam. Voorbeeld: http://www.youtube.com/<strong>username</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:725
+msgid "Myspace username"
+msgstr "Myspace gebruikersnaam"
+
+#: ../view/admin/admin_config.php:738
+#: ../view/admin/admin_config.php:741
+msgid "Myspace"
+msgstr "Myspace"
+
+#: ../view/admin/admin_config.php:739
+msgid "Myspace username. e.g: http://www.myspace.com/<strong>username</strong>. Registration required."
+msgstr "Myspace gebruikersnaam. Voorbeeld: http://www.myspace.com/<strong>username</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:749
+msgid "Plancast username"
+msgstr "Plancast gebruikersnaam"
+
+#: ../view/admin/admin_config.php:762
+#: ../view/admin/admin_config.php:765
+msgid "Plancast"
+msgstr "Plancast"
+
+#: ../view/admin/admin_config.php:763
+msgid "Plancast username. e.g: http://plancast.com/<strong>username</strong>. Registration required."
+msgstr "Plancast gebruikersnaam. Voorbeeld: http://plancast.com/<strong>username</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:773
+msgid "Lazyfeed username"
+msgstr "Lazyfeed gebruikersnaam"
+
+#: ../view/admin/admin_config.php:786
+#: ../view/admin/admin_config.php:789
+msgid "Lazyfeed"
+msgstr "Lazyfeed"
+
+#: ../view/admin/admin_config.php:787
+msgid "lazyfeed username. e.g: http://www.lazyfeed.com/user/<strong>username</strong>. Registration required."
+msgstr "Lazyfeed gebruikersnaam. Voorbeeld: http://www.lazyfeed.com/user/<strong>username</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:798
+msgid "Sphinn username"
+msgstr "Sphinn gebruikersnaam"
+
+#: ../view/admin/admin_config.php:811
+#: ../view/admin/admin_config.php:814
+msgid "Sphinn"
+msgstr ""
+
+#: ../view/admin/admin_config.php:812
+msgid "sphinn username. e.g: http://sphinn.com/user/<strong>username</strong>. Registration required."
+msgstr "Sphinn gebruikersnaam. Voorbeeld: http://sphinn.com/user/<strong>username</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:823
+msgid "Jaiku username"
+msgstr "Jaiku gebruikersnaam"
+
+#: ../view/admin/admin_config.php:835
+#: ../view/admin/admin_config.php:838
+msgid "Jaiku"
+msgstr ""
+
+#: ../view/admin/admin_config.php:836
+msgid "Jaiku username. e.g: http://<strong>username</strong>.jaiku.com. Registration required."
+msgstr "Jaiku gebruikersnaam. Voorbeeld: http://<strong>username</strong>.jaiku.com. Registratie vereist."
+
+#: ../view/admin/admin_config.php:846
+msgid "Plurk username"
+msgstr "Plurk gebruikersnaam"
+
+#: ../view/admin/admin_config.php:858
+#: ../view/admin/admin_config.php:861
+msgid "Plurk"
+msgstr ""
+
+#: ../view/admin/admin_config.php:859
+msgid "Plurk username. e.g: http://www.plurk.com/<strong>username</strong>. Registration required."
+msgstr "Plurk gebruikersnaam. Voorbeeld: http://www.plurk.com/<strong>username</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:869
+msgid "Hyves username"
+msgstr "Hyves gebruikersnaam"
+
+#: ../view/admin/admin_config.php:882
+#: ../view/admin/admin_config.php:885
+msgid "Hyves"
+msgstr ""
+
+#: ../view/admin/admin_config.php:883
+msgid "Hyves username. e.g: http://<strong>username</strong>.hyves.nl. Registration required."
+msgstr "Hyves gebruikersnaam. Voorbeeld: http://<strong>username</strong>.hyves.nl. Registratie vereist."
+
+#: ../view/admin/admin_config.php:909
+msgid "Foursquare username"
+msgstr "Foursquare gebruikersnaam"
+
+#: ../view/admin/admin_config.php:922
+#: ../view/admin/admin_config.php:925
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: ../view/admin/admin_config.php:923
+msgid "Foursquare username. Registration required."
+msgstr "Foursquare gebruikersnaam. Registratie vereist."
+
+#: ../view/admin/admin_config.php:933
+msgid "Disqus username"
+msgstr "Disqus gebruikersnaam"
+
+#: ../view/admin/admin_config.php:945
+#: ../view/admin/admin_config.php:948
+msgid "Disqus"
+msgstr ""
+
+#: ../view/admin/admin_config.php:946
+msgid "Disqus username. Registration required."
+msgstr "Disqus gebruikersnaam. Registratie vereist."
+
+#: ../view/admin/admin_config.php:957
+msgid "Blippr username"
+msgstr "Blippr gebruikersnaam"
+
+#: ../view/admin/admin_config.php:969
+#: ../view/admin/admin_config.php:972
+msgid "Blippr"
+msgstr ""
+
+#: ../view/admin/admin_config.php:970
+msgid "blippr username. Registration required."
+msgstr "Blippr gebruikersnaam. Registratie vereist."
+
+#: ../view/admin/admin_config.php:980
+msgid "Runkeeper username"
+msgstr "Runkeeper gebruikersnaam"
+
+#: ../view/admin/admin_config.php:994
+#: ../view/admin/admin_config.php:997
+msgid "Runkeeper"
+msgstr "Runkeeper"
+
+#: ../view/admin/admin_config.php:995
+msgid "Runkeeper username. e.g: http://runkeeper.com/user/<strong>daveligthart</strong>/profile. Registration required."
+msgstr "Runkeeper gebruikersnaam. e.g: http://runkeeper.com/user/<strong>daveligthart</strong>/profile. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1007
+msgid "Blippy username"
+msgstr "Blippy gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1020
+#: ../view/admin/admin_config.php:1023
+msgid "Blippy"
+msgstr ""
+
+#: ../view/admin/admin_config.php:1021
+msgid "Blippy username. e.g: http://blippy.com/<strong>daveligthart</strong>. Registration required."
+msgstr "Blippy gebruikersnaam. e.g: http://blippy.com/<strong>daveligthart</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1032
+msgid "WeRead username/id"
+msgstr "WeRead gebruikersnaam/id"
+
+#: ../view/admin/admin_config.php:1045
+#: ../view/admin/admin_config.php:1048
+msgid "Weread"
+msgstr "Weread"
+
+#: ../view/admin/admin_config.php:1046
+msgid "Weread username/id. e.g: http://weread.com/profile/<strong>Dave/1052583991</strong>/. Registration required."
+msgstr "Weread gebruikersnaam/id. e.g: http://weread.com/profile/<strong>Dave/1052583991</strong>/. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1056
+msgid "Empire Avenue ticker name"
+msgstr "Empire Avenue gebruikersnaam / tikker "
+
+#: ../view/admin/admin_config.php:1070
+#: ../view/admin/admin_config.php:1073
+#: ../view/admin/admin_config.php:1092
+msgid "Empire Avenue"
+msgstr "Empire Avenue"
+
+#: ../view/admin/admin_config.php:1071
+msgid "Empire Avenue Ticker. Registration required."
+msgstr "Empire Avenue Tikker. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1081
+msgid "Empire Avenue password"
+msgstr "Empire Avenue wachtwoord"
+
+#: ../view/admin/admin_config.php:1092
+msgid "Please enter your password"
+msgstr "Gaarne uw wachtwoord invoeren"
+
+#: ../view/admin/admin_config.php:1099
+msgid "FriendFeed username"
+msgstr "FriendFeed gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1113
+#: ../view/admin/admin_config.php:1116
+msgid "FriendFeed"
+msgstr "FriendFeed"
+
+#: ../view/admin/admin_config.php:1114
+msgid "FriendFeed username. Registration required."
+msgstr "FriendFeed gebruikersnaam. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1125
+msgid "Digg username"
+msgstr "Digg gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1138
+#: ../view/admin/admin_config.php:1141
+msgid "Digg"
+msgstr ""
+
+#: ../view/admin/admin_config.php:1139
+msgid "Digg username. Registration required."
+msgstr "Digg gebruikersnaam. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1181
+msgid "Battlenet profile url"
+msgstr "Battlenet profiel url"
+
+#: ../view/admin/admin_config.php:1194
+#: ../view/admin/admin_config.php:1197
+msgid "Battlenet"
+msgstr "Battlenet"
+
+#: ../view/admin/admin_config.php:1195
+msgid "Battlenet profile url. e.g <strong>http://eu.battle.net/sc2/en/profile/1491154/1/David/</strong>. Registration required."
+msgstr "Battlenet profiel url. Voorbeeld: <strong>http://eu.battle.net/sc2/en/profile/1491154/1/David/</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1206
+msgid "Educopark profile url"
+msgstr "Educopark profile url"
+
+#: ../view/admin/admin_config.php:1218
+#: ../view/admin/admin_config.php:1221
+msgid "Educopark"
+msgstr "Educopark"
+
+#: ../view/admin/admin_config.php:1219
+msgid "Educopark username. Registration required."
+msgstr "Educopark gebruikersnaam. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1251
+msgid "Vimeo username"
+msgstr "Vimeo gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1264
+#: ../view/admin/admin_config.php:1267
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../view/admin/admin_config.php:1265
+msgid "Vimeo username. e.g http://www.vimeo.com/<strong>daveligthart</strong>. Registration required."
+msgstr "Vimeo gebruikersnaam. e.g http://www.vimeo.com/<strong>daveligthart</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1275
+msgid "Identi.ca username"
+msgstr "Identi.ca gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1288
+#: ../view/admin/admin_config.php:1291
+msgid "Identi.ca"
+msgstr "Identi.ca"
+
+#: ../view/admin/admin_config.php:1289
+msgid "Identi.ca username. e.g http://identi.ca/<strong>daveligthart</strong>. Registration required."
+msgstr "Identi.ca gebruikersnaam. e.g http://identi.ca/<strong>daveligthart</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1299
+msgid "BlogCatalog username"
+msgstr "BlogCatalog gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1311
+#: ../view/admin/admin_config.php:1314
+msgid "BlogCatalog"
+msgstr "BlogCatalog"
+
+#: ../view/admin/admin_config.php:1312
+msgid "BlogCatalog username. e.g http://www.blogcatalog.com/user/<strong>dligthart</strong>. Registration required"
+msgstr "BlogCatalog gebruikersnaam. Voorbeeld: http://www.blogcatalog.com/user/<strong>dligthart</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1323
+msgid "Plaxo url"
+msgstr "Plaxo url"
+
+#: ../view/admin/admin_config.php:1336
+#: ../view/admin/admin_config.php:1339
+msgid "Plaxo"
+msgstr "Plaxo"
+
+#: ../view/admin/admin_config.php:1337
+msgid "Plaxo profile url. Registration required."
+msgstr "Plaxo profiel url. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1347
+msgid "Delicious search phrase"
+msgstr "Delicious zoekterm"
+
+#: ../view/admin/admin_config.php:1361
+msgid "Delicious Search Phrase"
+msgstr "Delicious Zoekterm"
+
+#: ../view/admin/admin_config.php:1362
+msgid "Delicious search phrase to monitor."
+msgstr "Delicious zoekterm om te monitoren."
+
+#: ../view/admin/admin_config.php:1364
+msgid "Delicious"
+msgstr "Delicious"
+
+#: ../view/admin/admin_config.php:1371
+msgid "Delicious url"
+msgstr "Delicious url"
+
+#: ../view/admin/admin_config.php:1384
+msgid "Delicious Url"
+msgstr "Delicious Url"
+
+#: ../view/admin/admin_config.php:1385
+msgid "Delicious url to monitor e.g: <strong>http://www.delicious.com/url/591d3f6192c88f638547d183355587a6</strong>"
+msgstr "Delicious url om te monitoren. Voorbeeld: <strong>http://www.delicious.com/url/591d3f6192c88f638547d183355587a6</strong>"
+
+#: ../view/admin/admin_config.php:1393
+msgid "Reddit username"
+msgstr "Reddit gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1406
+#: ../view/admin/admin_config.php:1409
+msgid "Reddit"
+msgstr ""
+
+#: ../view/admin/admin_config.php:1407
+msgid "Reddit username. Registration required."
+msgstr "Reddit gebruikersnaam. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1418
+msgid "StumbleUpon username"
+msgstr "StumbleUpon gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1430
+#: ../view/admin/admin_config.php:1433
+msgid "StumbleUpon"
+msgstr "StumbleUpon "
+
+#: ../view/admin/admin_config.php:1431
+msgid "StumbleUpon username. Registration required."
+msgstr "StumbleUpon gebruikersnaam. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1442
+msgid "Netlog username"
+msgstr "Netlog gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1455
+#: ../view/admin/admin_config.php:1458
+msgid "Netlog"
+msgstr ""
+
+#: ../view/admin/admin_config.php:1456
+msgid "Netlog username. Registration required."
+msgstr "Netlog gebruikersnaam. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1468
+msgid "99Designs.com username"
+msgstr "99Designs.com gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1479
+#: ../view/admin/admin_config.php:1482
+msgid "99Designs"
+msgstr ""
+
+#: ../view/admin/admin_config.php:1480
+msgid "99Designs.com username. Registration required."
+msgstr "99Designs.com gebruikersnaam. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1490
+msgid "Ego search phrase "
+msgstr "Ego zoek term"
+
+#: ../view/admin/admin_config.php:1501
+msgid "Ego Search"
+msgstr "Ego zoekterm"
+
+#: ../view/admin/admin_config.php:1501
+msgid "E.g your firstname and lastname."
+msgstr "Voorbeeld: jouw voornaam en achternaam."
+
+#: ../view/admin/admin_config.php:1508
+msgid "Quora username"
+msgstr "Quora gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1520
+#: ../view/admin/admin_config.php:1523
+msgid "Quora"
+msgstr ""
+
+#: ../view/admin/admin_config.php:1521
+msgid "Quora username. http://www.quora.com/<strong>Dave-Ligthart</strong>. Registration required."
+msgstr "Quora gebruikersnaam. http://www.quora.com/<strong>Dave-Ligthart</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1532
+msgid "Getglue username"
+msgstr "Getglue gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1545
+#: ../view/admin/admin_config.php:1548
+msgid "Getglue"
+msgstr "Getglue"
+
+#: ../view/admin/admin_config.php:1546
+msgid "Getglue username. http://getglue.com/<strong>daveligthart</strong>. Registration required."
+msgstr "Getglue gebruikersnaam. http://getglue.com/<strong>daveligthart</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1556
+msgid "Google Plus Id"
+msgstr ""
+
+#: ../view/admin/admin_config.php:1568
+#: ../view/admin/admin_config.php:1572
+msgid "Google Plus"
+msgstr "Google Plus"
+
+#: ../view/admin/admin_config.php:1569
+msgid ""
+"Google Plus ID. (note: NOT the full url, only the id) e.g: https://plus.google.com/<strong>107127911590007452165</strong>/posts. \n"
+"                  \t\tRegistration required."
+msgstr ""
+"Google Plus ID. (note: niet de volledige url invullen, alleen het ID) voorbeeld: https://plus.google.com/<strong>107127911590007452165</strong>/posts. \n"
+"                  \t\tRegistratie vereist."
+
+#: ../view/admin/admin_config.php:1580
+msgid "Hunch username"
+msgstr "Hunch gebruikersnaam"
+
+#: ../view/admin/admin_config.php:1592
+#: ../view/admin/admin_config.php:1595
+msgid "Hunch"
+msgstr ""
+
+#: ../view/admin/admin_config.php:1593
+msgid "Hunch username. http://hunch.com/<strong>daveligthart</strong>. Registration required."
+msgstr "Hunch gebruikersnaam. http://hunch.com/<strong>daveligthart</strong>. Registratie vereist."
+
+#: ../view/admin/admin_config.php:1617
+msgid "Enable / Disable Social Metrics"
+msgstr "Aan / Uit Sociale Metriek"
+
+#: ../view/admin/admin_dashboard.php:33
+msgid "check"
+msgstr "controleer"
+
+#: ../view/admin/admin_dashboard_page.php:48
+#: ../view/admin/admin_dashboard_page.php:62
+#: ../view/admin/admin_dashboard_page.php:89
+#: ../view/admin/admin_dashboard_page.php:103
+#: ../view/admin/admin_dashboard_page.php:117
+#: ../view/admin/admin_dashboard_page.php:127
+#: ../view/admin/admin_dashboard_page.php:141
+#: ../view/admin/admin_dashboard_page.php:155
+#: ../view/admin/admin_dashboard_page.php:169
+#: ../view/admin/admin_dashboard_page.php:177
+msgid "Click to toggle"
+msgstr "Klik om te openen en te sluiten"
+
+#: ../view/admin/admin_dashboard_page.php:121
+msgid "Stats - Post Views"
+msgstr "Stats - Vertoningen"
+
+#: ../view/admin/admin_export.php:13
+msgid "WP-Stats-Dashboard Export"
+msgstr "WP-Stats-Dashboard Exporteren"
+
+#: ../view/admin/admin_export.php:30
+msgid "Export Social Trends Data"
+msgstr "Exporteer Sociale Trend Data"
+
+#: ../view/admin/admin_export.php:35
+msgid "Export to excel"
+msgstr "Exporteren naar excel"
+
+#: ../view/admin/admin_export.php:37
+msgid "Excel"
+msgstr "Excel"
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:7
+msgid "No"
+msgstr "Nee"
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:18
+msgid "Yes"
+msgstr "Ja"
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:22
+msgid "Blacklisted:"
+msgstr "Blacklisted:"
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:30
+msgid "This means that you might have trouble delivering mail to some clients from your server ip address."
+msgstr "Dit betekend dat mail vaak niet aankomt bij gebruikers."
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:31
+msgid "Your server ip is: "
+msgstr "Server ip is:"
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:38
+msgid "Your server ip "
+msgstr "Server ip"
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:39
+msgid "is not listed on a spam list."
+msgstr "staat niet op een spam lijst."
+
+#: ../view/admin/admin_optimize_widget_engagement.php:13
+msgid "Engagement:"
+msgstr "Engagement:"
+
+#: ../view/admin/admin_optimize_widget_engagement.php:20
+msgid ""
+"The engagement is too low. Add a comment form to allow visitors to respond to your articles. This will improve the unique content on your website which\n"
+"\t\t\t\t\tgives you a better ranking in google."
+msgstr "Engagement is te laag. Maak het voor gebruikers makkelijker om te reageren op artikelen door het plaatsen van een reactie formulier.  "
+
+#: ../view/admin/admin_optimize_widget_engagement.php:25
+msgid ""
+"The engagement is too low.. Try to make commenting on your site more user friendly. Comments will add to the unique content on your website which gives you a better\n"
+"\t\t\t\t\tranking in Google."
+msgstr "Engagement is te laag.  Probeer het reageren op artikelen makkelijker te maken voor gebruikers. "
+
+#: ../view/admin/admin_optimize_widget_facebook.php:21
+msgid "Facebook Homepage Likes"
+msgstr "Facebook Homepage Likes"
+
+#: ../view/admin/admin_optimize_widget_facebook.php:27
+msgid "The number of homepage likes is too small. Try placing a Facebook like button on your homepage or put it in a more prominent position."
+msgstr "Het aantal likes is te klein. Plaats een facebook like knop op uw homepage of zet deze op een meer prominente plaats."
+
+#: ../view/admin/admin_optimize_widget_pagerank.php:12
+msgid "Pagerank:"
+msgstr "Pagerank:"
+
+#: ../view/admin/admin_optimize_widget_pagerank.php:19
+msgid "Your pagerank is quite low. Have you thought about <a href=\"http://www.daveligthart.com/products/\" target=\"_blank\" style=\"font-weight:bold;\" title=\"SEO, SMO, Performance optimization service\">optimizing</a> / SEO / SMO / Performance ? This will get you a better organic ranking in google."
+msgstr "Jouw pagerank is te laag. Heb je al eens overwogen om te <a href=\"http://www.daveligthart.com/products/\" target=\"_blank\" style=\"font-weight:bold;\" title=\"SEO, SMO, Performance optimization service\">optimaliseren?</a> Voor een betere ranking in google."
+
+#: ../view/admin/admin_optimize_widget_pagerank.php:25
+msgid ""
+"Your pagerank is fine. Have you thought about <a href=\"http://www.daveligthart.com/products/\" target=\"_blank\" style=\"font-weight:bold;\"  title=\"SEO, SMO, Performance optimization service\">optimizing</a> \n"
+"\t\t\t\tyour social media profiles to get more visitors and improve interaction with your audience?"
+msgstr "Uw pagerank is in orde."
+
+#: ../view/admin/admin_optimize_widget_twitter.php:20
+msgid "Twitter F/F ratio:"
+msgstr "Twitter F/F ratio:"
+
+#: ../view/admin/admin_optimize_widget_twitter.php:39
+msgid "Try to <a href=\"http://www.theunfollowapp.com\" target=\"_blank\" title=\"The unfollow app\" rel=\"external\">unfollow as many users as possible</a> to improve your twitter profile quality."
+msgstr "Stop met het volgen van zoveel mogelijk <a href=\"http://www.theunfollowapp.com\" target=\"_blank\" title=\"The unfollow app\">gebruikers</a> om de kwaliteit van je profiel op twitter te vergroten. "
+
+#: ../view/admin/admin_optimize_widget_twitter.php:50
+msgid "It seems you do not own a <a href=\"http://twitter.com\" target=\"_blank\" title=\"Twitter\">twitter.com</a> profile. Create one to improve interaction with your audience."
+msgstr "Je hebt nog geen account op <a href=\"http://twitter.com\" target=\"_blank\" title=\"Twitter\">twitter.com</a>.  Maak er eentje aan om een betere interactie graad te krijgen met je publiek. "
+
+#: ../view/admin/admin_optimize_widget_twitter_mentions.php:19
+msgid "Your blog has been mentioned"
+msgstr "Uw blog is "
+
+#: ../view/admin/admin_optimize_widget_twitter_mentions.php:19
+msgid "times over the last few weeks.."
+msgstr "keer genoemd in de afgelopen weken..."
+
+#: ../view/admin/admin_profile_finder.php:11
+msgid "WP-Stats-Dashboard Profile Finder"
+msgstr "WP-Stats-Dashboard Profiel Zoeker"
+
+#: ../view/admin/admin_profile_finder.php:34
+msgid "Profile Finder"
+msgstr "Profiel Zoeker"
+
+#: ../view/admin/admin_profile_finder.php:39
+msgid "Enter regularly used profile name:"
+msgstr "Voer veel gebruikte profielnaam in:"
+
+#: ../view/admin/admin_profile_finder.php:43
+msgid "Find"
+msgstr "Zoek"
+
+#: ../view/admin/admin_profile_finder.php:55
+msgid "Select profiles to save."
+msgstr "Selecteer profielen om te bewaren."
+
+#: ../view/admin/admin_profile_finder.php:60
+msgid "Profiles are saved to settings."
+msgstr "Profielen zijn opgeslagen."
+
+#: ../view/admin/admin_profile_finder.php:66
+msgid "Save"
+msgstr "Opslaan"
+
+#: ../view/admin/admin_rpc.php:5
+msgid "WPSD - RPC Client"
+msgstr "WPSD - RPC Client"
+
+#: ../view/admin/admin_rpc.php:7
+msgid "For testing purposes only."
+msgstr "Alleen voor test doeleinden te gebruiken."
+
+#: ../view/admin/admin_rpc.php:19
+msgid "getKey username"
+msgstr "getKey gebruikersnaam"
+
+#: ../view/admin/admin_rpc.php:22
+msgid "getKey password"
+msgstr "getKey wachtwoord"
+
+#: ../view/admin/admin_rpc.php:26
+msgid "Get Key"
+msgstr ""
+
+#: ../view/admin/admin_rpc.php:30
+msgid "getStats key"
+msgstr "getStats key"
+
+#: ../view/admin/admin_rpc.php:43
+msgid "getStats type"
+msgstr "getStats type"
+
+#: ../view/admin/admin_rpc.php:47
+msgid "getStatsByDate type Y-m-d"
+msgstr "getStatsByDate type Y-m-d"
+
+#: ../view/admin/admin_rpc.php:52
+msgid "Get Stats By Date"
+msgstr "Get Stats By Date"
+
+#: ../view/admin/admin_rpc.php:55
+msgid "Get Stats"
+msgstr "Get Stats"
+
+#: ../view/admin/admin_rpc.php:64
+msgid "getMetrics"
+msgstr ""
+
+#: ../view/admin/admin_rpc.php:66
+msgid "Get Metrics"
+msgstr "Get Metrics"
+
+#: ../view/admin/admin_rpc.php:76
+msgid "getStatsByYearAndMonth"
+msgstr ""
+
+#: ../view/admin/admin_rpc.php:79
+msgid "Get Stats By Year And Month"
+msgstr ""
+
+#: ../view/admin/admin_rpc.php:90
+msgid "getStatsByDateRange"
+msgstr "getStatsByDateRange"
+
+#: ../view/admin/admin_rpc.php:92
+msgid "Type"
+msgstr ""
+
+#: ../view/admin/admin_rpc.php:96
+msgid "Date From"
+msgstr ""
+
+#: ../view/admin/admin_rpc.php:100
+msgid "Date To"
+msgstr ""
+
+#: ../view/admin/admin_rpc.php:106
+msgid "Get Stats By Date Range"
+msgstr ""
+
+#: ../view/admin/admin_rpc.php:122
+msgid "Clear Server Cache"
+msgstr "Clear Server Cache"
+
+#: ../view/admin/admin_trend.php:9
+msgid "Select trend"
+msgstr "Selecteer trend"
+
+#: ../view/admin/admin_user_profile.php:40
+msgid "WPSD - User Config"
+msgstr "WPSD - Gebruikersconfiguratie"
+
+#: ../view/admin/admin_user_profile.php:45
+msgid "Klout"
+msgstr ""
+
+#: ../view/admin/admin_user_profile.php:50
+msgid "Please enter your Klout username. E.g Last part of the url: http://klout.com/<strong>daveligthart</strong>"
+msgstr "Voer uw klout gebruikernaam in."
+
+#: ../view/admin/admin_user_profile.php:60
+msgid "Please enter your Twitter username. E.g Last part of the url: http://twitter.com/<strong>daveligthart</strong>"
+msgstr "Voer uw twitter gebruikersnaam in."
+
+#: ../view/admin/admin_user_profile.php:66
+msgid "WPSD - User Metrics"
+msgstr "WPSD - Gebruikersmetriek"
+
+#: ../view/admin/admin_user_profile.php:70
+msgid "Total Articles"
+msgstr "Totaal Artikelen"
+
+#: ../view/admin/admin_user_profile.php:74
+msgid "Total Comments Received"
+msgstr "Totaal Ontvangen Reacties"
+
+#: ../view/admin/admin_user_profile.php:78
+msgid "Total Comments Placed"
+msgstr "Totaal Geplaatste Reacties"
+
+#: ../view/admin/admin_user_profile.php:86
+msgid "Twitter F/F Ratio"
+msgstr "Twitter F/F Ratio"
+
+#: ../view/admin/blocks/select-trend.php:12
+msgid "Pagerank"
+msgstr "Pagerank"
+
+#: ../view/admin/blocks/select-trend.php:13
+msgid "Alexa"
+msgstr ""
+
+#: ../view/admin/blocks/select-trend.php:14
+msgid "Technorati"
+msgstr ""
+
+#: ../view/admin/blocks/select-trend.php:15
+msgid "Compete"
+msgstr ""
+
+#: ../view/admin/blocks/select-trend.php:16
+msgid "Mozrank"
+msgstr ""
+
+#: ../view/admin/blocks/select-trend.php:17
+msgid "Postrank"
+msgstr "Postrank"
+
+#: ../view/admin/blocks/select-trend.php:18
+msgid "Twitter Followers"
+msgstr "Twitter Volgers"
+
+#: ../view/admin/blocks/select-trend.php:20
+msgid "LinkedIn Connections"
+msgstr "LinkedIn Connecties"
+
+#: ../view/admin/blocks/select-trend.php:21
+msgid "Backlinks"
+msgstr "Backlinks"
+
+#: ../view/admin/blocks/select-trend.php:22
+msgid "SocialGraph Incoming"
+msgstr "SocialGraph binnenkomende links"
+
+#: ../view/admin/blocks/select-trend.php:23
+msgid "Bit.ly Clicks"
+msgstr "Bit.ly Clicks"
+
+#: ../view/admin/blocks/select-trend.php:24
+msgid "Bing link Count"
+msgstr "Bing link Aantal"
+
+#: ../view/admin/blocks/select-trend.php:26
+msgid "FeedBurner Circulation"
+msgstr "FeedBurner Circulering"
+
+#: ../view/admin/blocks/select-trend.php:27
+msgid "Last.fm Friends"
+msgstr "Last.fm Vrienden"
+
+#: ../view/admin/blocks/select-trend.php:28
+msgid "Facebook Fans"
+msgstr "Facebook Fans"
+
+#: ../view/admin/blocks/select-trend.php:29
+msgid "StumbleUpon Views"
+msgstr "StumbleUpon Vertoningen"
+
+#: ../view/admin/blocks/select-trend.php:31
+msgid "Youtube Video Views"
+msgstr "Youtube Video Vertoningen"
+
+#: ../view/admin/blocks/select-trend.php:32
+msgid "Myspace Friends"
+msgstr "Myspace Vrienden"
+
+#: ../view/admin/blocks/select-trend.php:34
+msgid "Runkeeper Total Distance"
+msgstr "Runkeeper Totaalafstand"
+
+#: ../view/admin/blocks/select-trend.php:35
+msgid "Google Plus Followers"
+msgstr "Google Plus Volgers"
+
+#: ../view/admin/blocks/select-trend.php:36
+msgid "PeerIndex"
+msgstr ""
+
+#: ../view/admin/blocks/sidebar.php:6
+msgid "We are not asking for a donation but please support us by"
+msgstr "We vragen niet om een donatie maar help ons door "
+
+#: ../view/admin/blocks/sidebar.php:9
+msgid "You are awesome!"
+msgstr "Bedankt voor je steun!"
+
+#: ../view/admin/blocks/sidebar.php:13
+msgid "Send your friends a tweet about WPSD"
+msgstr ""
+
+#: ../view/admin/blocks/sidebar.php:14
+msgid "Telling your friends about this great plugin with a tweet:"
+msgstr "Vertel je vrienden over deze plugin met een tweet:"
+
+#: ../view/admin/blocks/sidebar.php:16
+msgid "Send a tweet"
+msgstr "Verstuur een tweet"
+
+#: ../view/admin/blocks/sidebar.php:16
+msgid "Tweet"
+msgstr "Tweet"
+
+#: ../view/admin/blocks/sidebar.php:19
+msgid "Follow us on twitter"
+msgstr "Volg ons via twitter"
+
+#: ../view/admin/blocks/sidebar.php:19
+msgid "Get updates on Twitter!"
+msgstr "Blijf op de hoogte via Twitter!"
+
+#: ../view/admin/blocks/sidebar.php:21
+msgid "Follow Dave Ligthart on Twitter"
+msgstr "Volg Dave Ligthart op Twitter"
+
+#: ../view/admin/blocks/sidebar.php:22
+msgid "Follow"
+msgstr "Volgen"
+
+#: ../view/admin/blocks/sidebar.php:25
+msgid "Rate us on WordPress"
+msgstr "Geef ons een beoordeling op WordPress"
+
+#: ../view/admin/blocks/sidebar.php:26
+msgid "By giving "
+msgstr "Door het geven van"
+
+#: ../view/admin/blocks/sidebar.php:27
+#: ../view/admin/blocks/sidebar.php:30
+msgid "Give a great rating"
+msgstr "Geef een geweldige beoordeling"
+
+#: ../view/admin/blocks/sidebar.php:27
+msgid "wp-stats-dashboard"
+msgstr "WP-Stats-Dashboard"
+
+#: ../view/admin/blocks/sidebar.php:28
+msgid "an awesome rating:"
+msgstr "een geweldige beoordeling:"
+
+#: ../view/admin/blocks/sidebar.php:30
+msgid "Rate"
+msgstr "Beoordelen"
+
+#: ../view/admin/blocks/sidebar.php:33
+msgid "Buy our app"
+msgstr "Koop onze app"
+
+#: ../view/admin/blocks/sidebar.php:33
+msgid "By buying our app"
+msgstr "Door onze app te kopen"
+
+#: ../view/admin/blocks/sidebar.php:34
+msgid "Go to App"
+msgstr "Ga naar App"
+
+#: ../view/admin/blocks/sidebar.php:44
+msgid "Get the WPSD iPhone App"
+msgstr "Download de WPSD iPhone App"
+
+#: ../view/admin/blocks/sidebar.php:48
+msgid "WPSD iPhone - App Store"
+msgstr "WPSD Iphone - App Store"
+
+#: ../view/admin/blocks/sidebar.php:52
+msgid "<strong>Now Available</strong> from the App Store"
+msgstr "<strong>Nu verkrijgbaar</strong> in de App Store"
+
+#: ../view/admin/blocks/sidebar.php:67
+msgid "Too many social media sites to connect?"
+msgstr "Teveel werk om alles te connecteren?"
+
+#: ../view/admin/blocks/sidebar.php:71
+msgid "Let us connect all listed social media sites for you. You'll be up and running in no time. "
+msgstr "Laat ons het werk doen om al je sites te connecteren. Je zult daardoor sneller van start kunnen gaan."
+
+#: ../view/admin/blocks/sidebar.php:75
+msgid "Optimize your WPSD"
+msgstr "Optimaliseren jouw WPSD"
+
+#: ../view/admin/blocks/sidebar.php:76
+msgid "WPSD optimization"
+msgstr "WPSD Optimaliseren"
+
+#: ../view/admin/blocks/sidebar.php:83
+msgid "iGoogle Gadget"
+msgstr "iGoogle Gadget"
+
+#: ../view/admin/blocks/sidebar.php:87
+msgid "iGoogle"
+msgstr "iGoogle"
+
+#: ../view/admin/blocks/sidebar.php:91
+msgid "Link to Social Metrics iGoogle Gadget"
+msgstr "Link naar de iGoogle Gadget"
+
+#: ../view/admin/blocks/sidebar.php:92
+msgid "WPSD iGoogle Gadget"
+msgstr "WPSD iGoogle Gadget"
+
+#: ../view/admin/blocks/sidebar.php:100
+msgid "Instructions: How to get the plugin to work"
+msgstr "Instructies"
+
+#: ../view/admin/blocks/sidebar.php:105
+msgid "Install the <a href=\"http://wordpress.org/extend/plugins/jetpack/\" target=\"_blank\" title=\"Download the Jetpack plugin from WordPress.com\">WordPress.com</a> jetpack plugin to start tracking your stats."
+msgstr "Installeer de <a href=\"http://wordpress.org/extend/plugins/jetpack/\" target=\"_blank\" title=\"Download de Jetpack plugin via WordPress.com\">WordPress.com</a> jetpack plugin om je bezoeken te kunnen meten."
+
+#: ../view/admin/blocks/sidebar.php:108
+msgid "Create or login to your account at"
+msgstr "Creëer een login voor je account op:"
+
+#: ../view/admin/blocks/sidebar.php:111
+msgid "Connect to WordPress.com through jetpack. Click on the huge banner that is displayed above when your blog is not connected."
+msgstr "Maak een connectie met WordPress.com via jetpack. Klik op de grote banner die helemaal bovenaan getoond is."
+
+#: ../view/admin/blocks/sidebar.php:115
+msgid "Enter your wordpress.com username and password on the wp-stats-dashboard settings page."
+msgstr "Voer uw wordpress.com gebruikersnaam en wachtwoord in"
+
+#: ../view/admin/blocks/sidebar.php:120
+msgid "You're all set"
+msgstr "Klaar is kees"
+
+#: ../view/admin/blocks/sidebar.php:127
+msgid "Server Check"
+msgstr "Server Controle"
+
+#: ../view/admin/blocks/sidebar.php:137
+msgid "Safe mode: on"
+msgstr "Safe mode: aan"
+
+#: ../view/admin/blocks/sidebar.php:137
+msgid "Safe mode: off"
+msgstr "Safe mode: uit"
+
+#: ../view/admin/blocks/sidebar.php:141
+msgid "Curl installed: yes"
+msgstr "Curl geinstalleerd: ja"
+
+#: ../view/admin/blocks/sidebar.php:141
+msgid "Curl installed: no"
+msgstr "Curl geinstalleerd: nee"
+
+#: ../view/admin/blocks/sidebar.php:145
+msgid "Stats plugin: installed"
+msgstr "Stats plugin: geinstalleerd"
+
+#: ../view/admin/blocks/sidebar.php:145
+msgid "Stats plugin: <a href=\"http://wordpress.org/extend/plugins/jetpack/\" target=\"_blank\" title=\"Install the WordPress.com Jetpack plugin\">not installed</a>"
+msgstr "Stats plugin: <a href=\"http://wordpress.org/extend/plugins/jetpack/\" target=\"_blank\" title=\"Installeer de WordPress.com Jetpack plugin\">niet geïnstalleerd</a>"
+
+#: ../view/admin/blocks/sidebar.php:149
+msgid "Cache directory writable: yes"
+msgstr "Cache directorie schrijfbaar: ja"
+
+#: ../view/admin/blocks/sidebar.php:149
+msgid "Cache directory writable: no"
+msgstr "Cache directorie schrijfbaar: nee"
+
+#: ../view/admin/blocks/sidebar.php:157
+msgid "wp_footer in footer.php found: <a href=\"http://codex.wordpress.org/Theme_Development\" target=\"_blank\" title=\"Theme development documentation\">no</a>"
+msgstr "wp_footer in footer.php gevonden: <a href=\"http://codex.wordpress.org/Theme_Development\" target=\"_blank\" title=\"Theme development documentation\">nee</a>"
+
+#: ../view/admin/blocks/sidebar.php:157
+msgid "wp_footer in footer.php found: yes"
+msgstr "wp_footer in footer.php gevonden: ja"
+
+#: ../view/admin/blocks/sidebar.php:169
+msgid "Version"
+msgstr "Versie"
+
+#: ../view/admin/blocks/sidebar.php:173
+msgid "DB version: "
+msgstr "DB versie:"
+
+#: ../view/admin/blocks/sidebar.php:182
+msgid "Plugin by"
+msgstr "Plugin door"
+
+#: ../view/admin/blocks/sidebar.php:186
+msgid ": If you like my work, hire me! For custom wordpress plugin and theme development."
+msgstr ": Je kan me inhuren om WordPress plugins of themes voor je te ontwikkelen"
+
+#: ../view/admin/blocks/sidebar.php:188
+msgid "More info"
+msgstr "Meer info"
+
+#~ msgid "BlogPulse Conversations"
+#~ msgstr "BlogPulse.com Conversaties"
+
+#~ msgid "Sponsor"
+#~ msgstr "Sponsoren"
+
+#~ msgid "Huge huge support!: <br/> visiting one of our sponsors websites: "
+#~ msgstr "Grote hulp: <br/> door deze website te bezoeken:"
+
+#~ msgid "Graph: Views per day"
+#~ msgstr "Grafiek: Bezoeken per dag"
+
+#~ msgid "Ping.fm Application Key"
+#~ msgstr "Ping.fm Application Sleutel"
+
+#~ msgid ""
+#~ "ping.fm application key. This enables autoposting to 30+ social media "
+#~ "sites on publishing a blog post. <a href=\"http://ping.fm/\" target="
+#~ "\"_blank\" title=\"ping.fm\">ping.fm</a>."
+#~ msgstr ""
+#~ "Optional ping.fm applicatie sleutel.  <a href=\"http://ping.fm/\" target="
+#~ "\"_blank\" title=\"ping.fm\">ping.fm</a>. "
+
+#~ msgid ""
+#~ "Bit.ly api key for click stats. <a href=\"http://bit.ly/a/your_api_key\" "
+#~ "target=\"_blank\" title=\"bitly api key\">Find it here</a>. Case "
+#~ "sensitive."
+#~ msgstr ""
+#~ "Bit.ly api sleutel voor klik statistieken. <a href=\"http://bit.ly/a/"
+#~ "your_api_key\" target=\"_blank\" title=\"bitly api key\">api sleutel</a>. "
+#~ "Hoofdlettergevoelig."
+
+#~ msgid ""
+#~ "Last.fm username for friend stats. <a href=\"http://www.last.fm/\" target="
+#~ "\"_blank\" title=\"last.fm\">last.fm</a>."
+#~ msgstr ""
+#~ "Last.fm gebruikersnaam. <a href=\"http://www.last.fm/\" target=\"_blank\" "
+#~ "title=\"last.fm\">last.fm</a>."
+
+#~ msgid "Xbox username"
+#~ msgstr "Xbox gebruikersnaam"
+
+#~ msgid ""
+#~ "Xbox live gamer tag. <a href=\"http://live.xbox.com/\" target=\"_blank\" "
+#~ "title=\"xbox live\">xbox live</a>."
+#~ msgstr ""
+#~ "Xbox live gamer tag. <a href=\"http://live.xbox.com/\" target=\"_blank\" "
+#~ "title=\"xbox live\">xbox live</a>."
+
+#~ msgid ""
+#~ "Foursquare username. <a href=\"http://foursquare.com/\" target=\"_blank\" "
+#~ "title=\"foursquare\">foursquare</a>."
+#~ msgstr ""
+#~ "Optioneel foursquare gebruikersnaam. <a href=\"http://foursquare.com/\" "
+#~ "target=\"_blank\" title=\"foursquare\">foursquare</a>. "
+
+#~ msgid ""
+#~ "Disqus username. <a href=\"http://disqus.com/\" target=\"_blank\" title="
+#~ "\"disqus\">disqus</a>."
+#~ msgstr ""
+#~ "Disqus gebruikersnaam. <a href=\"http://disqus.com/\" target=\"_blank\" "
+#~ "title=\"disqus\">disqus</a>. "
+
+#~ msgid ""
+#~ "blippr username. <a href=\"http://blippr.com/\" target=\"_blank\" title="
+#~ "\"blippr\">blippr</a>."
+#~ msgstr ""
+#~ "Blippr gebruikersnaam. <a href=\"http://blippr.com/\" target=\"_blank\" "
+#~ "title=\"blippr\">blippr</a>."
+
+#~ msgid ""
+#~ "Empire Avenue Ticker. <a href=\"http://www.empireavenue.com\" target="
+#~ "\"_blank\" title=\"Empire Avenue\">Empire Avenue</a>."
+#~ msgstr ""
+#~ "Empire Avenue Tikker. <a href=\"http://www.empireavenue.com\" target="
+#~ "\"_blank\" title=\"Empire Avenue\">Empire Avenue</a>."
+
+#~ msgid "Empire Avenue Password."
+#~ msgstr "Empire Avenue wachtwoord."
+
+#~ msgid ""
+#~ "FriendFeed username. <a href=\"http://www.friendfeed.com\" target=\"_blank"
+#~ "\" title=\"FriendFeed\">FriendFeed</a>."
+#~ msgstr ""
+#~ "FriendFeed gebruikersnaam. <a href=\"http://www.friendfeed.com\" target="
+#~ "\"_blank\" title=\"FriendFeed\">FriendFeed</a>. "
+
+#~ msgid ""
+#~ "Digg username. <a href=\"http://digg.com\" target=\"_blank\" title=\"Digg"
+#~ "\">Digg</a>."
+#~ msgstr ""
+#~ "Digg gebruikersnaam. <a href=\"http://digg.com\" target=\"_blank\" title="
+#~ "\"Digg\">Digg</a>. "
+
+#~ msgid "Mylikes username"
+#~ msgstr "Mylikes gebruikersnaam"
+
+#~ msgid ""
+#~ "Mylikes username. <a href=\"http://mylikes.com/signup?token=daveligthart"
+#~ "\" target=\"_blank\" title=\"Mylikes\">Mylikes</a>."
+#~ msgstr ""
+#~ "Mylikes gebruikersnaam. <a href=\"http://mylikes.com/signup?"
+#~ "token=daveligthart\" target=\"_blank\" title=\"Mylikes\">Mylikes</a>."
+
+#~ msgid ""
+#~ "Educopark username. <a href=\"http://educopark.com\" target=\"_blank\" "
+#~ "title=\"Educopark\">Educopark</a>."
+#~ msgstr ""
+#~ "Educopark gebruikersnaam. <a href=\"http://educopark.com\" target=\"_blank"
+#~ "\" title=\"Educopark\">Educopark</a>."
+
+#~ msgid "YahooBuzz url"
+#~ msgstr "YahooBuzz url"
+
+#~ msgid ""
+#~ "YahooBuzz url. e.g <strong>http://buzz.yahoo.com/activity/u/"
+#~ "UBG7TETTMGJOTVDMKVODKQRDA4</strong> <a href=\"http://buzz.yahoo.com/\" "
+#~ "target=\"_blank\" title=\"YahooBuzz\">YahooBuzz</a>."
+#~ msgstr ""
+#~ "YahooBuzz url. Voorbeeld: <strong>http://buzz.yahoo.com/activity/u/"
+#~ "UBG7TETTMGJOTVDMKVODKQRDA4</strong> <a href=\"http://buzz.yahoo.com/\" "
+#~ "target=\"_blank\" title=\"YahooBuzz\">YahooBuzz</a>. "
+
+#~ msgid ""
+#~ "Plaxo profile url. <a href=\"http://plaxo.com/\" target=\"_blank\" title="
+#~ "\"Plaxo\">Plaxo</a>."
+#~ msgstr ""
+#~ "Plaxo profiel url. <a href=\"http://plaxo.com/\" target=\"_blank\" title="
+#~ "\"Plaxo\">Plaxo</a>. "
+
+#~ msgid ""
+#~ "Reddit username. <a href=\"http://reddit.com/\" target=\"_blank\" title="
+#~ "\"Reddit\">Reddit</a>."
+#~ msgstr ""
+#~ "Reddit gebruikersnaam. <a href=\"http://reddit.com/\" target=\"_blank\" "
+#~ "title=\"Reddit\">Reddit</a>. "
+
+#~ msgid ""
+#~ "StumbleUpon username. <a href=\"http://stumbleupon.com/\" target=\"_blank"
+#~ "\" title=\"StumbleUpon\">StumbleUpon</a>."
+#~ msgstr ""
+#~ "StumbleUpon gebruikersnaam. <a href=\"http://stumbleupon.com/\" target="
+#~ "\"_blank\" title=\"StumbleUpon\">StumbleUpon</a>. "
+
+#~ msgid ""
+#~ "Netlog username. <a href=\"http://netlog.com/\" target=\"_blank\" title="
+#~ "\"Netlog\">Netlog</a>."
+#~ msgstr ""
+#~ "Netlog gebruikersnaam. <a href=\"http://netlog.com/\" target=\"_blank\" "
+#~ "title=\"Netlog\">Netlog</a>. "
+
+#~ msgid ""
+#~ "99Designs.com username. <a href=\"http://99designs.com/\" target=\"_blank"
+#~ "\" title=\"99designs\">99designs</a>."
+#~ msgstr ""
+#~ "99Designs.com gebruikersnaam. <a href=\"http://99designs.com/\" target="
+#~ "\"_blank\" title=\"99designs\">99designs</a>. "
+
+#~ msgid "GO"
+#~ msgstr "GA"
+
+#~ msgid "*NEW* iPhone App"
+#~ msgstr "*Nieuw* Iphone App"
+
+#~ msgid "Get the api key: you can find your api key on the wordpress.com "
+#~ msgstr "Haal de api sleutel op: deze kun je vinden op wordpress.com"
+
+#~ msgid "user settings page"
+#~ msgstr "gebruikersinstellingen pagina"
+
+#~ msgid "Enter api key on the wordpress.com stats plugin settings page: "
+#~ msgstr "Voer de api sleutel in:"

@@ -1,0 +1,1802 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP-Stats-Dashboard in Arabic\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-12-30 00:45+0200\n"
+"PO-Revision-Date: 2012-01-13 02:32+0200\n"
+"Last-Translator: Rawaf <rawaf@a7lakalam.org>\n"
+"Language-Team: Rawaf Wardah <rawaf@a7lakalam.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Arabic\n"
+"X-Poedit-Country: SYRIAN ARAB REPUBLIC\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+"X-Poedit-SearchPath-2: ../view\n"
+"X-Poedit-SearchPath-3: ../classes\n"
+"X-Poedit-SearchPath-4: ../classes/action\n"
+"X-Poedit-SearchPath-5: ../classes/util\n"
+"X-Poedit-SearchPath-6: ../classes/widget\n"
+"X-Poedit-SearchPath-7: ../view/admin\n"
+"X-Poedit-SearchPath-8: ../view/wp-stats-dashboard\n"
+
+#: ../classes/ajax.php:17
+msgid "You need to be administrator to view this content"
+msgstr "يجب ان تكون أدمن لتستطيع عرض المحتوى"
+
+#: ../classes/ajax.php:197
+msgid "connected"
+msgstr "متصل"
+
+#: ../classes/ajax.php:206
+#: ../classes/ajax.php:210
+msgid "Reload"
+msgstr "تحديث"
+
+#: ../classes/ajax.php:241
+msgid "Views"
+msgstr "زيارات"
+
+#: ../classes/action/WPSDAdminAction.php:176
+msgid "Couldn't activate WP-Stats-Dashboard: CURL extension not found. CURL is required to be installed on your server. Please ask your hosting provider to install PHP CURL for you."
+msgstr "لا تستطيع تفعيل  WP-Stats-Dashboard: إضافة CURL غير موجود. CURL يجب أن تحميله على السيرفر . من فضلك اسأل مزود الاستضافة لتحميل الميزة لك."
+
+#: ../classes/action/WPSDAdminAction.php:219
+msgid "WPSD"
+msgstr "WPSD"
+
+#: ../classes/action/WPSDAdminAction.php:223
+msgid "Rpc"
+msgstr "Rpc"
+
+#: ../classes/action/WPSDAdminAction.php:231
+#: ../classes/action/WPSDAdminAction.php:232
+msgid "Settings"
+msgstr "إعدادات"
+
+#: ../classes/action/WPSDAdminAction.php:239
+#: ../classes/action/WPSDAdminAction.php:240
+msgid "Profile finder"
+msgstr "مكتشف الملفات"
+
+#: ../classes/action/WPSDAdminAction.php:247
+#: ../classes/action/WPSDAdminAction.php:248
+msgid "Export"
+msgstr "تصدير"
+
+#: ../classes/action/WPSDAdminAction.php:264
+msgid "Dashboard Stats"
+msgstr "لوحة الاحصاءات الرئيسية"
+
+#: ../classes/action/WPSDAdminAction.php:420
+msgid "Read more"
+msgstr "أقرأ المزيد"
+
+#: ../classes/action/WPSDAdminAction.php:713
+#: ../classes/action/WPSDAdminAction.php:761
+#: ../classes/action/WPSDAdminAction.php:813
+#: ../classes/action/WPSDAdminAction.php:861
+#: ../classes/action/WPSDAdminAction.php:896
+#: ../classes/action/WPSDAdminAction.php:933
+#: ../classes/action/WPSDAdminAction.php:971
+#: ../classes/action/WPSDAdminAction.php:1079
+msgid "Widget disabled check"
+msgstr "حدد تعطيل المربع  الجانبي"
+
+#: ../classes/action/WPSDAdminAction.php:713
+#: ../classes/action/WPSDAdminAction.php:761
+#: ../classes/action/WPSDAdminAction.php:813
+#: ../classes/action/WPSDAdminAction.php:861
+#: ../classes/action/WPSDAdminAction.php:896
+#: ../classes/action/WPSDAdminAction.php:933
+#: ../classes/action/WPSDAdminAction.php:971
+#: ../classes/action/WPSDAdminAction.php:1080
+msgid "settings"
+msgstr "إعدادات"
+
+#: ../classes/action/WPSDAdminAction.php:1098
+msgid "Rank"
+msgstr "تصنيف"
+
+#: ../classes/action/WPSDAdminAction.php:1099
+msgid "WPSD Score"
+msgstr "نتيجة WPSD"
+
+#: ../classes/action/WPSDAdminAction.php:1100
+msgid "Author"
+msgstr "الكاتب"
+
+#: ../classes/action/WPSDAdminAction.php:1101
+msgid "Post Count"
+msgstr "عدد التدوينات"
+
+#: ../classes/action/WPSDAdminAction.php:1102
+msgid "Comments Received"
+msgstr "تم استلام التعليقات"
+
+#: ../classes/action/WPSDAdminAction.php:1103
+msgid "Comments Placed"
+msgstr "تم ترتيب التعليقات"
+
+#: ../classes/action/WPSDAdminAction.php:1104
+msgid "Klout Score"
+msgstr "معدل Klout"
+
+#: ../classes/action/WPSDAdminAction.php:1105
+msgid "Twitter Ratio"
+msgstr "Twitter نسبة:"
+
+#: ../classes/action/WPSDAdminAction.php:1166
+msgid "No authors found with comments placed"
+msgstr "لا يوجد كتاب اضافوا تعليقات"
+
+#: ../classes/util/WPSDUtils.php:36
+msgid "CURL extension not installed:"
+msgstr "لم يتم تحميل خاصية CURL:"
+
+#: ../classes/util/WPSDUtils.php:37
+msgid "you must have CURL extension enabled in your php configuration"
+msgstr "يجب تفعيل خاصية CURL في إعدادات البي أتش بي"
+
+#: ../classes/widget/WPSDAuthorWidget.php:18
+msgid "Displays the top 5 list of your blog's most popular authors"
+msgstr "عرض أفضل 5 كتاب بمدونتك"
+
+#: ../classes/widget/WPSDAuthorWidget.php:20
+msgid "WPSD - Top 5 Authors"
+msgstr "أفضل 5 كتاب - WPSD"
+
+#: ../classes/widget/WPSDAuthorWidget.php:65
+#: ../classes/widget/WPSDMetricsWidget.php:65
+#: ../classes/widget/WPSDMiniGraphWidget.php:46
+#: ../classes/widget/WPSDSocialProfilesWidget.php:68
+#: ../classes/widget/WPSDTotalViewsWidget.php:51
+msgid "Title:"
+msgstr "العنوان:"
+
+#: ../classes/widget/WPSDAuthorWidget.php:67
+#: ../classes/widget/WPSDMetricsWidget.php:67
+#: ../classes/widget/WPSDMiniGraphWidget.php:48
+#: ../classes/widget/WPSDSocialProfilesWidget.php:70
+#: ../classes/widget/WPSDTotalViewsWidget.php:53
+msgid "Description:"
+msgstr "الوصف:"
+
+#: ../classes/widget/WPSDAuthorWidget.php:175
+msgid "Posts"
+msgstr "تدوينات"
+
+#: ../classes/widget/WPSDAuthorWidget.php:181
+msgid "Comments In"
+msgstr "التعليقات الواردة"
+
+#: ../classes/widget/WPSDAuthorWidget.php:187
+msgid "Comments Out"
+msgstr "التعليقات الصادرة"
+
+#: ../classes/widget/WPSDAuthorWidget.php:216
+msgid "No authors found with comments placed..."
+msgstr "لا يوجد كتاب اضافوا تعليقات ..."
+
+#: ../classes/widget/WPSDMetricsWidget.php:18
+msgid "Displays your social metrics"
+msgstr "عرض القياسات الاجتماعية"
+
+#: ../classes/widget/WPSDMetricsWidget.php:20
+msgid "WPSD - Social Metrics"
+msgstr "القياسات الاجتماعية - WPSD"
+
+#: ../classes/widget/WPSDMetricsWidget.php:71
+msgid "Enable / Disable Metrics"
+msgstr "تفعيل/تعطيل القياسات"
+
+#: ../classes/widget/WPSDMiniGraphWidget.php:18
+msgid "Show a mini graph displaying your blog's daily views"
+msgstr "عرض صورة مصغرة عن المشاهدة اليومية لمدونتك"
+
+#: ../classes/widget/WPSDMiniGraphWidget.php:20
+msgid "WPSD - Mini Graph"
+msgstr "صورة مصغرة - WPSD"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:18
+msgid "Displays your social profiles"
+msgstr "عرض ملفاتك بالمجتمعات الالكترونية"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:20
+msgid "WPSD - Social Profiles"
+msgstr "حسابات المجتماعات الإلكترونية - WPSD"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:66
+msgid "Use the social profiles widget on your website to extend and optimize your social graph."
+msgstr "استخدم المربعات الجانبية الخاصة بحسابات المتجمعات الإلكترونية على موقعك لتمديد و تحسين الرسوم البيانية"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:74
+msgid "Enable Icon Images"
+msgstr "تفعيل صور الأيقونات"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:76
+msgid "Enabled"
+msgstr "تم التفعيل"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:79
+msgid "Enable / Disable Profiles"
+msgstr "تفعيل /تعطيل الحسابات"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:196
+msgid "Visit my"
+msgstr "زيارتي"
+
+#: ../classes/widget/WPSDSocialProfilesWidget.php:196
+msgid "profile"
+msgstr "حساب"
+
+#: ../classes/widget/WPSDTotalViewsWidget.php:18
+msgid "Displays your blog's total views"
+msgstr "عرض مجموع زيارات مدونتك."
+
+#: ../classes/widget/WPSDTotalViewsWidget.php:20
+msgid "WPSD - Total Views"
+msgstr "مجموع الزيارات - WPSD"
+
+#: ../classes/widget/WPSDTotalViewsWidget.php:49
+msgid "This widget will show your blogs total views."
+msgstr "هذا المربع سوف يعرض مجموع الزيارات الى مدونتك."
+
+#: ../classes/widget/admin/WPSDAuthorDashboardWidget.php:32
+msgid "Stats - Top 5 Authors"
+msgstr "احصائيات - أفضل 5 كتاب"
+
+#: ../classes/widget/admin/WPSDAuthorDashboardWidget.php:69
+#: ../classes/widget/admin/WPSDBlogPulseConversationDashboardWidget.php:58
+#: ../classes/widget/admin/WPSDBlogPulseDashboardWidget.php:58
+#: ../classes/widget/admin/WPSDClicksDashboardWidget.php:55
+#: ../classes/widget/admin/WPSDCompeteDashboardWidget.php:58
+#: ../classes/widget/admin/WPSDOptimizeDashboardWidget.php:55
+msgid "loading"
+msgstr "جاري التحميل"
+
+#: ../classes/widget/admin/WPSDBlogPulseConversationDashboardWidget.php:27
+msgid "Stats - BlogPulse.com Conversations"
+msgstr "الاحصاءات - حوارات BlogPulse.com"
+
+#: ../classes/widget/admin/WPSDBlogPulseConversationDashboardWidget.php:65
+msgid "Track conversations about your blog"
+msgstr "الحديث حول مدونتك"
+
+#: ../classes/widget/admin/WPSDBlogPulseDashboardWidget.php:27
+msgid "Stats - BlogPulse.com"
+msgstr "الاحصاءات - BlogPulse.com"
+
+#: ../classes/widget/admin/WPSDClicksDashboardWidget.php:24
+msgid "Stats - Clicks"
+msgstr "الاحصاءات - الضغطات"
+
+#: ../classes/widget/admin/WPSDCompeteDashboardWidget.php:27
+msgid "Stats - Compete.com"
+msgstr "الاحصاءات - Compete.com"
+
+#: ../classes/widget/admin/WPSDDashboardWidget.php:33
+msgid "Stats - Views per day"
+msgstr "الاحصاءات - الزيارات اليومية"
+
+#: ../classes/widget/admin/WPSDOptimizeDashboardWidget.php:24
+msgid "Stats - Optimization Suggestions"
+msgstr "الاحصاءات - اقتراحات التحسين"
+
+#: ../classes/widget/admin/WPSDOverviewDashboardWidget.php:27
+#: ../view/admin/admin_dashboard_page.php:181
+msgid "Stats - Social Media Metrics"
+msgstr "الاحصاءات - عدادات المجتمعات الإلكترونية"
+
+#: ../classes/widget/admin/WPSDOverviewDashboardWidget.php:89
+msgid "WPSD_PLUGIN_URL not defined"
+msgstr "WPSD_PLUGIN_URL غير موجود"
+
+#: ../classes/widget/admin/WPSDPostViewsDashboardWidget.php:24
+#: ../view/admin/admin_config.php:186
+msgid "Stats - Post views"
+msgstr "الاحصاءات - زيارات التدوينة"
+
+#: ../classes/widget/admin/WPSDReferrersDashboardWidget.php:24
+#: ../view/admin/admin_config.php:190
+#: ../view/admin/admin_dashboard_page.php:131
+msgid "Stats - Referrers"
+msgstr "الاحصاءات - اعادة التوجيه"
+
+#: ../classes/widget/admin/WPSDSearchTermsDashboardWidget.php:24
+#: ../view/admin/admin_config.php:198
+#: ../view/admin/admin_dashboard_page.php:145
+msgid "Stats - Search terms"
+msgstr "الاحصاءات - مصطلحات البحث"
+
+#: ../view/admin/admin_ajax_trend_visualize.php:22
+msgid "day(x), amount(y)"
+msgstr "اليوم (س) , الشهر (ع)"
+
+#: ../view/admin/admin_ajax_trend_visualize.php:48
+msgid "Trend"
+msgstr "الاتجاه"
+
+#: ../view/admin/admin_config.php:42
+#: ../view/admin/admin_dashboard_page.php:41
+msgid "WP-Stats-Dashboard Options"
+msgstr "خصائص WP-Stats-Dashboard"
+
+#: ../view/admin/admin_config.php:50
+msgid "WordPress.com Username or password is incorrect. Stats will not load. Please create an account at <a href=\"http://www.wordpress.com\" target=\"_blank\" title=\"wordpress.com\">http://www.wordpress.com</a> afterwards use those credentials below."
+msgstr "WordPress.com اسم الميتخدم وكلمة المرور غير صحيحة ,.لن يتم تحميل الاحصاءات . من فضلك انشىء حساب في <a href=\"http://www.wordpress.com\" target=\"_blank\" title=\"wordpress.com\">http://www.wordpress.com</a> بعدها استخدم المعلومات بالأسفل."
+
+#: ../view/admin/admin_config.php:53
+msgid "Saved"
+msgstr "تم الحفظ"
+
+#: ../view/admin/admin_config.php:67
+msgid "wp-content/cache does not exist:"
+msgstr "wp-content/cache غير موجودة:"
+
+#: ../view/admin/admin_config.php:69
+msgid "please make sure that the \"wp-content/cache\" directory is created"
+msgstr "من فضلك تأكد من انشاء مجلد  \"wp-content/cache\""
+
+#: ../view/admin/admin_config.php:72
+msgid "please use your ftp browser to navigate to the \"wp-content\" folder and create a directory named \"cache\"."
+msgstr "من فضلك استخدم الأ تي بي لدخول الى مجلد \"wp-content\" ثم انشاء مجلد جديد باسم \"cache\"."
+
+#: ../view/admin/admin_config.php:79
+msgid "wp-content/cache is not writable:"
+msgstr "wp-content/cache غير قابل للكتابة:"
+
+#: ../view/admin/admin_config.php:81
+msgid "please make sure that the \"wp-content/cache\" directory is writable by webserver."
+msgstr "من فضلك تأكد ان المجلد  \"wp-content/cache\" قابل للكتابة."
+
+#: ../view/admin/admin_config.php:84
+msgid "please use your ftp client to navigate to the \"wp-content\" folder and change file permissions of the \"cache\" folder to (chmod) 777."
+msgstr "من فضلك استخدم الأف تي بي للذهاب الى المجلد  \"wp-content\" ثم تعديل التصريح الخاث بالمجلد \"cache\" إلى  (chmod) 777."
+
+#: ../view/admin/admin_config.php:91
+msgid "please install the wordpress.com stats plugin and follow the instructions it presents:"
+msgstr "من فضلك حمل إضافة احصائيات wordpress.com وتابع التعليمات التي سوف تعرض."
+
+#: ../view/admin/admin_config.php:119
+msgid "Basic Settings"
+msgstr "الإعدادات الأساسية"
+
+#: ../view/admin/admin_config.php:126
+msgid "Blog ID"
+msgstr "رقم المدونة"
+
+#: ../view/admin/admin_config.php:138
+msgid "Install the Jetpack plugin"
+msgstr "تثبيت إضافة Jetpack"
+
+#: ../view/admin/admin_config.php:139
+msgid "Make sure the Jetpack plugin is installed and configured. Your blog-id will be automatically filled in by this plugin."
+msgstr "تأكد من تثبيت و إعداد إضافة Jetpack . رقم مدونتك (blog-id) سوف تضاف بشكل اتوماتيكي ضمن الحقل بواسطة الاضافة"
+
+#: ../view/admin/admin_config.php:143
+msgid "Username"
+msgstr "اسم المستخدم"
+
+#: ../view/admin/admin_config.php:155
+msgid "WordPress.com Username"
+msgstr "اسم المستخدم WordPress.com"
+
+#: ../view/admin/admin_config.php:156
+msgid "Enter your WordPress.com username"
+msgstr "ادخل اسم المستخدم WordPress.com"
+
+#: ../view/admin/admin_config.php:160
+msgid "Password"
+msgstr "كلمة المرور"
+
+#: ../view/admin/admin_config.php:170
+msgid "WordPress.com Password"
+msgstr "كلمة مرور wordpress.com"
+
+#: ../view/admin/admin_config.php:170
+msgid "Enter your WordPress.com password"
+msgstr "ادخل كلمة مرور wordpress.com"
+
+#: ../view/admin/admin_config.php:174
+msgid "Enabled / Disable <br/> Dashboard Widgets"
+msgstr "تفعل/تعطيل <br/> المربعات الجانبية للوحة"
+
+#: ../view/admin/admin_config.php:182
+msgid "Stats - Overview"
+msgstr "الاحصائيات - نظرة عامة"
+
+#: ../view/admin/admin_config.php:202
+#: ../view/admin/admin_dashboard_page.php:66
+msgid "Stats - Trends"
+msgstr "الاحصائيات - اتجاهات"
+
+#: ../view/admin/admin_config.php:221
+msgid "Default Trend Graph"
+msgstr "الرسم البياني الافتراضي لاتجاهات"
+
+#: ../view/admin/admin_config.php:227
+msgid "Default trends graph"
+msgstr "الرسم البياني الافتراضي لمربع الاتجاهات"
+
+#: ../view/admin/admin_config.php:227
+msgid "This graph will be displayed by default in the trends widget."
+msgstr "حدد الرسم البياني الافتراضي التي سوف يعرض بمربع الاتجاهات."
+
+#: ../view/admin/admin_config.php:232
+msgid "Disable widgets on main dashboard page"
+msgstr "تعطيل المربعات على صفحة الأدمن الرئيسية"
+
+#: ../view/admin/admin_config.php:237
+msgid "Stats dashboard page"
+msgstr "الصفحة الرئيسية لاحصاءات"
+
+#: ../view/admin/admin_config.php:237
+msgid "The stats widgets will only be visible on the stats dashboard page."
+msgstr "مربعات الاحصائيات سوف تعرض على الصفحة الرئيسية لاحصاءات فقط"
+
+#: ../view/admin/admin_config.php:251
+#: ../view/admin/admin_config.php:272
+#: ../view/admin/admin_config.php:383
+#: ../view/admin/admin_config.php:1605
+#: ../view/admin/admin_config.php:1627
+msgid "Save Changes"
+msgstr "حفظ التعديلات"
+
+#: ../view/admin/admin_config.php:258
+msgid "Visibility"
+msgstr "صلاحيات العرض"
+
+#: ../view/admin/admin_config.php:261
+msgid "Select the roles that will be able to view stats."
+msgstr "حدد الشروط التي تكون قادرة على عرض الاحصاءات."
+
+#: ../view/admin/admin_config.php:264
+msgid "Administrator"
+msgstr "المدير"
+
+#: ../view/admin/admin_config.php:265
+msgid "Editor"
+msgstr "محرر"
+
+#: ../view/admin/admin_config.php:267
+msgid "Contributor"
+msgstr "مساهم"
+
+#: ../view/admin/admin_config.php:268
+msgid "Subscriber"
+msgstr "المشترك"
+
+#: ../view/admin/admin_config.php:278
+msgid "Autopost settings"
+msgstr "إعدادات التدوين الأتوماتيكي"
+
+#: ../view/admin/admin_config.php:284
+msgid "Amplify username"
+msgstr "اسم مستخدم Amplify"
+
+#: ../view/admin/admin_config.php:294
+#: ../view/admin/admin_config.php:298
+msgid "Amplify"
+msgstr "Amplify"
+
+#: ../view/admin/admin_config.php:295
+msgid ""
+"Amplify username. e.g: \n"
+"\t\t\t\t\t\t\thttp://<strong>username</strong>.amplify.com."
+msgstr ""
+"اسم مستخدم Amplify . مثال: \n"
+"\t\t\t\t\t\t\thttp://<strong>username</strong>.amplify.com."
+
+#: ../view/admin/admin_config.php:305
+msgid "Amplify Post Email"
+msgstr "تدوينة Amplify بواسطة البريد"
+
+#: ../view/admin/admin_config.php:319
+msgid "Amplify Post by Email"
+msgstr "تدوينة Amplify بواسطة الإيميل"
+
+#: ../view/admin/admin_config.php:320
+msgid ""
+"Amplify Post by Email. Spread your content across twitter, facebook, posterous etc. You can find it under Settings / Post by Email. \n"
+"                  \t\tE.g abcdef@yourlog.amplify.com . The post excerpt is used for the autopost content. When writing a post please manually add an excerpt."
+msgstr ""
+"تدوينة Amplify بواسطة الايميل.نشر محتواك عبر توتير, فيس بوك, posterous الخ. أنت تستطيع إجادها تحت اعدادات /التدوينة بواسطة الايميل  \n"
+"                  \t\tمثال: abcdef@yourlog.amplify.com . ملخص التدوينة تستخدم بشكل اتوماتيكي. عندما تكتب التدوينة من فضل اضف الملخص يدويا."
+
+#: ../view/admin/admin_config.php:323
+msgid "Amplify Post by Email Settings Page"
+msgstr "صفحة إعدادات تدوين  Amplify بواسطة الايميل"
+
+#: ../view/admin/admin_config.php:331
+#: ../view/admin/admin_config.php:345
+msgid "Posterous username"
+msgstr "اسم مستخدم Posterous"
+
+#: ../view/admin/admin_config.php:346
+msgid "Posterous username. e.g: http://<strong>username</strong>.posterous.com. Registration required."
+msgstr "اسم مستخدم Posterous مثال:  http://<strong>username</strong>.posterous.com. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:348
+msgid "Posterous"
+msgstr "Posterous"
+
+#: ../view/admin/admin_config.php:355
+msgid "Posterous Post Email"
+msgstr "بريد تدوينة Posterous"
+
+#: ../view/admin/admin_config.php:368
+msgid "Posterous Post By Email."
+msgstr "تدوينة Posterous بواسطة البريد."
+
+#: ../view/admin/admin_config.php:369
+msgid " Make sure to add"
+msgstr "تأكد من إضافة"
+
+#: ../view/admin/admin_config.php:370
+msgid ""
+" to your posterous contact settings to allow posting. \n"
+"                  \t\tSpread your content across twitter, facebook, posterous.\n"
+"                  \t\tE.g abcdef@posterous.com. \n"
+"                  \t\tThe post excerpt is used for the autopost content. \n"
+"                  \t\tWhen writing a post please manually add an excerpt."
+msgstr ""
+" إعدادات الاتصال لposterous لموافقة التدوين \n"
+"                  \t\tنشر محتواك عبر توتير, فيس بوك, posterous\n"
+"                  \t\tمثال: abcdef@posterous.com \n"
+"                  \t\tاقتباس التدوينة استخدم لنشر الاتوماتيكي للمحتوى. \n"
+"                  \t\tاضف اقتباس بشكل يدوي عندما تكتب تدوينة."
+
+#: ../view/admin/admin_config.php:376
+msgid "Posterous contact settings"
+msgstr "إعدادات الاتصال Posterous"
+
+#: ../view/admin/admin_config.php:389
+msgid "Profile Settings"
+msgstr "إعدادات الحساب"
+
+#: ../view/admin/admin_config.php:394
+msgid "Use <a href=\"?page=wpsd_profile_finder\">the profile finder</a> to quickly retrieve and save your profiles."
+msgstr "استخدم <a href=\"?page=wpsd_profile_finder\">مكتشف الحسابات </a> لاستيراد السريع و حفظ حساباتك."
+
+#: ../view/admin/admin_config.php:404
+#: ../view/admin/admin_config.php:418
+msgid "Twitter username"
+msgstr "اسم مستخدم توتير"
+
+#: ../view/admin/admin_config.php:419
+msgid "Twitter username for twitter socials metrics in the overview widget. Registration required."
+msgstr "اسم المستخدم لتوتير لقياسات موقع توتير في المربع الجانبي. التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:421
+msgid "Twitter"
+msgstr "توتير"
+
+#: ../view/admin/admin_config.php:429
+#: ../view/admin/admin_config.php:442
+msgid "LinkedIn username"
+msgstr "اسم مستخدم LinkedIn"
+
+#: ../view/admin/admin_config.php:443
+msgid "LinkedIn username for connection count in the overview widget. Registration required."
+msgstr "اسم مستخدم LinkedIn لعد المتصلين في المربع الجانبي. التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:445
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../view/admin/admin_config.php:452
+msgid "LinkedIn Company username"
+msgstr "اسم مستخدم الشركة LinkedIn"
+
+#: ../view/admin/admin_config.php:466
+msgid "LinkedIn company username"
+msgstr "اسم مستخدم الشركة LinkedIn"
+
+#: ../view/admin/admin_config.php:467
+msgid "Company username. e.g: http://www.linkedin.com/company/<strong>company-name</strong>. Registration required."
+msgstr "اسم مستخدم الشركة. مثال: http://www.linkedin.com/company/<strong>company-name</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:469
+msgid "LinkedIn Company"
+msgstr "شركة LinkedIn"
+
+#: ../view/admin/admin_config.php:477
+msgid "FeedBurner"
+msgstr "FeedBurner"
+
+#: ../view/admin/admin_config.php:491
+msgid "Feedburner url"
+msgstr "رابط Feedburner"
+
+#: ../view/admin/admin_config.php:492
+msgid "Feedburner url e.g: <strong>http://feeds.feedburner.com/username</strong>. Registration required."
+msgstr "رابط Feedburner مثال:  <strong>http://feeds.feedburner.com/username</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:502
+msgid "Bit.ly username"
+msgstr "اسم مستخدم Bit.ly"
+
+#: ../view/admin/admin_config.php:515
+#: ../view/admin/admin_config.php:518
+msgid "Bit.ly"
+msgstr "Bit.ly"
+
+#: ../view/admin/admin_config.php:516
+msgid "Bit.ly username for click stats. API Key required. Case sensitive. Registration required."
+msgstr "اسم مستخدم Bit.ly لاحصائيات الضغط. مفتاح API مطلوب. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:526
+#: ../view/admin/admin_config.php:540
+#: ../view/admin/admin_config.php:543
+msgid "Bit.ly api key"
+msgstr "مفتاح Bit.ly api"
+
+#: ../view/admin/admin_config.php:541
+msgid "Bit.ly api key for click stats. Case sensitive."
+msgstr "مفتاح Bit.ly API لاحصائيات الضغط ."
+
+#: ../view/admin/admin_config.php:551
+msgid "Last.fm username"
+msgstr "اسم مستخدم Last.fm"
+
+#: ../view/admin/admin_config.php:565
+#: ../view/admin/admin_config.php:568
+msgid "Last.fm"
+msgstr "Last.fm"
+
+#: ../view/admin/admin_config.php:566
+msgid "Last.fm username for friend stats. Registration required."
+msgstr "اسم مستخدم Last.fm لاحصائيات الصديق. التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:578
+msgid "Facebook fan page id"
+msgstr "رقم صفحة الفيس بوك"
+
+#: ../view/admin/admin_config.php:591
+#: ../view/admin/admin_config.php:594
+msgid "Facebook"
+msgstr "فيس بوك"
+
+#: ../view/admin/admin_config.php:592
+msgid "Facebook page ID. (note: NOT the full url, only the id) e.g:<br/>http://www.facebook.com/pages/wp-stats-dashboard/<strong>123487341019112</strong>. Registration required."
+msgstr "رقم صفحة الفيس بوك (ملاحظة: لا تضع الرابط كامل, فقط ال ID) مثال:  <br/>http://www.facebook.com/pages/wp-stats-dashboard/<strong>123487341019112</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:603
+msgid "Flickr username"
+msgstr "اسم مستخدم Flickr"
+
+#: ../view/admin/admin_config.php:615
+#: ../view/admin/admin_config.php:618
+msgid "Flickr"
+msgstr "فليكر"
+
+#: ../view/admin/admin_config.php:616
+msgid "Flickr username e.g: http://www.flickr.com/photos/<strong>username</strong>. Registration required."
+msgstr "اسم مستخدم فلكر مثال:  http://www.flickr.com/photos/<strong>username</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:627
+msgid "Diigo profile name"
+msgstr "اسم حساب Diigo"
+
+#: ../view/admin/admin_config.php:640
+#: ../view/admin/admin_config.php:643
+msgid "Diigo"
+msgstr "Diigo"
+
+#: ../view/admin/admin_config.php:641
+msgid "Diigo profile name. e.g: http://www.diigo.com/profile/<strong>username</strong>. Registration required."
+msgstr "اسم مستخدم Diigo مثال: http://www.diigo.com/profile/<strong>username</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:652
+#: ../view/admin/admin_config.php:664
+#: ../view/admin/admin_config.php:668
+msgid "Brazen Careerist"
+msgstr " Brazen Careerist"
+
+#: ../view/admin/admin_config.php:665
+msgid "Brazen careerist profile name. e.g: http://www.brazencareerist.com/profile/<strong>username</strong>. Registration required."
+msgstr "اسم ملف Brazen careerist مثال: http://www.brazencareerist.com/profile/<strong>username</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:676
+msgid "Newsvine profile name"
+msgstr "اسم حساب Newsvine"
+
+#: ../view/admin/admin_config.php:688
+#: ../view/admin/admin_config.php:691
+msgid "Newsvine"
+msgstr "Newsvine"
+
+#: ../view/admin/admin_config.php:689
+msgid "Newsvine profile name. e.g: http://<strong>username</strong>.newsvine.com/. Registration required."
+msgstr "اسم ملف Newsvine مثال:  http://<strong>username</strong>.newsvine.com/. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:699
+msgid "Youtube username"
+msgstr "اسم مستخدم اليوتيوب"
+
+#: ../view/admin/admin_config.php:712
+#: ../view/admin/admin_config.php:715
+msgid "Youtube"
+msgstr "اليوتيوب"
+
+#: ../view/admin/admin_config.php:713
+msgid "Youtube username. e.g: http://www.youtube.com/<strong>username</strong>. Registration required."
+msgstr "اسم مستخدم اليوتيوب مثال:  http://www.youtube.com/<strong>username</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:723
+msgid "Myspace username"
+msgstr "اسم مستخدم الماي سبيس"
+
+#: ../view/admin/admin_config.php:736
+#: ../view/admin/admin_config.php:739
+msgid "Myspace"
+msgstr "الماي سبيس"
+
+#: ../view/admin/admin_config.php:737
+msgid "Myspace username. e.g: http://www.myspace.com/<strong>username</strong>. Registration required."
+msgstr "اسم مستخدم الماي سبيس مثال: http://www.myspace.com/<strong>username</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:747
+msgid "Plancast username"
+msgstr "اسم مستخدم Plancast"
+
+#: ../view/admin/admin_config.php:760
+#: ../view/admin/admin_config.php:763
+msgid "Plancast"
+msgstr "Plancast"
+
+#: ../view/admin/admin_config.php:761
+msgid "Plancast username. e.g: http://plancast.com/<strong>username</strong>. Registration required."
+msgstr "اسم مستخدم Plancast مثال:  http://plancast.com/<strong>username</strong>. التسجيل المطلوب."
+
+#: ../view/admin/admin_config.php:771
+msgid "Lazyfeed username"
+msgstr "اسم مستخدم Lazyfeed"
+
+#: ../view/admin/admin_config.php:784
+#: ../view/admin/admin_config.php:787
+msgid "Lazyfeed"
+msgstr "Lazyfeed"
+
+#: ../view/admin/admin_config.php:785
+msgid "lazyfeed username. e.g: http://www.lazyfeed.com/user/<strong>username</strong>. Registration required."
+msgstr "اسم مستخدم lazyfeed مثال:  http://www.lazyfeed.com/user/<strong>username</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:796
+msgid "Sphinn username"
+msgstr "اسم مستخدم Sphinn"
+
+#: ../view/admin/admin_config.php:809
+#: ../view/admin/admin_config.php:812
+msgid "Sphinn"
+msgstr "Sphinn"
+
+#: ../view/admin/admin_config.php:810
+msgid "sphinn username. e.g: http://sphinn.com/user/<strong>username</strong>. Registration required."
+msgstr "اسم مستخدم sphinn مثال:  http://sphinn.com/user/<strong>username</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:821
+msgid "Jaiku username"
+msgstr "اسم مستخدم Jaiku"
+
+#: ../view/admin/admin_config.php:833
+#: ../view/admin/admin_config.php:836
+msgid "Jaiku"
+msgstr "Jaiku"
+
+#: ../view/admin/admin_config.php:834
+msgid "Jaiku username. e.g: http://<strong>username</strong>.jaiku.com. Registration required."
+msgstr "اسم مستخدم Jaiku مثال:  http://<strong>username</strong>.jaiku.com. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:844
+msgid "Plurk username"
+msgstr "اسم مستخدم Plurk"
+
+#: ../view/admin/admin_config.php:856
+#: ../view/admin/admin_config.php:859
+msgid "Plurk"
+msgstr "Pluck"
+
+#: ../view/admin/admin_config.php:857
+msgid "Plurk username. e.g: http://www.plurk.com/<strong>username</strong>. Registration required."
+msgstr "اسم مستخدم Plurk مثال:  http://www.plurk.com/<strong>username</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:867
+msgid "Hyves username"
+msgstr "اسم مستخدم Hyves"
+
+#: ../view/admin/admin_config.php:880
+#: ../view/admin/admin_config.php:883
+msgid "Hyves"
+msgstr "Hyves"
+
+#: ../view/admin/admin_config.php:881
+msgid "Hyves username. e.g: http://<strong>username</strong>.hyves.nl. Registration required."
+msgstr "اسم مستخدم Hyves مثال:  http://<strong>username</strong>.hyves.nl. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:907
+msgid "Foursquare username"
+msgstr "اسم مستخدم Foursquare"
+
+#: ../view/admin/admin_config.php:920
+#: ../view/admin/admin_config.php:923
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: ../view/admin/admin_config.php:921
+msgid "Foursquare username. Registration required."
+msgstr "اسم مستخدم Foursquare ؟ التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:931
+msgid "Disqus username"
+msgstr "اسم مستخدم Disqus"
+
+#: ../view/admin/admin_config.php:943
+#: ../view/admin/admin_config.php:946
+msgid "Disqus"
+msgstr "Disqus"
+
+#: ../view/admin/admin_config.php:944
+msgid "Disqus username. Registration required."
+msgstr "اسم مستخدم Disqus. التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:955
+msgid "Blippr username"
+msgstr "اسم مستخدم Blippr"
+
+#: ../view/admin/admin_config.php:967
+#: ../view/admin/admin_config.php:970
+msgid "Blippr"
+msgstr "Blippr"
+
+#: ../view/admin/admin_config.php:968
+msgid "blippr username. Registration required."
+msgstr "اسم مستخدم blippr. التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:978
+msgid "Runkeeper username"
+msgstr "اسم مستخدم Runkeeper"
+
+#: ../view/admin/admin_config.php:992
+#: ../view/admin/admin_config.php:995
+msgid "Runkeeper"
+msgstr "Runkeeper"
+
+#: ../view/admin/admin_config.php:993
+msgid "Runkeeper username. e.g: http://runkeeper.com/user/<strong>daveligthart</strong>/profile. Registration required."
+msgstr "اسم مستخدم Runkeeper مثال: http://runkeeper.com/user/<strong>daveligthart</strong>/profile. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:1005
+msgid "Blippy username"
+msgstr "اسم مستخدم Blippy"
+
+#: ../view/admin/admin_config.php:1018
+#: ../view/admin/admin_config.php:1021
+msgid "Blippy"
+msgstr "Blippy"
+
+#: ../view/admin/admin_config.php:1019
+msgid "Blippy username. e.g: http://blippy.com/<strong>daveligthart</strong>. Registration required."
+msgstr "اسم مستخدم Blippy مثال: http://blippy.com/<strong>daveligthart</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:1030
+msgid "WeRead username/id"
+msgstr "رقم/اسم مستخدم WeRead"
+
+#: ../view/admin/admin_config.php:1043
+#: ../view/admin/admin_config.php:1046
+msgid "Weread"
+msgstr "Weread"
+
+#: ../view/admin/admin_config.php:1044
+msgid "Weread username/id. e.g: http://weread.com/profile/<strong>Dave/1052583991</strong>/. Registration required."
+msgstr "رقم/اسم مستخدم Weread مثال:  http://weread.com/profile/<strong>Dave/1052583991</strong>/. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:1054
+msgid "Empire Avenue ticker name"
+msgstr "اسم Empire Avenue ticker"
+
+#: ../view/admin/admin_config.php:1068
+#: ../view/admin/admin_config.php:1071
+#: ../view/admin/admin_config.php:1090
+msgid "Empire Avenue"
+msgstr "Empire Avenue"
+
+#: ../view/admin/admin_config.php:1069
+msgid "Empire Avenue Ticker. Registration required."
+msgstr "Empire Avenue Ticker. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:1079
+msgid "Empire Avenue password"
+msgstr "كلمة مرور Empire Avenue"
+
+#: ../view/admin/admin_config.php:1090
+msgid "Please enter your password"
+msgstr "من فضلك أدخل كلمة المرور"
+
+#: ../view/admin/admin_config.php:1097
+msgid "FriendFeed username"
+msgstr "اسم مستخدم FriendFeed"
+
+#: ../view/admin/admin_config.php:1111
+#: ../view/admin/admin_config.php:1114
+msgid "FriendFeed"
+msgstr " FriendFeed"
+
+#: ../view/admin/admin_config.php:1112
+msgid "FriendFeed username. Registration required."
+msgstr "اسم مستخدم FriendFeed . التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:1123
+msgid "Digg username"
+msgstr "اسم مستخدم Digg"
+
+#: ../view/admin/admin_config.php:1136
+#: ../view/admin/admin_config.php:1139
+msgid "Digg"
+msgstr "Digg"
+
+#: ../view/admin/admin_config.php:1137
+msgid "Digg username. Registration required."
+msgstr "اسم مستخدم Digg. التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:1179
+msgid "Battlenet profile url"
+msgstr "رابط حساب Battlenet"
+
+#: ../view/admin/admin_config.php:1192
+#: ../view/admin/admin_config.php:1195
+msgid "Battlenet"
+msgstr "Battlenet"
+
+#: ../view/admin/admin_config.php:1193
+msgid "Battlenet profile url. e.g <strong>http://eu.battle.net/sc2/en/profile/1491154/1/David/</strong>. Registration required."
+msgstr "رابط ملف Battlenet مثال:  <strong>http://eu.battle.net/sc2/en/profile/1491154/1/David/</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:1204
+msgid "Educopark profile url"
+msgstr "رابط حساب Educopark"
+
+#: ../view/admin/admin_config.php:1216
+#: ../view/admin/admin_config.php:1219
+msgid "Educopark"
+msgstr " Educopark"
+
+#: ../view/admin/admin_config.php:1217
+msgid "Educopark username. Registration required."
+msgstr "اسم مستخدم Educopark . التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:1249
+msgid "Vimeo username"
+msgstr "اسم مستخدم Vimeo"
+
+#: ../view/admin/admin_config.php:1262
+#: ../view/admin/admin_config.php:1265
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../view/admin/admin_config.php:1263
+msgid "Vimeo username. e.g http://www.vimeo.com/<strong>daveligthart</strong>. Registration required."
+msgstr "اسم مستخدم Vimeo مثال:  http://www.vimeo.com/<strong>daveligthart</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:1273
+msgid "Identi.ca username"
+msgstr "اسم مستخدم Identi.ca"
+
+#: ../view/admin/admin_config.php:1286
+#: ../view/admin/admin_config.php:1289
+msgid "Identi.ca"
+msgstr "Identi.ca"
+
+#: ../view/admin/admin_config.php:1287
+msgid "Identi.ca username. e.g http://identi.ca/<strong>daveligthart</strong>. Registration required."
+msgstr "اسم مستخدم Identi.ca مثال:  http://identi.ca/<strong>daveligthart</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:1297
+msgid "BlogCatalog username"
+msgstr "اسم مستخدم BlogCatalog"
+
+#: ../view/admin/admin_config.php:1309
+#: ../view/admin/admin_config.php:1312
+msgid "BlogCatalog"
+msgstr "BlogCatalog"
+
+#: ../view/admin/admin_config.php:1310
+msgid "BlogCatalog username. e.g http://www.blogcatalog.com/user/<strong>dligthart</strong>. Registration required"
+msgstr "اسم مستخدم BlogCatalog مثال:  http://www.blogcatalog.com/user/<strong>dligthart</strong>. التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:1321
+msgid "Plaxo url"
+msgstr "رابط Plaxo"
+
+#: ../view/admin/admin_config.php:1334
+#: ../view/admin/admin_config.php:1337
+msgid "Plaxo"
+msgstr "Plaxo"
+
+#: ../view/admin/admin_config.php:1335
+msgid "Plaxo profile url. Registration required."
+msgstr "رابط ملف Plaxo . التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:1345
+msgid "Delicious search phrase"
+msgstr "عبارة بحث Delicious"
+
+#: ../view/admin/admin_config.php:1359
+msgid "Delicious Search Phrase"
+msgstr "عبارة بحث Delicious"
+
+#: ../view/admin/admin_config.php:1360
+msgid "Delicious search phrase to monitor."
+msgstr "مراقبة عبارة بحث Delicious"
+
+#: ../view/admin/admin_config.php:1362
+msgid "Delicious"
+msgstr "Delicious"
+
+#: ../view/admin/admin_config.php:1369
+msgid "Delicious url"
+msgstr "رابط Delicious"
+
+#: ../view/admin/admin_config.php:1382
+msgid "Delicious Url"
+msgstr "رابط Delicious"
+
+#: ../view/admin/admin_config.php:1383
+msgid "Delicious url to monitor e.g: <strong>http://www.delicious.com/url/591d3f6192c88f638547d183355587a6</strong>"
+msgstr "رابط مراقب Delicious مثال: <strong>http://www.delicious.com/url/591d3f6192c88f638547d183355587a6</strong>"
+
+#: ../view/admin/admin_config.php:1391
+msgid "Reddit username"
+msgstr "اسم مستخدم Reddit"
+
+#: ../view/admin/admin_config.php:1404
+#: ../view/admin/admin_config.php:1407
+msgid "Reddit"
+msgstr "Reddit"
+
+#: ../view/admin/admin_config.php:1405
+msgid "Reddit username. Registration required."
+msgstr "اسم مستخدم Reddit . التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:1416
+msgid "StumbleUpon username"
+msgstr "اسم مستخدم StumbleUpon"
+
+#: ../view/admin/admin_config.php:1428
+#: ../view/admin/admin_config.php:1431
+msgid "StumbleUpon"
+msgstr "StumbleUpon"
+
+#: ../view/admin/admin_config.php:1429
+msgid "StumbleUpon username. Registration required."
+msgstr "اسم مستخدم StumbleUpon . التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:1440
+msgid "Netlog username"
+msgstr "اسم مستخدم Netlog"
+
+#: ../view/admin/admin_config.php:1453
+#: ../view/admin/admin_config.php:1456
+msgid "Netlog"
+msgstr "Netlog"
+
+#: ../view/admin/admin_config.php:1454
+msgid "Netlog username. Registration required."
+msgstr "اسم مستخدم Netlog. التسجيل مطلوب"
+
+#: ../view/admin/admin_config.php:1466
+msgid "99Designs.com username"
+msgstr "اسم مستخدم 99Designs.com"
+
+#: ../view/admin/admin_config.php:1477
+#: ../view/admin/admin_config.php:1480
+msgid "99Designs"
+msgstr "Designs99"
+
+#: ../view/admin/admin_config.php:1478
+msgid "99Designs.com username. Registration required."
+msgstr "اسم مستخدم Designs.com. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:1488
+msgid "Ego search phrase "
+msgstr "عبارة بحث Ego"
+
+#: ../view/admin/admin_config.php:1499
+msgid "Ego Search"
+msgstr "بحث Ego"
+
+#: ../view/admin/admin_config.php:1499
+msgid "E.g your firstname and lastname."
+msgstr "مثال: اسمك الأول واسمك الثاني."
+
+#: ../view/admin/admin_config.php:1506
+msgid "Quora username"
+msgstr "اسم مستخدم Quora"
+
+#: ../view/admin/admin_config.php:1518
+#: ../view/admin/admin_config.php:1521
+msgid "Quora"
+msgstr "Quora"
+
+#: ../view/admin/admin_config.php:1519
+msgid "Quora username. http://www.quora.com/<strong>Dave-Ligthart</strong>. Registration required."
+msgstr "اسم مستخدم Quora مثال:  http://www.quora.com/<strong>Dave-Ligthart</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:1530
+msgid "Getglue username"
+msgstr "اسم مستخدم Getglue"
+
+#: ../view/admin/admin_config.php:1543
+#: ../view/admin/admin_config.php:1546
+msgid "Getglue"
+msgstr "Getglue"
+
+#: ../view/admin/admin_config.php:1544
+msgid "Getglue username. http://getglue.com/<strong>daveligthart</strong>. Registration required."
+msgstr "اسم مستخدم Getglue. مثال:  http://getglue.com/<strong>daveligthart</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:1554
+msgid "Google Plus Id"
+msgstr "Google Plus Id"
+
+#: ../view/admin/admin_config.php:1566
+#: ../view/admin/admin_config.php:1570
+msgid "Google Plus"
+msgstr "Google plus"
+
+#: ../view/admin/admin_config.php:1567
+msgid ""
+"Google Plus ID. (note: NOT the full url, only the id) e.g: https://plus.google.com/<strong>107127911590007452165</strong>/posts. \n"
+"                  \t\tRegistration required."
+msgstr ""
+"رقم صفحة الجوجل بلس (ملاحظة: لا تضع الرابط كامل, فقط ال ID) مثال  https://plus.google.com/<strong>107127911590007452165</strong>/التدوينات. \n"
+"                  \t\tالتسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:1578
+msgid "Hunch username"
+msgstr "اسم مستخدم Hunch"
+
+#: ../view/admin/admin_config.php:1590
+#: ../view/admin/admin_config.php:1593
+msgid "Hunch"
+msgstr "Hunch"
+
+#: ../view/admin/admin_config.php:1591
+msgid "Hunch username. http://hunch.com/<strong>daveligthart</strong>. Registration required."
+msgstr "اسم مستخدم Hunch مثال :  http://hunch.com/<strong>daveligthart</strong>. التسجيل مطلوب."
+
+#: ../view/admin/admin_config.php:1615
+msgid "Enable / Disable Social Metrics"
+msgstr "تفعيل/تعطيل عدادات المجتمع الإلكتروني"
+
+#: ../view/admin/admin_dashboard.php:33
+msgid "check"
+msgstr "تحديد"
+
+#: ../view/admin/admin_dashboard_page.php:48
+#: ../view/admin/admin_dashboard_page.php:62
+#: ../view/admin/admin_dashboard_page.php:75
+#: ../view/admin/admin_dashboard_page.php:89
+#: ../view/admin/admin_dashboard_page.php:103
+#: ../view/admin/admin_dashboard_page.php:117
+#: ../view/admin/admin_dashboard_page.php:127
+#: ../view/admin/admin_dashboard_page.php:141
+#: ../view/admin/admin_dashboard_page.php:155
+#: ../view/admin/admin_dashboard_page.php:169
+#: ../view/admin/admin_dashboard_page.php:177
+#: ../view/admin/admin_dashboard_page.php:195
+msgid "Click to toggle"
+msgstr "الضغط لتزويد"
+
+#: ../view/admin/admin_dashboard_page.php:121
+msgid "Stats - Post Views"
+msgstr "الاحصائيات - زيارات التدوينات"
+
+#: ../view/admin/admin_dashboard_page.php:205
+msgid "BlogPulse Conversations"
+msgstr "محادثات BlogPulse"
+
+#: ../view/admin/admin_export.php:13
+msgid "WP-Stats-Dashboard Export"
+msgstr "تصدير WP-Stats-Dashboard"
+
+#: ../view/admin/admin_export.php:30
+msgid "Export Social Trends Data"
+msgstr "تصدير بيانات المجتمع الإلكتروني"
+
+#: ../view/admin/admin_export.php:35
+msgid "Export to excel"
+msgstr "تصدير كملف إكسل"
+
+#: ../view/admin/admin_export.php:37
+msgid "Excel"
+msgstr "إكسل"
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:7
+msgid "No"
+msgstr "لا"
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:18
+msgid "Yes"
+msgstr "نعم"
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:22
+msgid "Blacklisted:"
+msgstr "القائمة السوداء:"
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:30
+msgid "This means that you might have trouble delivering mail to some clients from your server ip address."
+msgstr "هذا يعني انه هناك مشكلة في تسليم البريد لبعض العملاء من عنوان أي بي سيرفرك."
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:31
+msgid "Your server ip is: "
+msgstr "أي بي سيرفرك يكون:"
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:38
+msgid "Your server ip "
+msgstr "أي بي سيرفرك"
+
+#: ../view/admin/admin_optimize_widget_blacklisted.php:39
+msgid "is not listed on a spam list."
+msgstr "لا يكون مسجل على القائمة المزعجة."
+
+#: ../view/admin/admin_optimize_widget_engagement.php:13
+msgid "Engagement:"
+msgstr "ارتباط :"
+
+#: ../view/admin/admin_optimize_widget_engagement.php:20
+msgid ""
+"The engagement is too low. Add a comment form to allow visitors to respond to your articles. This will improve the unique content on your website which\n"
+"\t\t\t\t\tgives you a better ranking in google."
+msgstr ""
+"الارتباط بطيء جدا, اضف حقل التعليقات للزوار لتفاعل مع مقالاتك, هذا سوف يزيد فاعلية محتوى موقعك\r\n"
+"\t\t\t\tويرفع ترتيبك على جوجل."
+
+#: ../view/admin/admin_optimize_widget_engagement.php:25
+msgid ""
+"The engagement is too low.. Try to make commenting on your site more user friendly. Comments will add to the unique content on your website which gives you a better\n"
+"\t\t\t\t\tranking in Google."
+msgstr ""
+"الارتباط بطيء جدا, جرب جعل التعليقات اكثر تفاعل مع المستخدم, التعليقات سوف تضيف قيمة لمحتوى موقعك وتزيد \r\n"
+"\t\t\t\tترتيب موقعك على جوجل."
+
+#: ../view/admin/admin_optimize_widget_pagerank.php:12
+msgid "Pagerank:"
+msgstr "ترتيب الصفحة:"
+
+#: ../view/admin/admin_optimize_widget_pagerank.php:19
+msgid "Your pagerank is quite low. Have you thought about <a href=\"http://www.daveligthart.com/products/\" target=\"_blank\" style=\"font-weight:bold;\" title=\"SEO, SMO, Performance optimization service\">optimizing</a> / SEO / SMO / Performance ? This will get you a better organic ranking in google."
+msgstr "ترتيبك يكون قليل , هل تفكر  <a href=\"http://www.daveligthart.com/products/\" target=\"_blank\" style=\"font-weight:bold;\" title=\"SEO, SMO, Performance optimization service\">بتحسين</a> / SEO / SMO / Performance ? هذا سوف يزيد من ترتيبك بجوجل."
+
+#: ../view/admin/admin_optimize_widget_pagerank.php:25
+msgid ""
+"Your pagerank is fine. Have you thought about <a href=\"http://www.daveligthart.com/products/\" target=\"_blank\" style=\"font-weight:bold;\"  title=\"SEO, SMO, Performance optimization service\">optimizing</a> \n"
+"\t\t\t\tyour social media profiles to get more visitors and improve interaction with your audience?"
+msgstr ""
+"ترتيبك يكون جيد. هل تفكر حول <a href=\"http://www.daveligthart.com/products/\" target=\"_blank\" style=\"font-weight:bold;\"  title=\"SEO, SMO, خدمة تحسين\">تحسين</a> \n"
+"\t\t\t\tحسابات المجتمع الالكتروني التي تملكها لتزيد زوار موقعك و تحسن مستوى موقع?"
+
+#: ../view/admin/admin_optimize_widget_twitter.php:20
+msgid "Twitter F/F ratio:"
+msgstr "Twitter F/F نسبة:"
+
+#: ../view/admin/admin_optimize_widget_twitter.php:39
+msgid "Try to <a href=\"http://www.theunfollowapp.com\" target=\"_blank\" title=\"The unfollow app\" rel=\"external\">unfollow as many users as possible</a> to improve your twitter profile quality."
+msgstr "حاول <a href=\"http://www.theunfollowapp.com\" target=\"_blank\" title=\"The unfollowتطبيق \">ضم أكبر عدد ممكن من المستخدمين</a> لتحسين ورفع مستوى حسابك بموقع توتير."
+
+#: ../view/admin/admin_optimize_widget_twitter.php:50
+msgid "It seems you do not own a <a href=\"http://twitter.com\" target=\"_blank\" title=\"Twitter\">twitter.com</a> profile. Create one to improve interaction with your audience."
+msgstr "يبدو انك لا تملك حساب <a href=\"http://twitter.com\" target=\"_blank\" title=\"Twitter\">twitter.com</a>انشىء حساب جديد لتحسين التفاعل مع زوارك."
+
+#: ../view/admin/admin_optimize_widget_twitter_mentions.php:19
+msgid "Your blog has been mentioned"
+msgstr "تم ذكر مدونتك"
+
+#: ../view/admin/admin_optimize_widget_twitter_mentions.php:19
+msgid "times over the last few weeks.."
+msgstr "أوقات التوقف في الأسابيع الأخيرة.."
+
+#: ../view/admin/admin_profile_finder.php:11
+msgid "WP-Stats-Dashboard Profile Finder"
+msgstr "مكتشف ملف WP-Stats-Dashboard"
+
+#: ../view/admin/admin_profile_finder.php:34
+msgid "Profile Finder"
+msgstr "مكتشف الملف"
+
+#: ../view/admin/admin_profile_finder.php:39
+msgid "Enter regularly used profile name:"
+msgstr "ادخل اسم الحساب المستخدم:"
+
+#: ../view/admin/admin_profile_finder.php:43
+msgid "Find"
+msgstr "ابحث"
+
+#: ../view/admin/admin_profile_finder.php:55
+msgid "Select profiles to save."
+msgstr "حدد الحسابات للحفظ"
+
+#: ../view/admin/admin_profile_finder.php:60
+msgid "Profiles are saved to settings."
+msgstr "إعدادات الحسابات المحفوظة"
+
+#: ../view/admin/admin_profile_finder.php:66
+msgid "Save"
+msgstr "حفظ"
+
+#: ../view/admin/admin_rpc.php:5
+msgid "WPSD - RPC Client"
+msgstr "زبون WPSD - RPC"
+
+#: ../view/admin/admin_rpc.php:7
+msgid "For testing purposes only."
+msgstr "من أحل الاختبار فقط."
+
+#: ../view/admin/admin_rpc.php:19
+msgid "getKey username"
+msgstr "اسم مستخدم getKey"
+
+#: ../view/admin/admin_rpc.php:22
+msgid "getKey password"
+msgstr "كلمة مرور getKey"
+
+#: ../view/admin/admin_rpc.php:26
+msgid "Get Key"
+msgstr "الحصول على المفتاح"
+
+#: ../view/admin/admin_rpc.php:30
+msgid "getStats key"
+msgstr "مفتاح getStats"
+
+#: ../view/admin/admin_rpc.php:43
+msgid "getStats type"
+msgstr "نوع getStats"
+
+#: ../view/admin/admin_rpc.php:47
+msgid "getStatsByDate type Y-m-d"
+msgstr "الاحصائيات حسب التاريخ Y-m-d"
+
+#: ../view/admin/admin_rpc.php:52
+msgid "Get Stats By Date"
+msgstr "الاحصائيات حسب التاريخ"
+
+#: ../view/admin/admin_rpc.php:55
+msgid "Get Stats"
+msgstr "الحصول على الاحصائيات"
+
+#: ../view/admin/admin_rpc.php:64
+msgid "getMetrics"
+msgstr "الحصول على القياسات"
+
+#: ../view/admin/admin_rpc.php:66
+msgid "Get Metrics"
+msgstr "الحصول على القياسات"
+
+#: ../view/admin/admin_rpc.php:76
+msgid "getStatsByYearAndMonth"
+msgstr "الحصول على الاحصائيات السنوية والشهرية"
+
+#: ../view/admin/admin_rpc.php:79
+msgid "Get Stats By Year And Month"
+msgstr "الحصول على الاحصائيات السنوية والشهرية"
+
+#: ../view/admin/admin_rpc.php:90
+msgid "getStatsByDateRange"
+msgstr "الحصول على الاحصائيات حسب نطاق التاريخ"
+
+#: ../view/admin/admin_rpc.php:92
+msgid "Type"
+msgstr "التصنيف"
+
+#: ../view/admin/admin_rpc.php:96
+msgid "Date From"
+msgstr "من التاريخ"
+
+#: ../view/admin/admin_rpc.php:100
+msgid "Date To"
+msgstr "الى التاريخ"
+
+#: ../view/admin/admin_rpc.php:106
+msgid "Get Stats By Date Range"
+msgstr "الحصول على الاحصائيات حسب التاريخ"
+
+#: ../view/admin/admin_rpc.php:122
+msgid "Clear Server Cache"
+msgstr "تنظيف ملفات السيرفر المؤقتة"
+
+#: ../view/admin/admin_trend.php:9
+msgid "Select trend"
+msgstr "تحديد الاتجاه"
+
+#: ../view/admin/admin_user_profile.php:40
+msgid "WPSD - User Config"
+msgstr "إعدادات المستخدم - WPSD"
+
+#: ../view/admin/admin_user_profile.php:45
+msgid "Klout"
+msgstr "Klout"
+
+#: ../view/admin/admin_user_profile.php:50
+msgid "Please enter your Klout username. E.g Last part of the url: http://klout.com/<strong>daveligthart</strong>"
+msgstr "من فضلك أدخل اسم مستخدم Klout. مثال: الجزء الأخير من الرابط: http://klout.com/<strong>daveligthart</strong>"
+
+#: ../view/admin/admin_user_profile.php:60
+msgid "Please enter your Twitter username. E.g Last part of the url: http://twitter.com/<strong>daveligthart</strong>"
+msgstr "من فضلك أدخل اسم مستخدم توتير. مثال: الجزء الأخير من الرابط http://twitter.com/<strong>daveligthart</strong>"
+
+#: ../view/admin/admin_user_profile.php:66
+msgid "WPSD - User Metrics"
+msgstr "قياسات المستخدم - WPSD"
+
+#: ../view/admin/admin_user_profile.php:70
+msgid "Total Articles"
+msgstr "مجموع المقالات"
+
+#: ../view/admin/admin_user_profile.php:74
+msgid "Total Comments Received"
+msgstr "مجموع التعليقات المستلمة"
+
+#: ../view/admin/admin_user_profile.php:78
+msgid "Total Comments Placed"
+msgstr "مجموع التعليقات المقبولة"
+
+#: ../view/admin/admin_user_profile.php:86
+msgid "Twitter F/F Ratio"
+msgstr "Twitter F/F معدل:"
+
+#: ../view/admin/blocks/sidebar.php:5
+msgid "Get the WPSD iPhone App"
+msgstr "الحصول على تطبيق الأي فون WPSD"
+
+#: ../view/admin/blocks/sidebar.php:9
+msgid "WPSD iPhone - App Store"
+msgstr "متجر التطبيقات - WPSD-iPhone"
+
+#: ../view/admin/blocks/sidebar.php:13
+msgid "<strong>Now Available</strong> from the App Store"
+msgstr "<strong>متاح الأن </strong> بمتجر التطبيقات"
+
+#: ../view/admin/blocks/sidebar.php:25
+msgid "Too many social media sites to connect?"
+msgstr "عدد كبير جداً من المجتمعات الإلكترونية للاتصال؟"
+
+#: ../view/admin/blocks/sidebar.php:29
+msgid "Let us connect all listed social media sites for you. You'll be up and running in no time. "
+msgstr "دعونا نتصل مع جميع المجتمعات الإلكترونية التي لديك. انت سوف تكون على اتصال بكل وقت."
+
+#: ../view/admin/blocks/sidebar.php:33
+msgid "Optimize your WPSD"
+msgstr "تحسين إضافة WPSD"
+
+#: ../view/admin/blocks/sidebar.php:34
+msgid "WPSD optimization"
+msgstr "تحسين WPSD"
+
+#: ../view/admin/blocks/sidebar.php:41
+msgid "iGoogle Gadget"
+msgstr "أداة iGoogle"
+
+#: ../view/admin/blocks/sidebar.php:45
+msgid "iGoogle"
+msgstr "iGoogle"
+
+#: ../view/admin/blocks/sidebar.php:49
+msgid "Link to Social Metrics iGoogle Gadget"
+msgstr "رابط الى أداة iGoogle للمجتمعات الإلكتروني"
+
+#: ../view/admin/blocks/sidebar.php:50
+msgid "WPSD iGoogle Gadget"
+msgstr "أداة WPSD iGoogle"
+
+#: ../view/admin/blocks/sidebar.php:58
+msgid "We are not asking for a donation but please support us by"
+msgstr "نحن لا نطلب منك التبرع لكن من فضلك ادعمنا بواسطة"
+
+#: ../view/admin/blocks/sidebar.php:62
+msgid "Telling your friends about this great plugin with a tweet:"
+msgstr "أخبر أصدقائك حول هذه الإضافة المميزة بنشرها بتوتير:"
+
+#: ../view/admin/blocks/sidebar.php:63
+msgid "Send a tweet"
+msgstr "ارسل تبليغ بتوتير"
+
+#: ../view/admin/blocks/sidebar.php:66
+msgid "Get updates on Twitter!"
+msgstr "تابع التحديثات على توتير!"
+
+#: ../view/admin/blocks/sidebar.php:67
+msgid "Follow Dave Ligthart on Twitter"
+msgstr "تابع Dave Lighhart على توتير"
+
+#: ../view/admin/blocks/sidebar.php:68
+msgid "Follow"
+msgstr "انضم"
+
+#: ../view/admin/blocks/sidebar.php:72
+msgid "By giving "
+msgstr "اعطي"
+
+#: ../view/admin/blocks/sidebar.php:73
+#: ../view/admin/blocks/sidebar.php:75
+msgid "Give a great rating"
+msgstr "اعطي ترتيب مميز"
+
+#: ../view/admin/blocks/sidebar.php:73
+msgid "wp-stats-dashboard"
+msgstr "wp-stats-dashboard"
+
+#: ../view/admin/blocks/sidebar.php:74
+msgid "an awesome rating:"
+msgstr "تصنيف ممتاز :"
+
+#: ../view/admin/blocks/sidebar.php:75
+msgid "Rate"
+msgstr "صنف"
+
+#: ../view/admin/blocks/sidebar.php:79
+msgid "Sponsor"
+msgstr "الرعاية"
+
+#: ../view/admin/blocks/sidebar.php:83
+msgid "Huge huge support!: <br/> visiting one of our sponsors websites: "
+msgstr "الدعم الكبير جدا : <br/> قم بزيارة واحد من المواقع الداعمة لإضافة: "
+
+#: ../view/admin/blocks/sidebar.php:98
+msgid "Instructions: How to get the plugin to work"
+msgstr "تعليمات: كيف تجعل الإضافة تعمل بشكل جيد؟"
+
+#: ../view/admin/blocks/sidebar.php:103
+msgid "Install the <a href=\"http://wordpress.org/extend/plugins/jetpack/\" target=\"_blank\" title=\"Download the Jetpack plugin from WordPress.com\">WordPress.com</a> jetpack plugin to start tracking your stats."
+msgstr "ثبت <a href=\"http://wordpress.org/extend/plugins/jetpack/\" target=\"_blank\" title=\"حمل إضافة Jetpackمن موقع wordpress.com\">WordPress.com</a> إضافة Jetpack لبدء تتبع الاحصائيات."
+
+#: ../view/admin/blocks/sidebar.php:106
+msgid "Create or login to your account at"
+msgstr "انشىء او سجل دخول الى حسابك في"
+
+#: ../view/admin/blocks/sidebar.php:109
+msgid "Connect to WordPress.com through jetpack. Click on the huge banner that is displayed above when your blog is not connected."
+msgstr "اتصل مع Wordpress.com عبر Jetpak. اضغط على الإعلان الكبير الذي يعرض فوق عندما مدونتك لا تكون متصلة"
+
+#: ../view/admin/blocks/sidebar.php:113
+msgid "Enter your wordpress.com username and password on the wp-stats-dashboard settings page."
+msgstr "ادخل اسم مستخدم و كلمة مرور wordpress.com بصفحة إعدادات wp-stats-dashboard"
+
+#: ../view/admin/blocks/sidebar.php:118
+msgid "You're all set"
+msgstr "قم بتنفيذ جميع الخطوات"
+
+#: ../view/admin/blocks/sidebar.php:125
+msgid "Server Check"
+msgstr "تفقد السيرفر "
+
+#: ../view/admin/blocks/sidebar.php:135
+msgid "Safe mode: on"
+msgstr "الوضع الأمن: مشغل"
+
+#: ../view/admin/blocks/sidebar.php:135
+msgid "Safe mode: off"
+msgstr "الوضع الأمن: معطل"
+
+#: ../view/admin/blocks/sidebar.php:139
+msgid "Curl installed: yes"
+msgstr "تم تحميل Curl: نعم"
+
+#: ../view/admin/blocks/sidebar.php:139
+msgid "Curl installed: no"
+msgstr "تم تحميل Curl: لا"
+
+#: ../view/admin/blocks/sidebar.php:143
+msgid "Stats plugin: installed"
+msgstr "إضافة الاحصائيات: تم تحميل"
+
+#: ../view/admin/blocks/sidebar.php:143
+msgid "Stats plugin: <a href=\"http://wordpress.org/extend/plugins/jetpack/\" target=\"_blank\" title=\"Install the WordPress.com Jetpack plugin\">not installed</a>"
+msgstr "إضافة الاحصائيات: <a href=\"http://wordpress.org/extend/plugins/stats/\" target=\"_blank\" title=\"ثبت إضافة wordpress.com Jetpack\">لم يتم تثبيت</a>"
+
+#: ../view/admin/blocks/sidebar.php:147
+msgid "Cache directory writable: yes"
+msgstr "مجلد الملفات المؤقتة قابل للقراءة: نعم"
+
+#: ../view/admin/blocks/sidebar.php:147
+msgid "Cache directory writable: no"
+msgstr "مجلد الملفات المؤقتة قابل للقراءة: لا"
+
+#: ../view/admin/blocks/sidebar.php:155
+msgid "wp_footer in footer.php found: <a href=\"http://codex.wordpress.org/Theme_Development\" target=\"_blank\" title=\"Theme development documentation\">no</a>"
+msgstr "wp_footer في ملف  footer.php موجود :  <a href=\"http://codex.wordpress.org/Theme_Development\" target=\"_blank\" title=\"Theme development documentation\">لا</a>"
+
+#: ../view/admin/blocks/sidebar.php:155
+msgid "wp_footer in footer.php found: yes"
+msgstr "wp_footer في ملف  footer.php موجود :  نعم"
+
+#: ../view/admin/blocks/sidebar.php:167
+msgid "Version"
+msgstr "الإصدار"
+
+#: ../view/admin/blocks/sidebar.php:171
+msgid "DB version: "
+msgstr "إصدار قاعدة البيانات:"
+
+#: ../view/admin/blocks/sidebar.php:180
+msgid "Plugin by"
+msgstr "مبرمج الإضافة"
+
+#: ../view/admin/blocks/sidebar.php:184
+msgid ": If you like my work, hire me! For custom wordpress plugin and theme development."
+msgstr ": اذا احببت عملي, اتصل بي! لبرمجة إضافات و ستايلات خاصة للورد بريس."
+
+#: ../view/admin/blocks/sidebar.php:186
+msgid "More info"
+msgstr "المزيد من المعلومات"
+
+#~ msgid "Graph: Views per day"
+#~ msgstr "الرسم البياني: الزيارات اليومية"
+
+#~ msgid ""
+#~ "Bit.ly api key for click stats. <a href=\"http://bit.ly/a/your_api_key\" "
+#~ "target=\"_blank\" title=\"bitly api key\">Find it here</a>. Case "
+#~ "sensitive."
+#~ msgstr ""
+#~ "مفتاح bitly api لأجل احصائيات الضغطات . <a href=\"http://bit.ly/a/"
+#~ "your_api_key\" target=\"_blank\" title=\"bitly api key\">تجده هنا </a>."
+
+#~ msgid ""
+#~ "Last.fm username for friend stats. <a href=\"http://www.last.fm/\" target="
+#~ "\"_blank\" title=\"last.fm\">last.fm</a>."
+#~ msgstr ""
+#~ "اسم مستخدم last.fm لاحصائيات الصديق . <a href=\"http://www.last.fm/\" "
+#~ "target=\"_blank\" title=\"last.fm\">last.fm</a>."
+
+#~ msgid "Xbox username"
+#~ msgstr "اسم مستخدم Xbox"
+
+#~ msgid ""
+#~ "Xbox live gamer tag. <a href=\"http://live.xbox.com/\" target=\"_blank\" "
+#~ "title=\"xbox live\">xbox live</a>."
+#~ msgstr ""
+#~ "وسم Xbox live gamer  <a href=\"http://live.xbox.com/\" target=\"_blank\" "
+#~ "title=\"xbox live\">xbox live</a>."
+
+#~ msgid ""
+#~ "Foursquare username. <a href=\"http://foursquare.com/\" target=\"_blank\" "
+#~ "title=\"foursquare\">foursquare</a>."
+#~ msgstr ""
+#~ "اسم مستخدم foursquare <a href=\"http://foursquare.com/\" target=\"_blank"
+#~ "\" title=\"foursquare\">foursquare</a>."
+
+#~ msgid ""
+#~ "Disqus username. <a href=\"http://disqus.com/\" target=\"_blank\" title="
+#~ "\"disqus\">disqus</a>."
+#~ msgstr ""
+#~ "اسم مستخدم Disqus <a href=\"http://disqus.com/\" target=\"_blank\" title="
+#~ "\"disqus\">disqus</a>."
+
+#~ msgid ""
+#~ "blippr username. <a href=\"http://blippr.com/\" target=\"_blank\" title="
+#~ "\"blippr\">blippr</a>."
+#~ msgstr ""
+#~ "اسم مستخدم blippr <a href=\"http://blippr.com/\" target=\"_blank\" title="
+#~ "\"blippr\">blippr</a>."
+
+#~ msgid ""
+#~ "Empire Avenue Ticker. <a href=\"http://www.empireavenue.com\" target="
+#~ "\"_blank\" title=\"Empire Avenue\">Empire Avenue</a>."
+#~ msgstr ""
+#~ "كاتب Empire Avenue  <a href=\"http://www.empireavenue.com\" target="
+#~ "\"_blank\" title=\"Empire Avenue\">Empire Avenue</a>."
+
+#~ msgid "Empire Avenue Password."
+#~ msgstr "كلمة مرور Empire Avenue"
+
+#~ msgid ""
+#~ "FriendFeed username. <a href=\"http://www.friendfeed.com\" target=\"_blank"
+#~ "\" title=\"FriendFeed\">FriendFeed</a>."
+#~ msgstr ""
+#~ "اسم مستخدم friendfeed <a href=\"http://www.friendfeed.com\" target="
+#~ "\"_blank\" title=\"FriendFeed\">FriendFeed</a>."
+
+#~ msgid ""
+#~ "Digg username. <a href=\"http://digg.com\" target=\"_blank\" title=\"Digg"
+#~ "\">Digg</a>."
+#~ msgstr ""
+#~ "اسم مستخدم digg <a href=\"http://digg.com\" target=\"_blank\" title=\"Digg"
+#~ "\">Digg</a>."
+
+#~ msgid "Mylikes username"
+#~ msgstr "اسم مستخدم Mylikes"
+
+#~ msgid ""
+#~ "Mylikes username. <a href=\"http://mylikes.com/signup?token=daveligthart"
+#~ "\" target=\"_blank\" title=\"Mylikes\">Mylikes</a>."
+#~ msgstr ""
+#~ "اسم مستخدم Mylikes <a href=\"http://mylikes.com/signup?token=daveligthart"
+#~ "\" target=\"_blank\" title=\"Mylikes\">Mylikes</a>."
+
+#~ msgid ""
+#~ "Educopark username. <a href=\"http://educopark.com\" target=\"_blank\" "
+#~ "title=\"Educopark\">Educopark</a>."
+#~ msgstr ""
+#~ "اسم مستخدم Educopark <a href=\"http://educopark.com\" target=\"_blank\" "
+#~ "title=\"Educopark\">Educopark</a>."
+
+#~ msgid "YahooBuzz url"
+#~ msgstr "رابط YahooBuzz"
+
+#~ msgid ""
+#~ "YahooBuzz url. e.g <strong>http://buzz.yahoo.com/activity/u/"
+#~ "UBG7TETTMGJOTVDMKVODKQRDA4</strong> <a href=\"http://buzz.yahoo.com/\" "
+#~ "target=\"_blank\" title=\"YahooBuzz\">YahooBuzz</a>."
+#~ msgstr ""
+#~ "رابط yahooBuzz مثال: <strong>http://buzz.yahoo.com/activity/u/"
+#~ "UBG7TETTMGJOTVDMKVODKQRDA4</strong>  <a href=\"http://buzz.yahoo.com/\" "
+#~ "target=\"_blank\" title=\"YahooBuzz\">YahooBuzz</a>."
+
+#~ msgid ""
+#~ "Plaxo profile url. <a href=\"http://plaxo.com/\" target=\"_blank\" title="
+#~ "\"Plaxo\">Plaxo</a>."
+#~ msgstr ""
+#~ "رابط حساب Plaxo <a href=\"http://plaxo.com/\" target=\"_blank\" title="
+#~ "\"Plaxo\">Plaxo</a>."
+
+#~ msgid ""
+#~ "Reddit username. <a href=\"http://reddit.com/\" target=\"_blank\" title="
+#~ "\"Reddit\">Reddit</a>."
+#~ msgstr ""
+#~ "اسم مستخدم reddit <a href=\"http://reddit.com/\" target=\"_blank\" title="
+#~ "\"Reddit\">Reddit</a>."
+
+#~ msgid ""
+#~ "StumbleUpon username. <a href=\"http://stumbleupon.com/\" target=\"_blank"
+#~ "\" title=\"StumbleUpon\">StumbleUpon</a>."
+#~ msgstr ""
+#~ "اسم مستخدم StumbleUpon <a href=\"http://stumbleupon.com/\" target=\"_blank"
+#~ "\" title=\"StumbleUpon\">StumbleUpon</a>."
+
+#~ msgid ""
+#~ "Netlog username. <a href=\"http://netlog.com/\" target=\"_blank\" title="
+#~ "\"Netlog\">Netlog</a>."
+#~ msgstr ""
+#~ "اسم مستخدم Netlog <a href=\"http://netlog.com/\" target=\"_blank\" title="
+#~ "\"Netlog\">Netlog</a>."
+
+#~ msgid ""
+#~ "99Designs.com username. <a href=\"http://99designs.com/\" target=\"_blank"
+#~ "\" title=\"99designs\">99designs</a>."
+#~ msgstr ""
+#~ "اسم مستخدم 99designs.com <a href=\"http://99designs.com/\" target=\"_blank"
+#~ "\" title=\"99designs\">99designs</a>."
+
+#~ msgid "GO"
+#~ msgstr "اذهب"
+
+#~ msgid "*NEW* iPhone App"
+#~ msgstr "جديد *تطبيق أي فون*"
+
+#~ msgid "Get the api key: you can find your api key on the wordpress.com "
+#~ msgstr ""
+#~ "احصل على مفتاح api: انت تستطيع اجاد مفتاح api على موقع wordpress.com"
+
+#~ msgid "user settings page"
+#~ msgstr "صفحة إعدادات المستخدم"
+
+#~ msgid "Enter api key on the wordpress.com stats plugin settings page: "
+#~ msgstr ""
+#~ "ادخل مفتاح api لموقع wordpress.com على صفحة إعدادات إضافة الاحصائيات:"
+
+#~ msgid "Ping.fm Application Key"
+#~ msgstr "Ping.fm مفتاح تطبيق"
+
+#~ msgid ""
+#~ "ping.fm application key. This enables autoposting to 30+ social media "
+#~ "sites on publishing a blog post. <a href=\"http://ping.fm/\" target="
+#~ "\"_blank\" title=\"ping.fm\">ping.fm</a>."
+#~ msgstr ""
+#~ "ping.fm مفتاح تطبيق . هذا يفعل نشر التدوينات الأتوماتيكي الى أكثر من 30 "
+#~ "مجتمع الكتروني . <a href=\"http://ping.fm/\" target=\"_blank\" title="
+#~ "\"ping.fm\">ping.fm</a>."

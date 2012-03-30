@@ -1,0 +1,916 @@
+# Copyright (C) 2010 WP SyntaxHighlighter
+# This file is distributed under the same license as the WP SyntaxHighlighter package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP SyntaxHighlighter 1.7\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-syntaxhighlighter\n"
+"POT-Creation-Date: 2011-12-17 03:54:01+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: wp-syntaxhighlighter-widget.php:15
+msgid "WP SyntaxHighlighter Widget shows highlighted code."
+msgstr ""
+
+#: wp-syntaxhighlighter-widget.php:16
+msgid "WP SyntaxHighlighter Widget"
+msgstr ""
+
+#: wp-syntaxhighlighter-widget.php:62
+msgid "Title:"
+msgstr ""
+
+#: wp-syntaxhighlighter-bootstrap.php:30
+msgid "Could not find wp-load.php"
+msgstr ""
+
+#: sh-pre-quicktag.php:93
+msgid "SH pre button"
+msgstr ""
+
+#: sh-pre-quicktag.php:98
+msgid "OK"
+msgstr ""
+
+#: sh-pre-quicktag.php:117
+msgid "CANCEL"
+msgstr ""
+
+#: sh-pre-quicktag.php:128 sh-pre-quicktag.php:140
+msgid "SH pre"
+msgstr ""
+
+#: sh-pre-quicktag.php:131
+msgid "For WP SyntaxHighlighter"
+msgstr ""
+
+#: sh-pre-quicktag.php:145
+msgid "Language"
+msgstr ""
+
+#: sh-pre-quicktag.php:161 sh-tinymce-button-ins/window.php:62
+#: sh-tinymce-button-box/window.php:62
+msgid "Show Line Number"
+msgstr ""
+
+#: wp-syntaxhighlighter.php:101
+msgid ""
+"This site supports <a href=\"http://alexgorbatchev.com/SyntaxHighlighter/"
+"\">SyntaxHighlighter</a> via <a href=\"http://www.near-mint.com/blog/"
+"software/wp-syntaxhighlighter\">WP SyntaxHighlighter</a>. It can highlight "
+"your code. <br /><strong>How to highlight your code:</strong> Paste your "
+"code in the comment form, select it and then click the language link button "
+"below. This will wrap your code in a <pre> tag(or shortcode) and format it "
+"when submitted."
+msgstr ""
+
+#: wp-syntaxhighlighter.php:116
+msgid ""
+"This site supports <a href=\"http://alexgorbatchev.com/SyntaxHighlighter/"
+"\">SyntaxHighlighter</a> via <a href=\"http://www.near-mint.com/blog/"
+"software/wp-syntaxhighlighter\">WP SyntaxHighlighter</a>. It can highlight "
+"your code. <br /><strong>How to highlight your code:</strong> Paste your "
+"code in the topic or reply form, select it and then click the language link "
+"button below. This will wrap your code in a <pre> tag(or shortcode) and "
+"format it when submitted."
+msgstr ""
+
+#: wp-syntaxhighlighter.php:471
+msgid "Settings"
+msgstr ""
+
+#: wp-syntaxhighlighter.php:1021
+msgid "+ expand source"
+msgstr ""
+
+#: wp-syntaxhighlighter.php:1027
+msgid "show source"
+msgstr ""
+
+#: wp-syntaxhighlighter.php:1120 wp-syntaxhighlighter.php:1149
+msgid "?"
+msgstr ""
+
+#: wp-syntaxhighlighter.php:1121 wp-syntaxhighlighter.php:1150
+msgid "SyntaxHighlighter\\n\\n"
+msgstr ""
+
+#: wp-syntaxhighlighter.php:1122 wp-syntaxhighlighter.php:1151
+msgid "Can't find brush for: "
+msgstr ""
+
+#: wp-syntaxhighlighter.php:1123 wp-syntaxhighlighter.php:1152
+msgid "Brush wasn't configured for html-script option: "
+msgstr ""
+
+#: wp-syntaxhighlighter.php:1145
+msgid "view source"
+msgstr ""
+
+#: wp-syntaxhighlighter.php:1146
+msgid "copy to clipboard"
+msgstr ""
+
+#: wp-syntaxhighlighter.php:1147
+msgid "The code is in your clipboard now"
+msgstr ""
+
+#: wp-syntaxhighlighter.php:1148
+msgid "print"
+msgstr ""
+
+#: sample/lang-pack-for-wp-syntaxhighlighter/lang-pack-for-wp-syntaxhighlighter.php:174
+msgid ""
+"Lang Pack for WP SyntaxHighlighter requires WP SyntaxHighlighter ver. 1.4.3 "
+"or higher"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:50
+msgid ""
+"WP SyntaxHighlighter has successfully created new DB table.<br />If you "
+"upgraded to this version, some new setting options may be added.<br />Go to "
+"the <a href=\"options-general.php?page=wp-syntaxhighlighter-options"
+"\">setting panel</a> and configure WP SyntaxHighlighter now. Once you save "
+"your settings, this message will be cleared."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:55
+msgid ""
+"All setting data has migrated successfully.<br />If you upgraded from ver. "
+"1.3 or older to this version, a part of setting parameters may be reset to "
+"the default values.<br />Go to the <a href=\"options-general.php?page=wp-"
+"syntaxhighlighter-options\">setting panel</a> and check your setting "
+"parameters. Once you save your settings, this message will be cleared."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:84
+msgid ""
+"Invalid value. Settings could not be saved.<br />Your \"Line number(Gutter)"
+"\" must be entered in numbers."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:87
+msgid ""
+"Invalid value. Settings could not be saved.<br />Your \"Tab size\" must be "
+"entered in numbers."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:90
+msgid ""
+"Invalid value. Settings could not be saved.<br />Your \"Class attribute\" "
+"contains \" or ' that are not allowed to use."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:93
+msgid ""
+"Invalid value. Settings could not be saved.<br />Your \"Stylesheet\" "
+"contains some character strings that are not allowed to use."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:98
+msgid ""
+"Invalid value. Settings could not be saved.<br />Your \"Description\" for "
+"\"Comment Highlighter Button\" contains some character strings that are not "
+"allowed to use."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:103
+msgid ""
+"Invalid value. Settings could not be saved.<br />Your \"Stylesheet\" for "
+"\"Comment Highlighter Button\" contains some character strings that are not "
+"allowed to use."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:108
+msgid ""
+"Invalid value. Settings could not be saved.<br />Your \"Description\" for "
+"\"bbpress Highlighter Button\" contains some character strings that are not "
+"allowed to use."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:113
+msgid ""
+"Invalid value. Settings could not be saved.<br />Your \"Stylesheet\" for "
+"\"bbPress Highlighter Button\" contains some character strings that are not "
+"allowed to use."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:150
+msgid "Settings saved."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:208
+msgid ""
+"All settings were reset. Please <a href=\"options-general.php?page=wp-"
+"syntaxhighlighter-options\">reload the page</a>."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:215
+msgid "Cheatin&#8217; uh?"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:237
+msgid "1. Basic Settings"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:243
+msgid "Higlight your code in"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:245
+msgid "Home"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:245
+msgid "Posts & Pages"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:245
+msgid "Categories"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:245
+msgid "Archives"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:245
+msgid "Search result"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:245
+msgid "Comments"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:245
+msgid "Others"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:246
+msgid ""
+"Highlighting your code in the 'Categories', 'Archives' or 'Search result' "
+"depends on your using theme.<br />Sometimes you may only have to enable "
+"'Home' and 'Posts & Pages'.<br />Note: To enable 'Comments' means you allow "
+"visitors to post their source code as comments."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:250
+msgid "Widget"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:252
+msgid "Use WP SyntaxHighlighter Widget"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:253
+msgid ""
+"'WP SyntaxHighlighter Widget' is the widget to show highlighted code.<br /"
+">Go to 'Widgets' section under 'Appearance' menu to add the 'WP "
+"SyntaxHighlighter Widget' in your sidebar."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:257
+msgid "bbPress"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:259
+msgid "Highlight codes in bbPress"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:260
+msgid ""
+"This plugin can highlight topics/replies with codes in bbPress.<br /"
+">Remenber to configure '<a href=\"#bbpress_highlight\">5. bbPress "
+"Highlighter Button Settings</a>'.<br />Before this option is enabled, you "
+"must install and activate '<a href=\"http://wordpress.org/extend/plugins/"
+"bbpress/\">bbPress</a>' plugin."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:264
+msgid "Library version"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:270
+msgid ""
+"Choose 'Syntax Highlighter' JavaScript library version.<br />In ver. 2.1, "
+"'autoloader' will be disabled and <a href=\"#loaded_languages\">pre-selected "
+"language definition files</a> will be loaded at once."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:274
+msgid "Theme"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:285 wp-syntaxhighlighter-admin.php:359
+msgid "None"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:286
+msgid "Random"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:288
+msgid ""
+"Themes for the highlighted elements. 'MDUltra' is not available for ver. 2.1."
+"<br />If you choose 'MDUltra' in ver. 2.1, Theme will be replaced with "
+"'Defaut' theme.<br />When 'Random' is selected, this plugin will apply "
+"different theme on each page."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:292
+msgid "Auto links"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:295
+msgid "URL in the highlighted element will be linked by default."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:299
+msgid "Quick code copy"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:302
+msgid ""
+"Only for ver. 3.0. 'Quick code copy' makes easy to copy the code on the "
+"codeblock to clipboard.<br />If visitors double click anywhere on the "
+"codeblock, the entire code view will be replaced with a pre-selected view."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:306
+msgid "Title"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:309
+msgid ""
+"Only for ver. 3.0. This option will allow you to place Title above each code "
+"blocks or in each collapsed code blocks."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:313
+msgid "Class attribute"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:316
+msgid ""
+"Enter space-separated class attribute values for code block. You can use "
+"them with addtional stylesheet.<br />TIP: To enter \"notranslate\" will stop "
+"translating your code with \"Google Translate\"."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:320 wp-syntaxhighlighter-admin.php:526
+#: wp-syntaxhighlighter-admin.php:614
+msgid "Stylesheet"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:322 wp-syntaxhighlighter-admin.php:528
+#: wp-syntaxhighlighter-admin.php:616
+msgid "Use additional CSS"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:324
+msgid ""
+"Define additional CSS for code block. The defined CSS will be inserted into "
+"<code>&lt;head&gt;</code> section.<br />You can also use the class attribute "
+"defined by 'Class attribute' option."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:328
+msgid "Collapse"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:331
+msgid ""
+"The code box will be collapsed by default. If you want to use this option, "
+"'Toolbar' option must be enabled.<br />After this option is enabled, "
+"'Toolbar' option will be enabled automatically."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:335
+msgid "Label for collapsed code block"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:338
+msgid ""
+"Enter text label for collapsed code block. If you use this option in ver. "
+"3.0, 'Title' must be empty."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:342
+msgid "Line number(Gutter)"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:345
+msgid "Line number(Gutter) will be shown by default."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:349
+msgid "Starting line number"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:352
+msgid "Enter starting line number for the line numbering(Gutter)."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:356
+msgid "Line Number Padding"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:360
+msgid "Auto"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:367
+msgid "This option will allow you to pad line numbers with leading zeros."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:371
+msgid "Smart tabs"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:374
+msgid "Indent by 'tab' will be optimized by default."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:378
+msgid "Tab size"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:381
+msgid "Tab size for 'Smart tabs' feature."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:385
+msgid "Toolbar"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:388
+msgid "Toolbar will be shown by default."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:392
+msgid "Wrap lines"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:395
+msgid "Only for ver. 2.1. Long lines will be wrapped automatically by default."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:399
+msgid "Legacy mode"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:402
+msgid ""
+"Support <a href=\"http://code.google.com/p/syntaxhighlighter/wiki/Usage"
+"\">old style <code>&lt;pre&gt;</code> tag</a> in SyntaxHighlighter ver. 1.5"
+"(Not mean WP SyntaxHighlighter ver. 1.5).<br />After this option is enabled, "
+"<a href=\"#loaded_languages\">pre-selected brush files</a> will be loaded at "
+"once."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:406
+msgid "CSS for <code>&lt;pre&gt;</code> tag"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:409
+msgid ""
+"If it is some time before your code highlighted, Unbeautiful code block will "
+"appear for a while.<br />This CSS will define its visual layout. Your code "
+"block may look some more good."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:413
+msgid "2. Visual Editor Settings"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:417
+msgid "Add TinyMCE Button"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:420
+msgid ""
+"Enable/Disable TinyMCE Buttons. They can help you to type <code>&lt;pre&gt;</"
+"code> tag in 'Visual Editor'.<br />'Select &amp; Insert' will help you to "
+"wrap your code on the post or page in <code>&lt;pre&gt;</code> tag or to "
+"update values of previously-markuped code.<br />'CodeBox' will allow you to "
+"paste your code into the post or page and wrap in <code>&lt;pre&gt;</code> "
+"tag automatically, keeping indent by tabs.<br/ >In 'Visual Editor', 'Select "
+"&amp; Insert' will appear as 'pre' icon and 'CodeBox' will appear as 'CODE' "
+"icon."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:424
+msgid "Window size"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:431
+msgid "Choose size of pop-up window at the click of buttons."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:435
+msgid "Place the buttons in"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:438
+msgid "1st row"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:439
+msgid "2nd row"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:440
+msgid "3rd row"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:441
+msgid "4th row"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:442
+msgid "of TinyMCE toolbar."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:443
+msgid "Choose TinyMCE toolbar row which buttons will be placed in."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:448
+msgid "3. HTML Editor Settings"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:452 wp-syntaxhighlighter-admin.php:540
+msgid "Add Quicktag Button"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:455
+msgid ""
+"Enable/Disable Quicktag, 'SH pre' button. It can help you to type <code>&lt;"
+"pre&gt;</code> tag in 'HTML Editor'.<br />'SH pre' button makes easy to "
+"escape your code to HTML entities and wrap it in <code>&lt;pre&gt;</code> "
+"tag."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:459 wp-syntaxhighlighter-admin.php:547
+msgid "Load jQuery and jQuery UI"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:462
+msgid ""
+"When 'SH pre' or other buttons on the editor don't pop up a dialog box, try "
+"to enable/disable this option.<br />If you use WordPress 3.0.6 or older, you "
+"should enable this option usually.<br />After this option is enabled, jQuery "
+"and jQuery UI will be loaded on the editor."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:466 wp-syntaxhighlighter-admin.php:506
+#: wp-syntaxhighlighter-admin.php:566 wp-syntaxhighlighter-admin.php:592
+msgid "Support shortcode"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:469
+msgid ""
+"This plugin will allow to use <a href=\"http://en.support.wordpress.com/code/"
+"posting-source-code/\">shortcode</a> in HTML editor for highlighting codes."
+"<br />If 'Support shortcode' in '7. bbPress Settings' is enabled, this "
+"option will also be enabled automatically."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:474
+msgid "4. Common Settings for Editor"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:478
+msgid "Allow users to post codes"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:480
+msgid "Allow users without unfiltered_htm capability to post a post with codes"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:481
+msgid ""
+"After you enable this option, users without <a href=\"http://codex.wordpress."
+"org/Roles_and_Capabilities\">unfiltered_html</a> capability can edit a post "
+"with codes in the editor.<br />Not all users can edit a post with codes, "
+"Allowed users are limited to users that can edit a post originally. e.g. "
+"Author and Contributor.<br />If you enable 'Highlight codes in bbPress' "
+"option, this option will be ignored and enabled virtually.<br />This plugin "
+"will also allow users that can edit a topic/reply in the editor to edit a "
+"topic/reply with codes automatically.<br />So, 'Forum Moderator' and 'Forum "
+"Participant' also can edit a topic/reply with codes in the editor within "
+"their capabilities."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:486
+msgid "5. Comment Form Settings"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:491
+msgid "Add Comment HL Button"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:494
+msgid ""
+"'Comment Highlighter buttons' helps visitors to post a comment with their "
+"sourcecodes and highlight them.<br />Visitors can wrap their sourcecode in "
+"<code>&lt;pre&gt;</code> tag or shortcode easily.<br />Before you use "
+"'Comment Highlighter buttons', you must enable 'comments' in 'Higlight your "
+"code in' option.<br />After this option is enabled, 'comments' will be "
+"enabled automatically."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:498 wp-syntaxhighlighter-admin.php:559
+#: wp-syntaxhighlighter-admin.php:585
+msgid "Tag inserted by buttons"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:500 wp-syntaxhighlighter-admin.php:561
+#: wp-syntaxhighlighter-admin.php:587
+msgid "&lt;pre&gt; tag"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:500 wp-syntaxhighlighter-admin.php:561
+#: wp-syntaxhighlighter-admin.php:587
+msgid "Shortcode"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:501 wp-syntaxhighlighter-admin.php:588
+msgid ""
+"If <code>&lt;pre&gt;</code> tag is chosen, visitors can wrap their "
+"sourcecode in <code>&lt;pre&gt;</code> tag easily using buttons.<br />This "
+"plugin also allows to use <a href=\"http://en.support.wordpress.com/code/"
+"posting-source-code/\">shortcode</a> instead of <code>&lt;pre&gt;</code> tag."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:510 wp-syntaxhighlighter-admin.php:595
+msgid ""
+"This plugin will allow to use <a href=\"http://en.support.wordpress.com/code/"
+"posting-source-code/\">shortcode</a> for highlighting codes.<br />After "
+"'Shortcode' is chosen in 'Tag inserted by buttons' option, this option will "
+"be enabled automatically."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:512
+msgid ""
+"This plugin will allow to use <a href=\"http://en.support.wordpress.com/code/"
+"posting-source-code/\">shortcode</a> for highlighting codes.<br />Before you "
+"enable this option, you must enable 'comments' in 'Higlight your code in' "
+"option."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:518 wp-syntaxhighlighter-admin.php:606
+msgid "Description"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:520 wp-syntaxhighlighter-admin.php:608
+msgid "Add description"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:522
+msgid "Enter description that is shown before the comment form."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:530
+msgid "If it is needed, define additional stylesheet for the comment form."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:536
+msgid "6. Comment Editor Settings"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:543
+msgid ""
+"Enable/Disable Quicktag, 'SH pre' button. It can help you to type <code>&lt;"
+"pre&gt;</code> tag in 'Comment Editor'.<br />'SH pre' button makes easy to "
+"escape your code to HTML entities and wrap it in <code>&lt;pre&gt;</code> "
+"tag.<br />Note: Only when 'comments' in 'Higlight your code in' option is "
+"enabled, It will be shown on 'Comment Editor' in the admin panel."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:550
+msgid ""
+"When 'SH pre' or other buttons on 'Comment Editor' don't pop up a dialog "
+"box, try to enable/disable this option.<br />If you use WordPress 3.2.1 or "
+"older, you should enable this option usually.<br />After this option is "
+"enabled, jQuery and jQuery UI will be loaded on 'Comment Editor'.<br />Note: "
+"Only when 'comments' in 'Higlight your code in' option is enabled, jQuery "
+"and jQuery UI will be loaded."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:555
+msgid "7. WP SyntaxHighlighter Widget Settings"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:562
+msgid ""
+"If <code>&lt;pre&gt;</code> tag is chosen, By clicking buttons on the widget "
+"form, your sourcecode is wrapped in <code>&lt;pre&gt;</code> tag.<br />This "
+"plugin also allows to use <a href=\"http://en.support.wordpress.com/code/"
+"posting-source-code/\">shortcode</a> instead of <code>&lt;pre&gt;</code> tag."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:569
+msgid ""
+"This plugin will allow to use <a href=\"http://en.support.wordpress.com/code/"
+"posting-source-code/\">shortcode</a> in WP SyntaxHighlighter Widget for "
+"highlighting codes.<br />After 'Shortcode' is chosen in 'Tag inserted by "
+"buttons' option, this option will be enabled automatically."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:574
+msgid "8. bbPress Settings"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:578
+msgid "Add bbPress HL Button"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:581
+msgid ""
+"'bbPress Highlighter buttons' helps visitors to post a topic or reply with "
+"their sourcecodes and highlight them in bbPress.<br />Visitors can wrap "
+"their sourcecode in <code>&lt;pre&gt;</code> tag or shortcode easily.<br /"
+">After this option is enabled, 'Highlight codes in bbPress' will be enabled "
+"automatically."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:599
+msgid "Anonymous users"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:601
+msgid "Allow guest users to post a topic/reply with codes"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:602
+msgid ""
+"Allow guest users without accounts to post a topic/reply with codes.<br /"
+">Before you enable this option, you must enable 'Allow Anonymous Posting' in "
+"the bbPress setting panel."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:610
+msgid "Enter description that is shown before the post form."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:618
+msgid "If it is needed, define additional stylesheet for bbPress."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:624
+msgid "9. Default Languages Settings"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:635
+msgid ""
+"Define pre-loaded or dynamic-autoloaded languages by default.<br />You "
+"should disable unused languages to prevent inserting unnecessary elements "
+"into your posts or pages."
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:657 wp-syntaxhighlighter-admin.php:665
+msgid "Yes"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:658 wp-syntaxhighlighter-admin.php:666
+msgid "No"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:675
+msgid "Save Changes"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:678
+msgid "10. Restore all settings to default"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:683
+msgid "Reset All Settings"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:686
+msgid "11. Your Current Theme"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:710
+msgid "12. Your System Info"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:713
+msgid "Server OS:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:714
+msgid "PHP version:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:715
+msgid "MySQL version:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:716
+msgid "WordPress version:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:717
+msgid "Site URL:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:718
+msgid "WordPress URL:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:719
+msgid "WordPress language:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:720
+msgid "WordPress character set:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:721
+msgid "WordPress theme:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:722
+msgid "WP SyntaxHighlighter version:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:723
+msgid "WP SyntaxHighlighter DB version:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:724
+msgid "WP SyntaxHighlighter URL:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:725
+msgid "Your browser:"
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:729
+msgid "To report a bug ,submit requests and feedback, "
+msgstr ""
+
+#: wp-syntaxhighlighter-admin.php:729
+msgid ""
+"Use <a href=\"http://wordpress.org/tags/wp-syntaxhighlighter?forum_id=10"
+"\">Forum</a> or <a href=\"http://www.near-mint.com/blog/contact\">Mail From</"
+"a>"
+msgstr ""
+
+#: sh-tinymce-button-ins/window.php:16 sh-tinymce-button-box/window.php:16
+msgid "You are not allowed to access this file."
+msgstr ""
+
+#: sh-tinymce-button-ins/window.php:36 sh-tinymce-button-box/window.php:36
+msgid "Select Language"
+msgstr ""
+
+#: sh-tinymce-button-ins/window.php:71 sh-tinymce-button-box/window.php:77
+msgid "Insert"
+msgstr ""
+
+#: sh-tinymce-button-ins/window.php:74 sh-tinymce-button-box/window.php:80
+msgid "Cancel"
+msgstr ""
+
+#: sh-tinymce-button-ins/sh-tinymce-button-ins.php:58
+msgid "WP SyntaxHighlighter SHTB Select & Insert"
+msgstr ""
+
+#: sh-tinymce-button-box/window.php:70
+msgid "Your Code:"
+msgstr ""
+
+#: sh-tinymce-button-box/sh-tinymce-button-box.php:57
+msgid "WP SyntaxHighlighter SHTB CodeBox"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WP SyntaxHighlighter"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.near-mint.com/blog/software/wp-syntaxhighlighter"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin is code syntax highlighter based on <a href=\"http://"
+"alexgorbatchev.com/SyntaxHighlighter/\">SyntaxHighlighter</a> ver. 3.0.83 "
+"and ver. 2.1.382. Supported languages: Bash, C++, CSS, Delphi, Java, "
+"JavaScript, Perl, PHP, Python, Ruby, SQL, VB, XML, XHTML and HTML etc."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "redcocker"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.near-mint.com/blog/"
+msgstr ""

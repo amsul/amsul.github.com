@@ -1,0 +1,276 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Nicolas Kuttler
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Theme Switch in italiano\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/nkthemeswitch\n"
+"POT-Creation-Date: 2010-01-11 21:02+0100\n"
+"PO-Revision-Date: 2009-11-15 17:38+0100\n"
+"Last-Translator: Gianni Diurno (aka gidibao) <gidibao@gmail.com>\n"
+"Language-Team: Gianni Diurno | http://gidibao.net/ <gidibao@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#. #-#-#-#-#  nkthemeswitch.pot (Theme Switch 0.6.1.5)  #-#-#-#-#
+#. Plugin Name of an extension
+#: inc/admin.php:7 inc/admin.php:199 inc/widget.php:8 inc/widget.php:70
+msgid "Theme Switch"
+msgstr "Theme Switch"
+
+#: inc/admin.php:203
+msgid "This plugin has three basic configurations:"
+msgstr "Questo plugin ha tre configurazioni di base:"
+
+#: inc/admin.php:206
+msgid "Only admin"
+msgstr "solo l'admin"
+
+#: inc/admin.php:206
+msgid ""
+"This is useful for theme developers and to preview themes on live sites."
+msgstr "utile per gli sviluppatori di temi e per l'anteprima live dei temi."
+
+#: inc/admin.php:207
+msgid "Only with passkey"
+msgstr "solo con la passkey"
+
+#: inc/admin.php:207
+msgid ""
+"Send your clients preview links. I recommend to change the passkey from time "
+"to time to stop old links from working. Once the passkey has been accepted "
+"by the plugin the client could guess other working template names in theory."
+msgstr ""
+"invia ai tuoi clienti i link di anteprima. Ti invito a modificare di tanto "
+"in tanto la passkey in modo tale da fermare il funzionamento dei vecchi "
+"link. Una volta che la passkey sarà stata accettata dal plugin, il tuo "
+"cliente potrà in teoria visionare il funzionamento di altri template."
+
+#: inc/admin.php:208
+msgid "Everybody"
+msgstr "chiunque"
+
+#: inc/admin.php:208
+msgid ""
+"Theme switching for everybody. You want to add the widget and to modify the "
+"widget permissions accordingly."
+msgstr ""
+"il theme switching é disponibile per tutti. Aggiungi il widget e modifica di "
+"conseguenza i permessi ."
+
+#: inc/admin.php:212
+msgid ""
+"The <strong>cookie expire</strong> determines how long the theme switch "
+"stays in effect once it was requested. The default is five minutes, you "
+"probably want to change that."
+msgstr ""
+"La <strong>scadenza del cookie</strong> determina il periodo di attività del "
+"tema richiesto. Il valore predefinito (modificabile) é stato impostato a 5 "
+"minuti."
+
+#: inc/admin.php:216
+msgid ""
+"You can also add a cloud of theme switching links to any post or page by "
+"using the <tt>[nkthemeswitch]</tt> shortcode. Use <tt>[nkthemeswitch "
+"mode=screenshot]</tt> to display the screenshots instead of names. The "
+"shortcode adds a link to the plugin homepage to your footer."
+msgstr ""
+"Puoi anche aggiungere ad ogni articolo/pagina una cloud con i link ai temi "
+"disponibili utilizzando lo shortcode <tt>[nkthemeswitch]</tt>. Usa <tt>"
+"[nkthemeswitch mode=screenshot]</tt> per mostrare gli screenshot al posto "
+"dei nomi. Lo shortcode aggiungerà nel footer un link allahomepage del plugin."
+
+#: inc/admin.php:219
+msgid "Configuration"
+msgstr "Configurazione"
+
+#: inc/admin.php:226
+msgid "Enable theme switching"
+msgstr "Abilita il theme switching"
+
+#: inc/admin.php:238
+msgid "Enable theme switching in the admin area (for theme options)"
+msgstr "Attiva in amministrazione il theme switching (per le opzioni tema)"
+
+#: inc/admin.php:249
+msgid "Who can switch themes"
+msgstr "Chi può commutare i temi"
+
+#: inc/admin.php:260
+msgid "Who can see the widget"
+msgstr "Chi può vedere il widget"
+
+#: inc/admin.php:271
+msgid "Passkey for theme preview links"
+msgstr "Passkey per i link di anteprima"
+
+#: inc/admin.php:282
+msgid "Cookie expire (seconds)"
+msgstr "Scadenza cookie (secondi)"
+
+#: inc/admin.php:293
+msgid "Exclude default themes"
+msgstr "Escludi i temi predefiniti"
+
+#: inc/admin.php:304
+msgid "Save Changes"
+msgstr "Salva le modifiche"
+
+#: inc/admin.php:312
+#, php-format
+msgid "The default theme is <strong>%s</strong>."
+msgstr "Il tema predefinito é <strong>%s</strong>."
+
+#: inc/admin.php:317
+msgid "Preview links for your customers"
+msgstr "Link di anteprima per i committenti"
+
+#: inc/admin.php:324
+msgid "Open theme in new window"
+msgstr "Apri il tema in una nuova finestra."
+
+#: inc/admin.php:330
+msgid "Reset"
+msgstr "Ripristina"
+
+#: inc/admin.php:335
+msgid "Reset Settings"
+msgstr "Impostazioni ripristino"
+
+#: inc/nkuttler.php:25
+msgid "Do you like this plugin?"
+msgstr "Ti piace questo plugin?"
+
+#: inc/nkuttler.php:33
+msgid "<a href=\"%s\">Rate</a> it"
+msgstr "<a href=\"%s\">Votalo</a>"
+
+#: inc/nkuttler.php:36
+#, php-format
+msgid "<a href=\"%s\">Visit</a> it's homepage"
+msgstr "<a href=\"%s\">visita</a> la sua homepage"
+
+#: inc/nkuttler.php:39
+#, php-format
+msgid "<a href=\"%s\">Subscribe</a> the feed"
+msgstr "<a href=\"%s\">abbonati</a> al feed RSS"
+
+#: inc/nkuttler.php:42
+msgid "<a href=\"%s\">Donate</a>!"
+msgstr "<a href=\"%s\">Donazioni</a>!"
+
+#: inc/nkuttler.php:45
+msgid "About the author"
+msgstr "Info autore"
+
+#: inc/nkuttler.php:48
+#, php-format
+msgid "My <a href=\"%s\">blog</a>"
+msgstr "il mio <a href=\"%s\">blog</a>"
+
+#: inc/nkuttler.php:51
+#, php-format
+msgid "Subscribe via <a href=\"%s\">RSS</a> or <a href=\"%s\">email</a>"
+msgstr ""
+"abbonati al feed <a href=\"%s\">RSS</a> oppure via <a href=\"%s\">email</a>"
+
+#: inc/nkuttler.php:55
+msgid "My other plugins"
+msgstr "I miei plugin"
+
+#: inc/nkuttler.php:56
+msgid "<a href=\"http://www.nkuttler.de\">Translated by Nicolas</a>"
+msgstr "<a href=\"http://gidibao.net\">Tradotto da Gianni Diurno</a>"
+
+#: inc/themeswitch.php:227
+#, php-format
+msgid "<a href=\"%s\">WordPress Theme Switch Plugin</a>"
+msgstr "<a href=\"%s\">WordPress Theme Switch Plugin</a>"
+
+#. Plugin URI of an extension
+msgid "http://www.nkuttler.de/nkthemeswitch/"
+msgstr "http://www.nkuttler.de/nkthemeswitch/"
+
+#. Description of an extension
+msgid ""
+"Use a different wordpress theme for logged in user. Nice for theme "
+"development."
+msgstr ""
+"Usa un tema differente per gli utenti collegati. Funzione utile per lo "
+"sviluppo di un tema."
+
+#. Author of an extension
+msgid "Nicolas Kuttler"
+msgstr "Nicolas Kuttler"
+
+#. Author URI of an extension
+msgid "http://www.nkuttler.de/"
+msgstr "http://www.nkuttler.de/"
+
+#. Select box
+msgid "Enable"
+msgstr "attiva"
+
+#. Select box
+msgid "Disable"
+msgstr "disattiva"
+
+#~ msgid "Theme switch"
+#~ msgstr "Theme switch"
+
+#~ msgid ""
+#~ "There's also a widget that you can enable in the <tt>Appearance</tt> or "
+#~ "<tt>Design</tt> section if your theme is widget-ready. Please notice that "
+#~ "the widget will change the theme for all logged in user of the specified "
+#~ "level, not for one individual user."
+#~ msgstr ""
+#~ "E' disponibile un widget attivabile sotto <tt>Aspetto</tt> o <tt>Design</"
+#~ "tt> qualora il tuo tema fosse widget-ready. Ti ricordo che il widget "
+#~ "cambierà il tema solamente per tutti gli utenti collegati appartenenti ad "
+#~ "uno specifico livello e non per un solo utente specifico."
+
+#~ msgid "Condition for theme switching?"
+#~ msgstr "Condizioni per il theme switching?"
+
+#~ msgid "Which theme should this group of users see?"
+#~ msgstr "Quale tema desideri venga visualizzato da questo gruppo di utenti?"
+
+#~ msgid "Preview links"
+#~ msgstr "Link anteprima"
+
+#~ msgid ""
+#~ "This feature was requested, but I didn't really have much time to think "
+#~ "much about security. Make sure a passkey is selected and change it from "
+#~ "time to time by using the select box. Changing the key will disable all "
+#~ "previous preview links.  I don't think this works with any caching "
+#~ "enabled."
+#~ msgstr ""
+#~ "Accertati che la passkey sia stata selezionata e modificala di tanto in "
+#~ "tanto utilizzando la casella di selezione. Il cambio della chiave "
+#~ "disattiverà i link di anteprima precedenti. Questa funzione non é "
+#~ "disponibile con la cache attivata."
+
+#~ msgid "Preview"
+#~ msgstr "Anteprima"
+
+#~ msgid "Passkey"
+#~ msgstr "Passkey"
+
+#~ msgid "Example link: "
+#~ msgstr "Link di esempio:"
+
+#~ msgid ""
+#~ "This theme doesn't seem to exist.<br>Please contact your theme developer"
+#~ msgstr "Pare che questo tema non esista.<br>Contatta l'autore del tema"
+
+#~ msgid "Developer"
+#~ msgstr "Sviluppatore"
+
+#~ msgid "Switch"
+#~ msgstr "Commuta"

@@ -1,0 +1,7 @@
+#. Select box
+msgid "Enable"
+msgstr ""
+
+#. Select box
+msgid "Disable"
+msgstr ""

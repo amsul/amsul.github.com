@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Readme</title>
+</head>
+<style type="text/css">
+<!--
+body {
+font-family: Lucida Grande, Verdana, sans-serif;
+}
+
+code {
+font-size: 1.3em
+}
+
+div.success {
+background: #0f0;
+width: 50%;
+margin: 0 auto;
+padding: 1px 10px;
+border: 3px solid #0d0;
+}
+
+div.error {
+padding: 1px 10px;
+margin: 30px auto;
+}
+
+div.error p {
+font-weight: bold;
+}
+
+div.error ul {
+list-style: square;
+}
+
+div.fatal {
+background: #faa;
+border: 3px solid #d00;
+}
+
+div.warning {
+background: #f60;
+border: 3px solid #e40;
+}
+
+div.note {
+background: #5cf;
+border: 3px solid #3ad;
+}
+
+-->
+</style>
+<body>
+	<hr />
+
+	<h1>Theme Switch and Preview</h1>
+
+	<p><em>Allows admins or all visitors to switch the blog theme. Has a restricted preview mode for your clients and includes a widget.</em></p>
+
+	<hr />
+
+	<p>
+		<strong>Contributors:</strong> <a href="http://www.nkuttler.de/">nkuttler</a>, <a href="http://www.nicolaskuttler.de">Nicolas Kuttler (de)</a><br />
+	<strong>Donate link:</strong> <a href="http://www.nkuttler.de/wordpress/donations/">http://www.nkuttler.de/wordpress/donations/</a> <br />
+	<strong>Tags:</strong> <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">theme</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">themes</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">template</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">templates</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">switch</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">theme development</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">admin</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">plugin</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">widget</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">widgets</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">preview</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">theme preview</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">wpmu</a>, <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">multisite</a>, <br />
+	<strong>Requires at least:</strong> 2.7<br />
+	<strong>Tested up to:</strong> 3.0<br />
+	<strong>Stable tag:</strong> 0.9.0.1	</p>
+
+	<hr />
+
+		<h3>Description</h3>
+	<p>The plugin is great for theme development as you can tweak the template online without breaking stuff for visitors. You can also use it for presentations, to show off various templates.  There is a widget and a theme cloud shortcode to make this easier.</p>
+
+<p>This plugin has three basic configurations:</p>
+
+<ul>
+<li><strong>Only admin</strong>: This is useful for theme developers and to preview themes on live sites.</li>
+<li><strong>Only with passkey</strong>: Send your clients preview links. They won't need an account on your blog for this to work.</li>
+<li><strong>Everybody</strong>: Theme switching for everybody.</li>
+</ul>
+
+<h4>Usage</h4>
+
+<p>The easiest way to use this plugin is to drag the widget into one of your sidebars.</p>
+
+<p>There is as well the shortcode [nkthemeswitch]. Examples:</p>
+
+<ol>
+<li>[nkthemeswitch] This displays the theme switch cloud as text links.</li>
+<li>[nkthemeswitch mode="screenshot"] This displays the switch links with screenshots.</li>
+<li>[nkthemeswitch mode="screenshot" addname="yes"] This displays the switch links with screenshots and the theme name.</li>
+</ol>
+
+<h4>Using the switch cloud in your theme</h4>
+
+<p>You can call the function <code>nkthemeswitch_cloud()</code> from your theme to get the theme switch cloud. Example:</p>
+
+<pre><code>if ( function_exists( 'nkthemeswitch_cloud' ) ) {
+    echo nkthemeswitch_cloud( $target = '_blank', $passkey = false, $screenshot = false, $addname = false );
+}
+</code></pre>
+
+<p>Parameters:</p>
+
+<ul>
+<li>target: link target attribute</li>
+<li>passkey: add the passkey to the links. This might be useful if you use passkeys.</li>
+<li>screenshot: display screenshots instead of name</li>
+<li>addname: add theme names to screenshots</li>
+</ul>
+
+<h4>My plugins</h4>
+
+<p><a href="http://www.nkuttler.de/2010/06/07/wpmu-switch-backend/">MU fast backend switch</a>: Switch between your MU blog backends with one click</p>
+
+<p><a href="http://www.nkuttler.de/2010/05/21/record-movies-of-visitors/">Visitor Movies for WordPress</a>: Did you ever want to know what your visitors are really doing on your site? Watch them!</p>
+
+<p><a href="http://www.nkuttler.de/wordpress/custom-avatars-for-comments/">Custom Avatars For Comments</a>: Your visitors will be able to choose from the avatars you upload to your website for each and every comment they make.</p>
+
+<p><a href="http://www.nkuttler.de/wordpress/nktagcloud/">Better tag cloud</a>: I was pretty unhappy with the default WordPress tag cloud widget. This one is more powerful and offers a list HTML markup that is consistent with most other widgets.</p>
+
+<p><a href="http://www.nkuttler.de/wordpress/nkthemeswitch/">Theme switch</a>: I like to tweak my main theme that I use on a variety of blogs. If you have ever done this you know how annoying it can be to break things for visitors of your blog. This plugin allows you to use a different theme than the one used for your visitors when you are logged in.</p>
+
+<p><a href="http://www.nkuttler.de/wordpress/zero-conf-mail/">Zero Conf Mail</a>: Simple mail contact form, the way I like it. No ajax, no bloat. No configuration necessary, but possible.</p>
+
+<p><a href="http://www.nkuttler.de/wordpress/nkmovecomments/">Move WordPress comments</a>: This plugin adds a small form to every comment on your blog. The form is only added for admins and allows you to <a href="http://www.nkuttler.de/nkmovecomments/">move comments</a> to a different post/page and to fix comment threading.</p>
+
+<p><a href="http://www.nkuttler.de/wordpress/delete-pending-comments">Delete Pending Comments</a>: This is a plugin that lets you delete all pending comments at once. Useful for spam victims.</p>
+
+<p><a href="http://www.nkuttler.de/wordpress/nksnow/">Snow and more</a>: This one lets you see snowflakes, leaves, raindrops, balloons or custom images fall down or float upwards on your blog.</p>
+
+<p><a href="http://www.nkuttler.de/wordpress/nkfireworks/">Fireworks</a>: The name says it all, see fireworks on your blog!</p>
+
+<p><a href="http://www.rhymebox.de/blog/rhymebox-widget/">Rhyming widget</a>: I wrote a little online <a href="http://www.rhymebox.com/">rhyming dictionary</a>. This is a widget to search it directly from one of your sidebars.</p>	<hr />
+		<h3>Installation</h3>
+	<p>Unzip, upload to your plugin directory, enable the plugin and configure it as needed. If you want to add the developer widget do that in your dashboard's Design section.</p>	<hr />
+		<h3>Frequently Asked Questions</h3>
+	<p>Q: I need the plugin to work for everybody, not just logged in users.<br />
+A: This is possible since 0.6.0.</p>
+
+<p>Q: The preview links don't work!<br />
+A: Please check if you have some cache activated, that will most likely prevent the preview links from working. WP Super Cache only works in <strong>HALF ON</strong> mode.</p>
+
+<p>Q: The previews look broken!<br />
+A: Do you use a complex theme with theme options? Some themes need to be activated for real at least once before they work.</p>
+
+<p>Q: How do I exclude themes from being shown in the widget or the cloud?&lt;br/&gt;
+A: Add Status: unpublished to the header of the theme's style.css.</p>
+
+<p>Q: I use a &gt;= 3.0 multisite install and don't want inactive themes to be shown on certain blogs. Anything I can do?&lt;br/&gt;
+A: Add define( 'NKTHEMESWITCH_LOAD_MS', true ); to your install's wp-config.php. Careful, this might break on upgrades as I had to copy stuff from wp-admin/ into the plugin. Not very likely but possible. I'm not sure I'll continue to support this in the future. I probably won't test it, so report any bugs.</p>
+
+<p>Q: My site went blank when I used your plugin, what should I do?&lt;br/&gt;
+A: Deactivate the plugin in the admin section. Remove the plugin files from your server if that doesn't work.</p>	<hr />
+		<h3>Screenshots</h3>
+	<ol>
+<li>The configuration menu, including preview links for you or for customers (if passkeys are allowed).</li>
+<li>The text theme cloud. No default CSS included in the plugin. See the demo at the <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">theme switch and preview plugin</a> site.</li>
+<li>The screenshot theme cloud. The screenshots won't be resized or anything. See the demo at <a href="http://www.nkuttler.de/wordpress/theme-switch-and-preview-plugin/">theme switch and preview plugin</a> site.</li>
+</ol>	<hr />
+		<h3>Changelog</h3>
+	<h4>0.9.0.1 ( 2010-07-16 )</h4>
+
+<ul>
+<li>Make the multisite feature really work. Hopefully.</li>
+</ul>
+
+<h4>0.9 ( 2010-07-14 )</h4>
+
+<ul>
+<li>Make it possible to exclude themes that aren't activated on a multisite ( &gt;= 3.0 ) install. Please see the FAQ for details.</li>
+</ul>
+
+<h4>0.8 ( 2010-06-12 )</h4>
+
+<ul>
+<li>Incompatible change in nkthemeswitch_cloud() parameters. If you call this function from your theme you'll need to update your code.</li>
+<li>Documentation update</li>
+<li>Make it possible to show screenshots with theme names.</li>
+<li>Bugfix for cloud with screenshots: Show text link when no screenshot exists</li>
+</ul>
+
+<h4>0.7.4.1 ( 2010-05-27 )</h4>
+
+<ul>
+<li>Bugfix for theme cloud and unpublished themes.</li>
+<li>Fix donation link</li>
+<li>Update docs</li>
+</ul>
+
+<h4>0.7.4 ( 2010-05-12 )</h4>
+
+<ul>
+<li>Make it possible to use an unordered list for the theme cloud, thanks to Helen for the suggestion!</li>
+</ul>
+
+<h4>0.7.3.1 ( 2010-04-04 )</h4>
+
+<ul>
+<li>Really exclude the new theme</li>
+</ul>
+
+<h4>0.7.3 ( 2010-04-02 )</h4>
+
+<ul>
+<li>Exclude the new WordPress 3.0 default theme as well if requested.</li>
+</ul>
+
+<h4>0.7.2 ( 2010-03-24 )</h4>
+
+<ul>
+<li>Add a title to the widget as requested by <a href="http://www.mywordpress.co.uk/">ukmaceman</a>. Thanks for the suggestion!</li>
+<li>Fix problems with the widget when no permalinks are used.</li>
+</ul>
+
+<h4>0.7.1 ( 2010-03-17 )</h4>
+
+<ul>
+<li>This release should fix the problem that theme editing isn't possible when the plugin is active. Reported first by <a href="http://selena-li.com/">Lizzy</a>, thank you!</li>
+</ul>
+
+<h4>0.7.0.1</h4>
+
+<ul>
+<li>Restore the widget, thanks <a href="http://richimages.net/">Richard Walters</a></li>
+</ul>
+
+<h4>0.7.0</h4>
+
+<ul>
+<li>Fix for when WordPress is installed into a subdirectory. Thanks <a href="http://ten-fingers-and-a-brain.com">Martin</a>.</li>
+<li>Add noscript submit button to theme switch dropdown widget.</li>
+<li>Update docs and translations.</li>
+</ul>
+
+<h4>0.6.1.5</h4>
+
+<ul>
+<li>Fix the problem behind the bug, not the symptoms. Thanks again Richard!</li>
+</ul>
+
+<h4>0.6.1.4</h4>
+
+<ul>
+<li>Really fix the bug. And another one.</li>
+</ul>
+
+<h4>0.6.1.3</h4>
+
+<ul>
+<li>Fix incorrect widget URIs for the home page as reported by <a href="http://www.richimages.net/">Richard Walters</a>.</li>
+</ul>
+
+<h4>0.6.1.2</h4>
+
+<ul>
+<li>Fix incorrect preview/switch URIs as reported by melanie.</li>
+</ul>
+
+<h4>0.6.1.1</h4>
+
+<ul>
+<li>Don't display unpublished themes in the cloud</li>
+</ul>
+
+<h4>0.6.1</h4>
+
+<ul>
+<li>Added option to exclude the default and classic themes from the widget and theme cloud.</li>
+<li>Stay on the same blog page when switching with the widget.</li>
+<li>Stay on the same blog page when switching without permalinks enabled.</li>
+<li>Add icon by <a href="http://www.famfamfam.com">famfamafm</a> to the <a href="http://planetozh.com/blog/my-projects/wordpress-admin-menu-drop-down-css/">Admin Drop Down Menu</a>.</li>
+<li>Add italian translation, thanks to <a href="http://gidibao.net/">Gianni</a>!</li>
+<li>Bugfixes</li>
+</ul>
+
+<h4>0.6.0.1</h4>
+
+<ul>
+<li>Switch links from the cloud didn't work with pretty permalinks enabled. And switching is allowed to admins when passkeys are enabled.</li>
+</ul>
+
+<h4>0.6.0</h4>
+
+<ul>
+<li>Big rewrite, add ideas and code from <a href="http://boren.nu/">Ryan Boren's</a> <a href="http://wordpress.org/extend/plugins/theme-switcher/">Theme Switcher</a> plugin. His plugin is much smaller and more efficient than mine, but it offers no admin-only previews, configuration screens, shortcodes etc.</li>
+<li>Theme switching for everybody, even anonymous users possible.</li>
+<li>Shortcode for theme switch cloud. No default CSS included.</li>
+<li>Shortcode for screenshots of all themes. No screenshot resize built-in.</li>
+<li>Update german translation.</li>
+</ul>
+
+<h4>0.5.0</h4>
+
+<ul>
+<li>I18N</li>
+<li>Add german translation</li>
+<li>Improve security and make code more efficient.</li>
+<li>Switching is only available to admins. I think the user level thing never worked, please report if it did for you.</li>
+<li>Please attach patches to feature requests.</li>
+</ul>
+
+<h4>0.4.2</h4>
+
+<ul>
+<li>Fix typos</li>
+<li>Fix bad upgrade bug that deletes plugin settings</li>
+</ul>
+
+<h4>0.4.1</h4>
+
+<ul>
+<li>New FAQ entries</li>
+<li>Doc updates</li>
+</ul>
+
+<h4>0.4.0</h4>
+
+<ul>
+<li>Add preview links</li>
+<li>Add &lt;select&gt; building helper function</li>
+<li>Add install hook</li>
+<li>Use WordPress CSS for submit buttons</li>
+<li>Fix FAQ formatting</li>
+</ul>
+
+<h4>0.3.6</h4>
+
+<ul>
+<li>Added a FAQ entry</li>
+</ul>
+
+<h4>0.3.5</h4>
+
+<ul>
+<li>Sort themes alphabetically, thanks to <a href="http://wordpress.xklaim.com/">xklaim</a> for the suggestion</li>
+</ul>
+
+<h4>0.3.4</h4>
+
+<ul>
+<li>Doc updates, fix typo<br /></li>
+</ul>
+
+<h4>0.3.3</h4>
+
+<ul>
+<li>Minor updates<br /></li>
+</ul>
+
+<h4>0.3.2</h4>
+
+<ul>
+<li>Compatibility tests<br /></li>
+</ul>
+
+<h4>0.3.1</h4>
+
+<ul>
+<li>Bugfix<br /></li>
+</ul>
+
+<h4>0.3.0</h4>
+
+<ul>
+<li>Add a Widget, better settings page, Documentation updates<br /></li>
+</ul>
+
+<h4>0.2.1</h4>
+
+<ul>
+<li>Documentation updates, correct version numbering<br /></li>
+</ul>
+
+<h4>0.01</h4>
+
+<ul>
+<li>Ready plugin for upload at the <a href="http://wordpress.org/">WordPress</a> site<br /></li>
+</ul>	<hr />
+	
+	<h3>Upgrade Notice</h3>
+	<dl>
+		<dt>0.8.0</dt>
+		<dd>Incompatible change in nkthemeswitch_cloud() parameters. If you call this function from your theme you&#039;ll need to update your code.</dd>
+		<dt>0.7.1</dt>
+		<dd>Fix theme editing.</dd>
+		<dt>0.7.0</dt>
+		<dd>This is a maintenance release with one big internal but no big visible changes. Priority: Low.</dd>
+	</dl>
+
+	

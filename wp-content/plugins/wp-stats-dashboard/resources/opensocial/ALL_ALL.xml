@@ -1,0 +1,6 @@
+<messagebundle>
+  <msg name="title">Social Metrics</msg>
+  <msg name="description">WP-Stats-Dashboard Social Metrics Gadget</msg>
+  <msg name="screenshot">http://www.daveligthart.com/opensocial/socialmetrics/logo-150x150.png</msg>
+  <msg name="thumbnail">http://www.daveligthart.com/opensocial/socialmetrics/logo-150x150.png</msg>
+</messagebundle>

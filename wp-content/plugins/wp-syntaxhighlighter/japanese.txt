@@ -1,0 +1,673 @@
+はじめに
+
+「WP SyntaxHighlighter」は、ソースコードをハイライト表示させるためのプラグインです。
+
+Bash、C++、CSS、Delphi、Java、JavaScript、Perl、PHP、Python、Ruby、SQL、VB、XML、XHTML、HTMLを始めとする多数の開発言語、スクリプト、マークアップ言語をサポートしています。
+
+このプラグインは、JavaスクリプトライブラリのSyntaxHighlighter バージョン3.0.83　および、2.1.382を使用しています。
+
+SyntaxHighlighter: http://alexgorbatchev.com/SyntaxHighlighter/
+
+
+特徴
+・Javaスクリプトライブラリ「SyntaxHighlighter」を採用。
+・バージョン3.0.83および2.1.382の２つのライブラリを切り替えて利用可。
+・操作が簡単なTinyMCEボタンとQuicktagボタン。
+・エディターからボタンを使って<pre>タグを入力出来き、オプションの変更も可能。
+・ショートコードもサポート。
+・コメント欄のソースコードもボタンを使って簡単にハイライト表示可。（WordPress 3.0以上）
+・ソースコードの強調表示が可能なウィジェット。
+・「bbPress」プラグイン バージョン2.0以上をサポート。
+・「Dynamic Brush Loading」をサポート。必要な言語設定ファイルのみが動的に読み込まれます。
+・ハイライト対象のコードを含む投稿、固定ページ、ホーム、カテゴリー、アーカイブ、検索結果、コメントでのみ、Javaスクリプトが読み込まれます。
+・「SyntaxHighlighter」の殆どのオプションを網羅する設定画面。
+・管理画面やメッセージは、英語と日本語(UTF-8)に対応。
+
+= サポートする言語 =
+
+AppleScript、ActionScript3、Bash、ColdFusion、C、C++、C#、CSS、Delphi、Diff、Erlang、Groovy、HTML、Java、Java FX、JavaScript、Pascal、Patch、Perl、PHP、Plain text、PowerShell、Python、Ruby、Ruby on Rails、Sass、SCSS、Shell、SQL、VB、VB NET、XHTML、XML、XSLT
+
+バンドルされているサンプルプラグインを使えば、次の言語を追加することも出来ます
+
+Biferno、Clojure、DOSバッチファイル、F#、LISP、Lua（SyntaxHighlighter 3.0のみ)、MEL Script、Objective-C、PowerCLI、Processing、R、S、S-PLUS、Tcl、Verilog、Vim Script、YAML
+
+詳しくは、「sample」ディレクトリを参照のこと。
+
+※一部の言語は「SyntaxHighlighter 3.0」のみに対応。
+
+= オススメのプラグイン =
+
+SyntaxHighlighter TinyMCE Button」は、ビジュアエディター（TinyMCE）に「SyntaxHighlighter」のための高機能な２つのボタンを追加します。
+
+SyntaxHighlighter TinyMCE Button: http://wordpress.org/extend/plugins/syntaxhighlighter-tinymce-button/
+
+「CodeMirror for CodeEditor」は、テーマエディター、プラグインエディターのソースコードを強調表示し、便利なツールバーを追加します。
+
+CodeMirror for CodeEditor: http://wordpress.org/extend/plugins/codemirror-for-codeeditor/
+
+
+1.動作環境
+
+・WordPress バージョン2.8 以上、3.0以上推奨
+
+
+2.インストール
+
+・ダウンロードしたファイルを解凍し、「wp-syntaxhighlighter」フォルダごと、WordPressのプラグインディレクトリ（wp-content/plugins/）にアップロードします。
+・WordPressの管理画面の「プラグイン」で、このプラグインを有効化します。
+・WordPressの管理画面の「設定」の中の「WP SyntaxHighlighter」という項目で設定を行います。
+
+
+3.アップデート
+
+WordPressの管理画面で、「WP SyntaxHighlighter」を停止し、インストールの要領でファイルをサーバーにアップロード、上書きした後、再度、有効化する。
+
+
+4.アンインストール
+
+WordPressの管理画面で、まずプラグインを停止し、削除を実行する。
+
+
+5.使い方
+
+5-1.ビジュアルエディターを使って記事を書く場合
+
+注意：「SH TinyMCE Button」は、標準のビジュアルエディター「TinyMCE」にのみ対応しています。他のビジュアルエディター（例：CKEditor）は、サポートしていません。
+
+注意：「unfiltered_html」権限を持たないユーザーは、<!--[XXXX]-->をコード内で使用することは出来ません。
+XXXX＝0-9、A-F、a-fで構成される2から4文字の文字列。
+
+※「SH TinyMCE Button」を使って、投稿やページ上に既にあるソースコードをハイライト表示させたい場合。
+
+・ハイライト表示させるソースコードを選択し、反転表示させる。
+・「pre」ボタンをクリックする。
+・言語とオプションを選択する。
+・「挿入」ボタンをクリックする。
+
+
+※「SH TinyMCE Button」を使って、ソースコードを投稿やページにペーストしたい場合。
+
+・「CODE」ボタンをクリックする。
+・言語とオプションを選択し、ソースコードをテキストボックスにペーストする。
+・「挿入」ボタンをクリックする。
+
+
+※「SH TinyMCE Button」を使って、ハイライト表示済みのソースコードの言語やオプションを変更したい場合。
+
+・設定を変更したいソースコードを選択し、反転表示させる。
+・「pre」ボタンをクリックする。
+・言語とオプションを変更する。
+・「更新」ボタンをクリックする。
+
+
+※ソースコードをタブでインデントさせる場合。
+
+・単にTABを入力します。ただし、<pre>タグでマークアップ済みのソースコードでなければ、TABによるインデントは有効になりません。
+
+
+5-2.HTMLエディターを使って記事を書く場合
+
+注意：「unfiltered_html」権限を持たないユーザーは、<!--[XXXX]-->をコード内で使用することは出来ません。
+XXXX＝0-9、A-F、a-fで構成される2から4文字の文字列。
+
+※「SH pre」ボタンを使って、投稿やページ上に既にあるソースコードをハイライト表示させたい場合。
+
+注意：「SH pre」ボタンを使うには、設定画面で「HTMLエディターの設定」の「Quicktagボタンを追加」を有効にする必要があります。
+
+・ハイライトボタン表示させるソースコードを選択し、反転表示させる。
+・「SH pre」ボタンをクリックする。
+・言語とオプションを選択する。
+・「OK」ボタンをクリックする。
+
+
+※ボタンを使わずに<pre>タグでマークアップする場合
+
+下記の文法に従い、HTMLエディターやビジュアルエディターの「整形済み」スタイルを使用して<pre>タグでソースコードをマークアップします。
+
+エスケープする文字：<、>、&、"、'
+
+文法：ハイライト表示したいコード を<pre>タグでマークアップします。
+
+書式: <pre class="brush: 言語名">コード</pre>
+*lang = your language
+
+例1: <pre class="brush: php">PHP コード</pre>
+例2: <pre class="brush: xhtml">XHTML コード</pre>
+
+使用可能な言語: http://alexgorbatchev.com/SyntaxHighlighter/manual/brushes/
+＊表中の「Brush aliases」が言語名になります。
+
+保存時にソースコードは、自動的にエスケープされますので、予めソースコードをエスケープする必要はありませんが、ビジュアルエディターに切り替えると、ソースコードは破壊されてしまいます。
+これを防止するために、予めソースコードをエスケープするか、ビジュアルエディターに切り替える前に、一旦、保存して下さい。
+
+注意：ソースコードに</pre>が含まれる場合は、予め、</pre>を<!--[/pre]-->で置き換えて下さい。
+
+言語以外にもオプションの指定が可能です。
+
+例3: <pre class="brush: xhtml; first-line: 10">XHTML コード</pre>
+例4: <pre class="brush: php; html-script: true">PHP コード</pre>
+
+使用可能なオプション: http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/
+
+<script>タグを用いた記述にも対応していますが、<script>タグの使用は避けて下さい。<script>タグは、HTMLエディターでしか入力出来ませんし、また、ビジュアルエディターに切り替えると、入力したタグが消去されてしまいます。
+
+<script>タグを使用する場合は、このプラグインでは、ソースコードをエスケープする必要があります。
+
+エスケープする文字：<、>、&
+
+
+※ボタンを使わずにショートコードでマークアップする場合
+
+ショートコードで、ソースコードをマークアップする事も出来ます。
+
+注意：ショートコードを使うには、設定画面で「HTMLエディターの設定」の「ショートコードをサポート」を有効にする必要があります。
+
+注意：コードを含む投稿をビジュアルエディターで表示したり、HTMLエディターからビジュアルエディターに切り替えないで下さい。ビジュアルエディターで表示すると、ショートコードでマークアップされたコードは破壊されます。
+
+例：[sourcecode language="php" gutter="true" firstline="1" highlight="" htmlscript="false"]PHP コード[/sourcecode]
+例：[sourcecode lang="xhtml" gutter="true" firstline="1" highlight="" htmlscript="false"]XHTML コード[/sourcecode]
+
+ショートコードは、「WordPress.com」で使用されてる書式と互換性があります。
+
+http://en.support.wordpress.com/code/posting-source-code/
+
+コードを入力する際に、コードをエスケープする必要はありません。自動的にエスケープされます。
+
+
+5-3.コメントにソースコードを書く場合。
+
+注意：設定画面の「ハイライト表示するページ」で「コメント」を有効にすると、ブログの訪問者もコメントとしてソースコードの投稿が可能になります。
+
+注意：コメント欄のハイライト機能は、標準のコメント欄に依存しています。コメント欄を別のコメントシステム（DISQUS 等）で置き換えている場合や、閉じている場合は、コメント欄のソースコードはハイライトされませんし、「Comment Highlighter ボタン」も表示されません。
+
+注意：「unfiltered_html」権限を持たないユーザーは、<!--[XXXX]-->をコード内で使用することは出来ません。
+XXXX＝0-9、A-F、a-fで構成される2から4文字の文字列。
+
+もし、WordPress 3.0以上をお使いならば、設定画面で「Comment Highlighter ボタン」を有効にすることを勧めします。「Comment Highlighter ボタン」を使えば、サイトの訪問者は簡単にソースコードをコメントとして投稿し、ハイライトすることが出来ます。
+
+
+※「<pre>タグ」ボタンを使う場合
+
+・ソースコードをコメント欄にペーストします。
+・ペーストしたソースコード全体を選択し、反転表示させます。
+・コメント欄に表示されているテキストリンクボタンをクリックします。
+・ソースコードが<pre>タグでマークアップされ、コメントの送信後に強調表示に変わります。
+
+ソースコードをエスケープする必要はありません。保存時に自動的にエスケープされます。
+
+注意：<!--[/pre]-->が含まれるソースコードは処理できません。
+
+
+※「ショートコード」ボタンを使う場合
+
+・ソースコードをコメント欄にペーストします。
+・ペーストしたソースコード全体を選択し、反転表示させます。
+・コメント欄に表示されているテキストリンクボタンをクリックします。
+・ソースコードがショートコードでマークアップされ、コメントの送信後に強調表示に変わります。
+
+ソースコードをエスケープする必要はありません。保存時に自動的にエスケープされます。
+
+
+※ボタンを使わずに<pre>タグでマークアップする場合
+
+HTMLエディターで入力する場合と同様に、<pre>タグでソースコードをマークアップします。
+
+書式: <pre class="brush: 言語名">コード</pre>
+*lang = your language
+
+例: <pre class="brush: php">PHP コード</pre>
+
+ソースコードをエスケープする必要はありません。保存時に自動的にエスケープされます。
+
+注意：ソースコードに</pre>が含まれる場合は、予め、</pre>を<!--[/pre]-->で置き換えて下さい。
+
+
+※ボタンを使わずにショートコードでマークアップする場合
+
+ボタンを使わずに直接ショートコードを入力することも出来ます。
+
+注意：ショートコードを使うには、設定画面で「コメント欄の設定」の「ショートコードをサポート」を有効にする必要があります。
+
+例：[sourcecode language="php" gutter="true" firstline="1" highlight="" htmlscript="false"]PHP コード[/sourcecode]
+例：[sourcecode lang="xhtml" gutter="true" firstline="1" highlight="" htmlscript="false"]XHTML コード[/sourcecode]
+
+ショートコードは、「WordPress.com」で使用されてる書式と互換性があります。
+
+http://en.support.wordpress.com/code/posting-source-code/
+
+コードを入力する際に、コードをエスケープする必要はありません。自動的にエスケープされます。
+
+
+※ソースコード付きのコメントを編集する場合。（管理者向け）
+
+コメントの編集画面で「SH pre」ボタンを利用することが出来ます。
+
+注意：「SH pre」ボタンを使うには、設定画面で「コメントエディターの設定」の「Quicktagボタンを追加」を有効にする必要があります。
+
+ボタンを使わずに<pre>タグまたはショートコードでマークアップしても構いません。
+
+注意：ショートコードを使うには、設定画面で「コメント欄の設定」の「ショートコードをサポート」を有効にする必要があります。
+
+
+5-4.WP SyntaxHighlighter Widget
+
+「WP SyntaxHighlighter Widget」は、強調表示されたコードを表示するためのウィジェットです。
+
+「WP SyntaxHighlighter Widget」を使うには、まず、「WP SyntaxHighlighter」の設定画面で「WP SyntaxHighlighter Widgetを使う」を有効にする必要があります。
+
+そして、WordPressの管理画面の「外観」->「ウィジェット」で「WP SyntaxHighlighter Widget」をサイドバーに登録します。
+
+テキストエリアには、テキスト、HTMLタグ、ソースコードを入力出来ます。
+
+※「<pre>タグ」ボタンを使う場合
+
+・ソースコードをテキストエリアにペーストします。
+・ペーストしたソースコード全体を選択し、反転表示させます。
+・フォームに表示されているテキストリンクボタンをクリックします。
+・ソースコードが<pre>タグでマークアップされます。
+
+コードを入力する際に、コードをエスケープする必要はありません。自動的にエスケープされます。
+
+注意：<!--[/pre]-->が含まれるソースコードは処理できません。
+
+
+※「ショートコード」ボタンを使う場合
+
+・ソースコードをテキストエリアにペーストします。
+・ペーストしたソースコード全体を選択し、反転表示させます。
+・フォームに表示されているテキストリンクボタンをクリックします。
+・ソースコードがショートコードでマークアップされます。
+
+コードを入力する際に、コードをエスケープする必要はありません。自動的にエスケープされます。
+
+
+※ボタンを使わずに<pre>タグでマークアップする場合
+
+HTMLエディターで入力する場合と同様に、<pre>タグでソースコードをマークアップします。
+
+書式: <pre class="brush: 言語名">コード</pre>
+*lang = your language
+
+例: <pre class="brush: php">PHP コード</pre>
+
+ソースコードをエスケープする必要はありません。保存時に自動的にエスケープされます。
+
+注意：ソースコードに</pre>が含まれる場合は、予め、</pre>を<!--[/pre]-->で置き換えて下さい。
+
+
+※ボタンを使わずにショートコードでマークアップする場合
+
+ボタンを使わずに直接ショートコードを入力することも出来ます。
+
+注意：ショートコードを使うには、設定画面で「WP SyntaxHighlighter Widgetの設定」の「ショートコードをサポート」を有効にする必要があります。
+
+例：[sourcecode language="php" gutter="true" firstline="1" highlight="" htmlscript="false"]PHP コード[/sourcecode]
+例：[sourcecode lang="xhtml" gutter="true" firstline="1" highlight="" htmlscript="false"]XHTML コード[/sourcecode]
+
+ショートコードは、「WordPress.com」で使用されてる書式と互換性があります。
+
+http://en.support.wordpress.com/code/posting-source-code/
+
+コードを入力する際に、コードをエスケープする必要はありません。自動的にエスケープされます。
+
+
+5-5.bbPress
+
+「bbPress」プラグイン 2.0以上がインストールされ、有効化されているなら、ソースコードの入力を手助けする「bbPress Highlighter ボタン」をトピックおよびリプライフォームに上に表示することが出来ます。
+
+「bbPress Highlighter ボタン」を使用する場合は、管理画面で「bbPress Highlighter ボタン」を有効にして下さい。
+
+注意：「unfiltered_html」権限を持たないユーザーは、<!--[XXXX]-->をコード内で使用することは出来ません。
+XXXX＝0-9、A-F、a-fで構成される2から4文字の文字列。
+
+※「<pre>タグ」ボタンを使う場合
+
+・ソースコードをコメント欄にペーストします。
+・ペーストしたソースコード全体を選択し、反転表示させます。
+・コメント欄に表示されているテキストリンクボタンをクリックします。
+・ソースコードが<pre>タグでマークアップされ、送信後に強調表示に変わります。
+
+コードを入力する際に、コードをエスケープする必要はありません。自動的にエスケープされます。
+
+注意：<!--[/pre]-->が含まれるソースコードは処理できません。
+
+
+※「ショートコード」ボタンを使う場合
+
+・ソースコードをコメント欄にペーストします。
+・ペーストしたソースコード全体を選択し、反転表示させます。
+・コメント欄に表示されているテキストリンクボタンをクリックします。
+・ソースコードがショートコードでマークアップされ、送信後に強調表示に変わります。
+
+コードを入力する際に、コードをエスケープする必要はありません。自動的にエスケープされます。
+
+
+※ボタンを使わずに<pre>タグでマークアップする場合
+
+HTMLエディターで入力する場合と同様に、<pre>タグでソースコードをマークアップします。
+
+書式: <pre class="brush: 言語名">コード</pre>
+*lang = your language
+
+例: <pre class="brush: php">PHP コード</pre>
+
+ソースコードをエスケープする必要はありません。保存時に自動的にエスケープされます。
+
+注意：ソースコードに</pre>が含まれる場合は、予め、</pre>を<!--[/pre]-->で置き換えて下さい。
+
+
+※ボタンを使わずにショートコードでマークアップする場合
+
+ボタンを使わずに直接ショートコードを入力することも出来ます。
+
+注意：ショートコードを使うには、設定画面で「bbPressの設定」の「ショートコードをサポート」を有効にする必要があります。
+
+例：[sourcecode language="php" gutter="true" firstline="1" highlight="" htmlscript="false"]PHP コード[/sourcecode]
+例：[sourcecode lang="xhtml" gutter="true" firstline="1" highlight="" htmlscript="false"]XHTML コード[/sourcecode]
+
+ショートコードは、「WordPress.com」で使用されてる書式と互換性があります。
+
+http://en.support.wordpress.com/code/posting-source-code/
+
+コードを入力する際に、コードをエスケープする必要はありません。自動的にエスケープされます。
+
+
+※管理画面のTopics/Repliesセクション
+
+bbPressの管理画面では、ビジュアルエディターの「pre」および「code」ボタン、HTMLエディターの「SH pre」ボタンを使用して下さい。
+
+注意：「SH pre」ボタンを使うには、設定画面で「HTMLエディターの設定」の「Quicktagボタンを追加」を有効にする必要があります。
+
+ボタンを使わずに<pre>タグまたはショートコードでマークアップしても構いません。
+
+注意：ショートコードを使うには、設定画面で「HTMLエディターの設定」の「ショートコードをサポート」を有効にする必要があります。
+
+注意：ショートコードでアークアップされたコードを含む投稿をビジュアルエディターで表示したり、HTMLエディターからビジュアルエディターに切り替えないで下さい。ビジュアルエディターで表示すると、ショートコードでマークアップされたコードは破壊されます。
+
+
+5-6.Ver. 1.5との互換性
+
+設定画面で「Ver. 1.5との互換性」を有効にすることで、SyntaxHighlighter ライブラリ Ver. 1.5の古い書式が使えるようになります。（注意：WP SyntaxHighlighter ver. 1.5ではありません。）
+
+ただし、<textarea>タグを使う場合は、ソースコードをエスケープする必要があります。
+
+エスケープする文字：<、>、&、"、'
+
+Ver. 1.5の書式: http://code.google.com/p/syntaxhighlighter/wiki/Usage
+
+古い書式でマークアップされたソースコードは、静的に読み込まれた言語定義ファイルでのみハイライトされます。デフォルトの設定では、全ての言語が静的に読み込まれます。
+
+「Ver. 1.5との互換性」を有効にすることで、古い書式で記述した過去の投稿もハイライト表示出来ますが、古い書式自体を使い続けることはお勧めしません。古い書式のタグは、HTMLエディターで入力する必要があります。
+
+
+5-7.言語の追加
+
+開発者向けに用意されたアクションフックと連想配列を利用すれば、新しいbrushファイルを読み込み、言語を追加することが出来ます。
+詳しくは、「sample」フォルダを参照して下さい。
+言語を追加するためのサンプルプラグインがバンドルされています。
+
+
+6.よくある質問
+
+Q.ハイライトされたソースコードが表示されません。加工されていないソースコードがそのまま表示されます。
+
+A.テーマファイル内に"<?php wp_head(); ?>"と"<?php wp_footer(); ?>"の記述が必要です。"header.php"の</head>タグの直線に"<?php wp_head(); ?>"を記述し、footer.phpの</body>タグの直前に"<?php wp_footer(); ?>"を記述して下さい。
+
+Q.ボタンがビジュアルエディターに表示されません。
+
+A.このプラグインはTinyMCE（標準のビジュルエディター）に依存します。もし、標準のビジュアルエディターを別のもの（例えばCKEditor）で置き換えている場合は、ボタンは表示されません。
+
+Q.「pre」ボタンを使って言語とオプションを変更するため、コードを選択、反転表示しようとしましたが、コード全体が選択出来ません。
+
+A.全体を選択する必要はありません。コードの最初の１行が選択出来れば十分です。
+
+Q.バージョンアップしたところ、ボタンが正常に動作しなくなりました。
+
+A.古いバージョンのJavaスクリプトファイルがキャッシュされている可能性があります。ブラウザのキャッシュを消去するか、キャッシュが保存されているフォルダから、古いJavaスクリプを削除して下さい。
+
+Q.「Google翻訳」によってソースコードが翻訳されないようにしたい。
+
+A.設定画面の「コードブロックのClass属性値」に「notranslate」と入力して下さい。これでソースコードは翻訳されません。既に別のclassを設定している場合は、スペースで区切って「notranslate」を追加します。
+
+Q.設定画面のテキストエリアに「invalid」と表示される。
+
+A.テキストエリアの入力値に使用を許可されていない文字列が含まれています。正しい値を入力し、保存して下さい。このエラーは、本体をバージョン1.5.6以上にアップデートした場合に起こる可能性があります。
+
+Q.「SH pre」ボタン（Quicktag）、または、その他のエディター上のボタンがポップアップしません。
+
+A.設定画面の「HTMLエディターの設定」または「コメントエディターの設定」で「jQueryとjQuery UIを読み込む」を有効または無効にして下さい。
+
+
+7.ライセンス
+
+GPL v2
+
+
+8.このプラグインが気に入ったら
+
+プラグインの開発のサポートをお願いしております。
+
+http://www.near-mint.com/blog/donate
+
+
+9.履歴
+
+2012/1/6　バージョン 1.7.1 リリース
+ ※フィルターが$n(n：整数)を含むコードを正しく処理できない問題を修正。
+
+2011/12/15　バージョン 1.7 リリース
+ ※「bbPress（http://wordpress.org/extend/plugins/bbpress/）」プラグインをサポート。
+ ※ショートコードをサポート。
+ ※コメントフォーム用に「ショートコード」を入力できるボタンを用意。
+ ※WP SyntaxHighlighter Widget用に「ショートコード」を入力できるボタンを用意。
+ ※「unfiltered_html」権限を持たないユーザーもソースコードを含む投稿が可能になった。
+ ※承認前のコメントも強調表示されるようになった。
+ ※投稿用に新しいフィルターを追加。
+ ※コメント用のフィルターを刷新。
+ ※一部の設定のデフォルト値を変更。
+ ※同梱のサンプルプラグインが新しい言語「Biferno」をサポート。
+ ※ファイルサイズを減らすためにメインファイルを分割。
+ ※コメント欄のために追加されたフィルターが「&amp;#xxx;」を含むコードを正しく処理できない問題を修正。
+ ※bloginfo()の誤った使用を修正。
+ ※textdomainの記述抜けを修正。
+ ※SyntaxHighligterライブラリのコアファイルにおけるLFとCR/LFの混在を修正。
+
+2011/11/18　バージョン 1.6.7 リリース
+ ※WordPress 3.3に対応するため、クイックタグの処理を変更。
+ ※設定画面に「クイックコピー」オプションを追加。
+ ※翻訳用のテキストドメインのタイプミスを修正。
+ ※コメント更新時のコードに含まれる</pre>タグの置換処理を修正。
+
+2011/11/10　バージョン 1.6.5 リリース
+ ※「SH pre」ボタンをコメントの編集画面に追加。
+ ※設定画面に「Load jQueryとjQuery UIを読み込む」オプションを追加。
+ ※コメントの更新の際もソースコードが自動的にエスケープされるようになった。
+ ※プラグインのよって読み込まれたjQuery UIが他のAjaxボタンに影響を与える問題を修正。
+ ※WordPress 3.0.6以前の環境で、「SH pre」ボタンが動作しない問題を修正。
+ ※WordPress 2.9.2以前の環境で、設定の保存後に一部の設定値がNULLになる問題を修正。この問題は、WordPress 3.0以降へアップデートした後に表面化する。
+ ※ビジュアルエディターの「code」ボタンが実体参照(&amp;、&lt;、&gt;、&quot;、&#039;)を含むコードを正しく処理できない問題を修正。
+ ※コメント欄のために追加されたフィルターが実体参照(&amp;、&lt;、&gt;、&quot;、&#039;)を含むコードを正しく処理できない問題を修正。
+ ※「WP SyntaxHighlighter Widget」が実体照(&amp;、&lt;、&gt;、&quot;、&#039;)を含むコードを正しく処理できない問題を修正。
+ ※設定値内のタイプミスを修正。
+
+2011/11/2　バージョン 1.6 リリース
+ ※HTMLエディター上でのソースコード記述を手助けする「SH pre」ボタンを追加。
+
+2011/10/19　バージョン 1.5.8 リリース
+ ※配列の定義のための処理を変更。
+ ※ブラウザによってはcodeボタン使用時に、余分な改行が追加される不具合を修正。
+
+2011/10/3　バージョン 1.5.7 リリース
+ ※より厳密な設定値の検証。
+ ※設定画面のタイトルの前にアイコンを表示。
+ ※設定データの移行処理が自動更新と同時に実行されない問題を修正。
+ ※エラーメッセージが翻訳されない不具合を修正。
+
+2011/9/21　バージョン 1.5.5 リリース
+ ※折り畳まれたコードブロックのテキストラベルを設定するためのオプションを追加。
+ ※設定パラメーターの大部分を配列としてデータベース上に格納。
+ ※設定画面のデザインを変更。
+ ※管理者へのメッセージの表示方法を変更。
+ ※comments_open()が真の時のみ「Comment Highlight Button」の処理を実行。
+ ※「Comment Highlight Button」を有効にすると、「コメント」も有効になるように変更。
+ ※Javaスクリプトファイルを「js」ディレクトリへ移動。TinyMCEプラグインおよびSyntaxHighlighterライブラリは除く。
+ ※CSSファイルを「css」ディレクトリへ移動。SyntaxHighlighterライブラリは除く。
+ ※同梱のサンプルプラグインが多言語化および新しい管理者へのメッセージの表示方法をサポート。
+ ※改行コードをLFに変更。（SyntaxHighlighterライブラリ、追加された言語定義ファイル、テキストファイルは除く。）多くのファイルの改行コードがCR/LFになっていた。
+ ※設定の保存またはリセット時に、セッションの正当性をnonce値により検証。
+ ※コメントフォームの前に表示するデフォルトの説明文を変更。Judahに感謝する。
+ ※アップデート時の処理を変更。
+ ※設定画面のソースに不要な<form>タグが追加される問題を修正。
+ ※設定画面に誤った言語定義ファイルの対象バージョンが表示される問題を修正。
+
+2011/9/7　バージョン 1.5 リリース
+ ※ソースコードの強調表示が可能なウィジェットを追加。
+ ※コメント欄でのソースコードの投稿とハイライトを簡単にする「Comment Highlight button」を追加。
+ ※同梱のサンプルプラグインに新しい言語「DOSバッチファイル」と「Objective-C」を追加。Andreas Breitschopp氏に感謝する。
+ ※タイトルで、シングルクォーテーションの使用が可能になった。
+ ※設定画面での言語定義ファイルの対象バージョンの表示方法を変更。
+ ※管理者へのメッセージの表示方法を変更。
+ ※プラグインのディレクトリ名を関数で取得するように変更。
+ ※翻訳ファイルを格納するディレクトリ名を変更。
+
+2011/8/18　バージョン 1.4.4 リリース
+ ※テーマ「なし」の選択で、スタイルシートを読み込まない設定が可能になった。
+ ※ボタンが、WordPress3.2以上のフルスクリーンモードに対応。
+ ※「pre」ボタンの「挿入」機能がフルスクリーンモードで動作しない問題を修正。
+ ※「Notice: Undefined variable: page_highlight」 と 「Notice: Undefined variable: comment_highlight」と言う警告が表示される問題を修正。
+ ※同梱のサンプルプラグインで新たにClojure、LISP、MELスクリプト、PowerCLI、Vimスクリプトの追加が可能になった。
+
+2011/8/4　バージョン 1.4.3.1 リリース
+ ※誤った<script>タグの記述を修正。
+ ※日本語訳を変更。
+
+2011/8/3　バージョン 1.4.3 リリース
+ ※ページ毎に異なるテーマを適用できる「ランダム」テーマを追加。
+ ※処理速度の向上のために、最短でforeachループを抜ける処理を追加。
+ ※処理速度の向上のために、条件分岐を変更。
+ ※競合を避けるため「the_content」に適用するフィルターのプライオリティを変更。
+ ※特別なページでもハイライト表示を行うために、「ハイライト表示するページ」の選択肢に「その他のページ」を追加。
+ ※外部のプラグインのための新しいフックを追加。
+ ※外部のプラグインが言語定義ファイルを追加するための新しい手段を追加。
+ ※同梱のサンプルプラグインを変更。
+
+2011/7/22　バージョン 1.4 リリース
+ ※投稿、固定ページに加えて、ホーム、カテゴリー、アーカイブ、検索結果、コメントに置いても自動判別機能によるJavaスクリプトの読み込みをサポート。
+ ※コメントの中に書かれたコードのハイライト表示をサポート。
+ ※スタイルシート適応のための条件分岐を変更。
+ ※カテゴリ、アーカイブ、検索結果に追加のスタイルシートが適応できない不具合を修正。
+ ※特定のメッセージが日本語に翻訳されない不具合を修正。
+
+2011/7/11　バージョン 1.3.9 リリース
+ ※設定画面に「ハイライト表示するページ」オプションを追加。カテゴリ、アーカイブ、検索結果上のコードのハイライトが可能になった。
+ ※設定画面に「タイトル」と「行番号の先頭に0を追加」オプションを追加。
+ ※「デフォルトの言語」の設定値を、ボタンと動的読み込み機能に反映出来るようになった。
+ ※ボタンの表示に関する処理を変更。
+ ※設定画面へのJavaスクリプトとCSSの追加方法を変更。
+ ※誤って記述されたwp_enqueue_style()の引数を修正。
+ ※WP to Twitter等がインストールされた環境で動作しない問題を修正。
+
+2011/6/27　バージョン 1.3.8.2 リリース
+ ※誤った<script>タグの記述によって引き起こされるHTML検証エラーを修正。
+
+2011/6/27　バージョン 1.3.8.1 リリース
+ ※変数「$wp_sh_ver」の値を更新。
+
+2011/6/26　バージョン 1.3.8 リリース
+ ※バージョン2.1.382選択時に「クリップボードにコピー」アイコンがツールバーに表示されない不具合を修正。
+
+2011/6/25　バージョン 1.3.7 リリース
+ ※ポップアップウィンドウのサイズを選択するためのオプションを追加。
+ ※プラグインディレクトリURLの取得方法を変更。
+
+2011/6/18　バージョン 1.3.6 リリース
+ ※WP_DEBUGが有効の時に管理画面で「Notice: has_cap の使用はバージョン 2.0 から非推奨になりました! プラグインやテーマでのユーザーレベルの使用は推奨されていません。代わりに権限グループと権限を使ってください。」と言う警告が表示される問題を修正。
+ ※設定画面のためのJavaスクリプトの処理を変更。
+
+2011/6/16　バージョン 1.3.5 リリース
+ ※コードブロックのためのスタイルシートの設定項目を追加。
+ ※ ボタンを表示する行を選択するオプションを追加。
+ ※バージョン1.5形式の<pre>および<textarea>タグをTinyMCEのextended_valid_elementsに追加。
+ ※設定画面にシステム情報を表示。
+ ※ボタンの表示に関する処理を変更。
+
+2011/6/4　バージョン 1.3 リリース
+ ※読み込む言語定義ファイルの選択が可能になった。
+ ※設定画面に設定をリセットするボタンを追加。
+ ※<script>と<textarea>タグでのマークアップをサポート。
+ ※「Ver.1.5との互換性」が有効の場合に古い書式のタグでマークアップされたソースコードが正しくハイライトされない問題を修正。
+
+2011/5/28　バージョン 1.2.3 リリース
+ ※バージョン2.1.382選択時にデフォルトで読み込まれる言語を追加。（追加された言語：Actionscript3、Bash shell、ColdFusion、Diff、Erlang、Groovy、JavaFX、Perl、Plain Text、PowerShell、Scala）
+ ※プラグインによる機能拡張のためにアクションフックと連想配列を追加。
+ ※バージョン2.1で「MDUltra」テーマを選択した時に、設定画面上の「現在のテーマ」が更新されない問題を修正。
+
+2011/5/22　バージョン 1.2.2 リリース
+ ※他のTinyMCE用ボタンとの競合を避けるため、フックの優先度を変更。
+ ※パッケージから、既に使われていないファイルを取り除いた。
+
+2011/5/21　バージョン 1.2.1 リリース
+ ※フルスクリーンモードで「CODE」ボタンが動作しない問題を修正。
+
+2011/5/13　バージョン 1.2 リリース
+ ※タブを維持したままソースコードをペースト出来る「CODE」ボタンを追加。
+ ※マークアップ済みソースコードの言語やオプションの変更が可能になった。
+ ※ボタンのアイコンを変更。
+ ※ポップアップウィンドウ内に表示されるボタンの配置を変更。
+
+2011/5/5　バージョン 1.1.1 リリース
+　※ホームで、コードがハイライトされない現象を修正。
+
+2011/5/5　バージョン 1.1 リリース
+　※「SH TinyMCE Button」搭載し、ビジュアルエディター上での<pre>タグの入力機能を完備。
+　※設定画面でテーマーのプリビューが可能になった。
+　※アンインストール時に、設定値がデータベースから削除されない問題を修正。
+
+2011/5/3　バージョン 1.0.1 リリース
+　※設定画面で警告が出る問題を修正。
+
+2011/5/3　バージョン 1.0 リリース
+
+
+10.謝辞
+
+・「SyntaxHighlighter」ライブラリは、Alex Gorbatchevによって開発されました。
+・「shBrushBiferno.js」は、Sandro Bilbeisiが作成しました。
+・「shBrushClojure.js」は、Daniel Solano Gómezが作成しました。
+・「shBrushDosBatch-V2.js」と「shBrushDosBatch-V3.js」は、Andreas Breitschoppが作成しました。
+・「F#」用の言語定義ファイルは、Steve Gilhamによって書かれました。
+・「shBrushLisp.js」は、Knut Haugenが作成しました。
+・「shBrushLua.js」は、최익필が作成しました。
+・「shBrushMel.js」は、Skye Bookが作成しました。
+・「shBrushObjC.js」は、Matej Bukovinskiが作成しました。
+・「shBrushPowerCLI.js」は、Dan Jが作成しました。
+・「shBrushProcessing.js」および、そのCSSは、Sebastian Korczakによって書かれました。
+・「shBrushR.js」は、Yihui Xieが作成しました。
+・「shBrushTcl.js」は、henixが作成しました。
+・「shBrushVerilog.js」は、Hanly De Los Santosが作成しました。
+・「shBrushVimscript.js」は、nelstrom(Drew Neil)が作成しました。
+・「shBrushYaml.js」は、Nicolas Perriaultが作成しました。
+・Judahは、「Comment HL ボタン」の説明文を修正しました。
+
+Alex Gorbatchev：http://alexgorbatchev.com/SyntaxHighlighter/
+Sandro Bilbeisi：http://www.sandrobilbeisi.org/wp/works/web-development/biferno-javascript-brush-for-syntaxhighlighter-shbrush-js/
+Daniel Solano Gómez：https://github.com/sattvik/sh-clojure
+Andreas Breitschopp：http://www.ab-tools.com/en/ Andreas氏が開発したプラグイン：http://wordpress.org/extend/plugins/profile/ab-tools
+Steve Gilham：http://stevegilham.blogspot.com/2009/10/syntaxhighlighter-20-brushes-for-f-and.html
+Knut Haugen：http://blog.knuthaugen.no/2009/10/a-syntaxhighlighter-brush-for-lisp.html
+최익필：http://ikpil.com/1191
+Skye Book：http://www.skyebook.net/blog/2011/02/syntaxhighlighter-brush-for-mel-script/
+Matej Bukovinski：http://www.bukovinski.com
+Dan J：http://vm-pro.com/vmware-powercli-syntax-highlighter-brush/
+Sebastian Korczak：http://en.myinventions.pl/index.php?page=ProcessingSyntaxHighlighting
+Yihui Xie：http://yihui.name/en/2010/09/syntaxhighlighter-brush-for-the-r-language
+henix：http://www.henix-blog.co.cc/blog/tcl-syntaxhighlighter-brush.html
+Hanly De Los Santos：http://www.hdelossantos.com/2010/05/20/verilog-syntaxhighlighter-brush/
+nelstrom(Drew Neil)：http://vimcasts.org/blog/2010/04/syntaxhighlighter-vimscript-brush-and-blackboard-theme/
+Nicolas Perriault：http://prendreuncafe.com/blog/post/2009/07/26/YAML-Brush-for-the-SyntaxHighlighter-Javascript-Library
+Judah：http://www.judahfrangipane.com/blog/
+
+
+Redcocker
+URL: http://www.near-mint.com/blog/
+WP SyntaxHighlighter: http://www.near-mint.com/blog/software/wp-syntaxhighlighter
