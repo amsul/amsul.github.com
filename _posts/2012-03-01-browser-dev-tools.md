@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Develop in the browser dev tools.
 title_block: true
+title: Develop in the browser dev tools.
 ---
 
 

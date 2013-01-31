@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Infinite scroll responsibly.
 title_block: true
 postscript: [
     '&#042; <b>K</b>eep <b>I</b>t <b>S</b>imple, <b>S</b>tupid.',
     '&#042;&#042; It&rsquo;s interesting to note that Google Images automagically loads more results - although not infinitely.'
 ]
+title: Infinite scroll responsibly.
 ---
 
 
