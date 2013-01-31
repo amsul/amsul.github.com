@@ -1,0 +1,9 @@
+
+
+auto: true
+exclude: [ 'Amsul.ca.sublime-project', 'Amsul.ca.sublime-workspace', 'README.md' ]
+markdown: rdiscount
+permalink: /:year/:month/:day/:title
+tagline: 'Hi, I&rsquo;m Amsul. I develop &amp; design stuff using our web.'
+url: http://amsul.ca
+

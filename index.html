@@ -1,0 +1,20 @@
+---
+layout: base
+name: home
+---
+
+<section class="content--landing">
+    <div class="content__box--landing">
+        {% for post in site.posts %}
+            <h1 class="title title--thin">
+                {% if post.external %}
+                    <a class="title__link" target="_blank" href="{{ post.external_url }}">{{ post.title }}</a>
+                {% else %}
+                    <a class="title__link" href="{{ post.url }}">{{ post.title }}</a>
+                {% endif %}
+            </h1>
+            <hr class="divider--dark">
+        {% endfor %}
+    </div>
+</section> <!-- .content--landing -->
+

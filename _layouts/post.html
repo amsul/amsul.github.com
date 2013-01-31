@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<article class="content">
+
+    <section class="content__box--padded content__body">
+
+        {{ content }}
+
+        {% if page.postscript %}
+            <hr>
+            <footer class="content__postscript">
+                {% for postscript in page.postscript %}
+                    <p id="postscript_{{ forloop.index }}">{{ postscript }}</p>
+                {% endfor %}
+            </footer>
+        {% endif %}
+
+    </section> <!-- .content__box -->
+
+</article> <!-- .content -->
