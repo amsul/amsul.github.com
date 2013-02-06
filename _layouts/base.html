@@ -30,7 +30,6 @@
 
 
 
-
     <noscript>
         <section id="noscript">
             <div class="content--noscript">
@@ -42,29 +41,34 @@
     </noscript>
 
 
+    {% unless page.empty_page %}
 
-    <div class="menu">
-        <nav class="menu__nav" id="menu">
-            <ul class="list--plain">
-                <li class="list__item"><a class="list__link--block" target="_blank" href="https://github.com/amsul?tab=repositories">my open source stuff</a></li><!--
-             --><li class="list__item"><a class="list__link--block" href="/me">me and my other stuff</a></li>
-            </ul>
-        </nav>
-        <aside class="menu__toggler alignright">
-            <a class="menu__opener button-cube" href="#menu"><span class="gui-icon gui-icon--down"></span></a>
-            <a class="menu__closer button-cube" href="#"><span class="gui-icon gui-icon--up"></span></a>
-        </aside>
-    </div> <!-- .menu -->
+        <div class="menu">
+            <nav class="menu__nav" id="menu">
+                <ul class="list--plain">
+                    <li class="list__item"><a class="list__link--block" target="_blank" href="https://github.com/amsul?tab=repositories">my open source stuff</a></li><!--
+                 --><li class="list__item"><a class="list__link--block" href="/me">me and my other stuff</a></li>
+                </ul>
+            </nav>
+            <aside class="menu__toggler alignright">
+                <a class="menu__opener button-cube" href="#menu"><span class="gui-icon gui-icon--down"></span></a>
+                <a class="menu__closer button-cube" href="#"><span class="gui-icon gui-icon--up"></span></a>
+            </aside>
+        </div> <!-- .menu -->
+
+    {% endunless %}
 
 
     <header class="header{% if page.name != "home" %}--colored{% endif %}">
         <div class="content">
             <div class="content__box--header">
-                {% if page.name != "home" %}
-                    <h1 class="header__wrapper title--header title--thin"><a class="title--dimmed header__link" href="/">{{ site.tagline | truncatewords: 3 | remove: '...' }}</a></h1>
-                {% else %}
-                    <h1 class="header__wrapper title--header">{{ site.tagline }}</h1>
-                {% endif %}
+                {% unless page.empty_page %}
+                    {% if page.name != "home" %}
+                        <h1 class="header__wrapper title--header title--thin"><a class="title--dimmed header__link" href="/">{{ site.tagline | truncatewords: 3 | remove: '...' }}</a></h1>
+                    {% else %}
+                        <h1 class="header__wrapper title--header">{{ site.tagline }}</h1>
+                    {% endif %}
+                {% endunless %}
                 {% if page.title_block %}
                     <div class="header__title aligncenter">
                         {% if page.date %}
@@ -81,34 +85,38 @@
     {{ content }}
 
 
-    <footer class="footer{% if page.name != "home" %} gui-flip{% endif %}">
-        <div class="content">
-            <div class="content__box aligncenter">
-                {% if page.name != "home" %}
-                    <div><a class="button-block" href="/">Back to home</a></div>
-                {% endif %}
-                <ul class="list--plain list--inline">
-                    <li class="list__item">
-                        <a class="button-cube button-cube--dark" href="http://twitter.com/amsul_" target="_blank">
-                            <span class="gui-icon gui-icon--twitter"></span>
-                        </a>
-                    </li><!--
-                 --><li class="list__item">
-                        <a class="button-cube button-cube--dark" href="http://github.com/amsul" target="_blank">
-                            <span class="gui-icon gui-icon--github"></span>
-                        </a>
-                    </li><!--
-                 --><li class="list__item">
-                        <a class="button-cube button-cube--dark" href="mailto:reach@amsul.ca">
-                            <span class="gui-icon gui-icon--email"></span>
-                        </a>
-                    </li>
-                </ul>
-                <p>&copy; 2011-{{ site.time | date: "%Y" }} Amsul</p>
-                <p class="embrace">Embrace the randomness.</p>
+    {% unless page.empty_page %}
+
+        <footer class="footer{% if page.name != "home" %} gui-flip{% endif %}">
+            <div class="content">
+                <div class="content__box aligncenter">
+                    {% if page.name != "home" %}
+                        <div><a class="button-block" href="/">Back to home</a></div>
+                    {% endif %}
+                    <ul class="list--plain list--inline">
+                        <li class="list__item">
+                            <a class="button-cube button-cube--dark" href="http://twitter.com/amsul_" target="_blank">
+                                <span class="gui-icon gui-icon--twitter"></span>
+                            </a>
+                        </li><!--
+                     --><li class="list__item">
+                            <a class="button-cube button-cube--dark" href="http://github.com/amsul" target="_blank">
+                                <span class="gui-icon gui-icon--github"></span>
+                            </a>
+                        </li><!--
+                     --><li class="list__item">
+                            <a class="button-cube button-cube--dark" href="mailto:reach@amsul.ca">
+                                <span class="gui-icon gui-icon--email"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>&copy; 2011-{{ site.time | date: "%Y" }} Amsul</p>
+                    <p class="embrace">Embrace the randomness.</p>
+                </div>
             </div>
-        </div>
-    </footer> <!-- .footer -->
+        </footer> <!-- .footer -->
+
+    {% endunless %}
 
 
     <script type="text/javascript">
