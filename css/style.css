@@ -1,7 +1,7 @@
 /*!
  * Author:      Amsul - http://amsul.ca
- * Updated:     30 January, 2013
- * Version:     0.4.0
+ * Updated:     07 February, 2013
+ * Version:     0.4.2
  */
 
 
@@ -522,15 +522,15 @@ nav ol {
    ======================================================================== */
 
 /*html*/.colorize {
-    background: #f7242b;/*#ed2e2b;*/
-    color: #f7faf2;/*#f6faed;*/
+    background: #f7242b;
+    color: #f7faf2;
 }
 
 .embrace {
     color: #fff;
 }
 .colorize .embrace {
-    color: #f7242b;/*#ed2e2b;*/
+    color: #f7242b;
 }
 
 body {
@@ -571,6 +571,7 @@ hr {
  */
 img {
     vertical-align: middle;
+    max-width: 100%;
     height: auto;
 }
 
@@ -641,18 +642,18 @@ a.dimmed {
    $FORM-ELEMENTS
    ========================================================================== */
 
-fieldset {
+/*fieldset {
     border: 0;
     margin: 0 0 1.5em;
     padding: 0;
-}
+}*/
 
 
 /**
  * Inputs and textareas
  */
 
-input[type=text],
+/*input[type=text],
 input[type=password],
 input[type=email],
 input[type=search],
@@ -688,25 +689,25 @@ input[type=email]:focus,
 input[type=search]:focus,
 textarea:focus {
 
-}
+}*/
 
 
 /**
  * Radios and checkboxes
  */
 
-input[type=checkbox],
+/*input[type=checkbox],
 input[type=radio] {
     margin-right: 5px;
     vertical-align: 1px;
-}
+}*/
 
 
 /**
  * Select drop-downs and search
  */
 
-select {
+/*select {
     border: 1px solid #999;
     background: #fff;
     padding: 3px 5px;
@@ -721,7 +722,7 @@ input[type=search] {
     -webkit-border-radius: 14px;
        -moz-border-radius: 14px;
             border-radius: 14px;
-}
+}*/
 
 
 
@@ -864,7 +865,7 @@ input[type=search] {
 
 .button-block {
     display: block;
-    background: #f7242b;/*#ed2e2b;*/
+    background: #f7242b;
     color: #fff;
     max-width: 420px;
     margin: 0 auto;
@@ -916,7 +917,7 @@ pre > code {
    $BLOCKQUOTES
    ========================================================================== */
 
-blockquote {
+/*blockquote {
     border-left: 4px solid #ddd;
     padding: 0 0 2px 14px;
     line-height: 1.5;
@@ -939,7 +940,7 @@ blockquote footer {
 }
 blockquote cite {
     border-bottom: 1px dotted #d2d2d2;
-}
+}*/
 
 
 
@@ -986,7 +987,7 @@ h6 {
 }
 
 .title__link {
-    color: #f7faf2;/*#f6faed;*/
+    color: #f7faf2;
     border-bottom: 1px dashed transparent;
 
     -webkit-transition: all .1s ease-out;
@@ -995,7 +996,7 @@ h6 {
 }
 
 .title__link:hover {
-    border-color: #f7faf2;/*#f6faed;*/
+    border-color: #f7faf2;
 }
 
 
@@ -1023,7 +1024,7 @@ h6 {
  * External Links
  */
 
-.link--external {
+/*.link--external {
     position: relative;
     padding-right: 1.25em;
 }
@@ -1052,17 +1053,7 @@ h6 {
     -webkit-box-shadow: -2px 2px #0089ec, -2px -2px #0089ec, 2px 2px #0089ec;
        -moz-box-shadow: -2px 2px #0089ec, -2px -2px #0089ec, 2px 2px #0089ec;
             box-shadow: -2px 2px #0089ec, -2px -2px #0089ec, 2px 2px #0089ec;
-}
-
-
-
-/**
- * Link blocks
- */
-
-.link--block {
-
-}
+}*/
 
 
 
@@ -1215,7 +1206,7 @@ h6 {
 }
 
 .content--noscript a {
-    color: #f7242b;/*#ed2e2b;*/
+    color: #f7242b;
 }
 
 .content--noscript a:hover {
@@ -1290,18 +1281,15 @@ h6 {
 }
 
 .content__postscript {
-    font-size: .66em;
+    font-size: .75em;
     color: #777;
     font-weight: 100;
 }
 
 .content__postscript p:target {
-    background: #daedfb;
+    background: #def2ff;
+    outline: 8px solid #def2ff;
     color: #000;
-
-    -webkit-transition: all .25s linear;
-       -moz-transition: all .25s linear;
-            transition: all .25s linear;
 }
 
 
@@ -1345,10 +1333,10 @@ h6 {
    ========================================================================== */
 
 /**
- * 724px breakpoint
+ * 46em breakpoint
  */
 
-@media (min-width: 724px) {
+@media (min-width: 46em) {
 
 
     .content--landing {
@@ -1369,7 +1357,7 @@ h6 {
     }
 
 
-} /* min-width: 724px */
+} /* min-width: 46em */
 
 
 

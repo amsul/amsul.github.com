@@ -13,6 +13,6 @@ Yeah I know it may sound far-fetched at the moment since many people now use thi
 
 With the awesome tools coming out with each new build of Google Chrome Canary, it seems plausible to think that this may actually be part of the roadmap for Chrome Dev Tools.
 
-### Update <small class="dimmed thin">(2012/01/02)</small>
+### Update <small class="dimmed thin">(2013/01/02)</small>
 
-In newer builds of Google Chrome (along with the introduction of [source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/), this has started to become a reality. This is nicely [demonstrated by Remy Sharp](http://remysharp.com/2012/12/21/my-workflow-never-having-to-leave-devtools/).
+In newer builds of Google Chrome (along with the introduction of [source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)), this has started to become a reality. This is nicely [demonstrated by Remy Sharp](http://remysharp.com/2012/12/21/my-workflow-never-having-to-leave-devtools/).
