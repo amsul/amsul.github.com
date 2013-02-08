@@ -8,7 +8,7 @@ name: home
         {% for post in site.posts %}
             <h1 class="title title--thin">
                 {% if post.external %}
-                    <a class="title__link" target="_blank" href="{{ post.external_url }}">{{ post.title }}</a>
+                    <a class="title__link" href="{{ post.external_url }}" title="Opens in a new window" target="_blank">{{ post.title }}</a>
                 {% else %}
                     <a class="title__link" href="{{ post.url }}">{{ post.title }}</a>
                 {% endif %}
