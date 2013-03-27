@@ -1,7 +1,7 @@
 /*!
  * Author:      Amsul - http://amsul.ca
- * Updated:     07 February, 2013
- * Version:     0.4.2
+ * Updated:     27 March, 2013
+ * Version:     0.4.6
  */
 
 
@@ -917,31 +917,48 @@ pre > code {
    $BLOCKQUOTES
    ========================================================================== */
 
-/*blockquote {
-    border-left: 4px solid #ddd;
-    padding: 0 0 2px 14px;
-    line-height: 1.5;
-    font-size: 16px;
-    font-weight: 200;
+blockquote {
+    padding: .125em 0 .5em 2em;
+    margin: 1.5em 0 1.5em 40px;
+    position: relative;
 }
-blockquote.quote-right {
-    border-left: 0;
-    border-right: 4px solid #ddd;
-    padding-left: 0;
-    padding-right: 14px;
-    text-align: right;
+blockquote:before {
+    content: "“";
+    position: absolute;
+    left: -40px;
+    top: 0;
+    font-size: 5em;
+    font-weight: bold;
+    color: #ddd;
 }
+
 blockquote p {
     margin-bottom: .5em;
 }
 blockquote footer {
-    font-size: 12px;
+    font-size: .75em;
     color: #999;
 }
 blockquote cite {
     border-bottom: 1px dotted #d2d2d2;
-}*/
+}
 
+/**
+ * Tweetquotes
+ */
+.twitter-tweet-rendered {
+    display: inline-block !important;
+    width: 100% !important;
+    margin: .5em 0 !important;
+
+    -webkit-border-radius: 4px !important;
+       -moz-border-radius: 4px !important;
+            border-radius: 4px !important;
+
+    -webkit-box-sizing: border-box !important;
+       -moz-box-sizing: border-box !important;
+            box-sizing: border-box !important;
+}
 
 
 
@@ -1024,36 +1041,20 @@ h6 {
  * External Links
  */
 
-/*.link--external {
-    position: relative;
-    padding-right: 1.25em;
-}
-
-.link--external:before,
 .link--external:after {
-    content: " ";
-    position: absolute;
-}
-.link--external:before {
-    width: .5em;
-    height: .5em;
-    top: .2em;
-    right: .15em;
+    content: "➚";
+    font-size: .33em;
+    background: #f7faf2;
+    color: #f7242b;
+    padding: .33em .5em .125em;
+    font-weight: bold;
+    margin-left: .5em;
+    vertical-align: .25em;
 
-    -webkit-box-shadow: 2px -2px #0089ec;
-       -moz-box-shadow: 2px -2px #0089ec;
-            box-shadow: 2px -2px #0089ec;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
 }
-.link--external:after {
-    width: .55em;
-    height: .33em;
-    top: .35em;
-    right: .3em;
-
-    -webkit-box-shadow: -2px 2px #0089ec, -2px -2px #0089ec, 2px 2px #0089ec;
-       -moz-box-shadow: -2px 2px #0089ec, -2px -2px #0089ec, 2px 2px #0089ec;
-            box-shadow: -2px 2px #0089ec, -2px -2px #0089ec, 2px 2px #0089ec;
-}*/
 
 
 
