@@ -1,7 +1,7 @@
 /*!
  * Author:      Amsul - http://amsul.ca
- * Updated:     27 March, 2013
- * Version:     0.4.6
+ * Updated:     05 April, 2013
+ * Version:     0.4.7
  */
 
 
@@ -1042,12 +1042,13 @@ h6 {
  */
 
 .link--external:after {
-    content: "➚";
-    font-size: .33em;
+    content: "linked";
+    font-size: .5em;
     background: #f7faf2;
     color: #f7242b;
     padding: .33em .5em .125em;
     font-weight: bold;
+    letter-spacing: 0;
     margin-left: .5em;
     vertical-align: .25em;
 
