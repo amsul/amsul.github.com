@@ -31,6 +31,8 @@ However, when these two concepts get convoluted and misunderstood, you get [beau
 Hidden controls and gestures are handy as quick **extensions** to visible controls - which are usually only useful once the user is comfortable with the interface. If a distraction-free environment is a crucial part of the experience, it should be handled with [Progressive Reduction](http://layervault.tumblr.com/post/42361566927/progressive-reduction) of the interface - not vanished altogether.
 
 
+### Update <small class="dimmed thin">(2013/04/05)</small>
 
+Timo Arnall goes into much more detail in his [&ldquo;No to NoUI&rdquo; post](http://www.elasticspace.com/2013/03/no-to-no-ui) to give a much better understanding of this trend.
 
 
