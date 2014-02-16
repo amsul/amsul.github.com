@@ -1331,7 +1331,9 @@ ol:last-child {
         .content__body li {
             margin-bottom: .5em;
         }
-        .content__body a {}
+        .content__body a {
+            word-wrap: break-word;
+        }
         .content__body a:hover {
             text-decoration: underline;
         }
