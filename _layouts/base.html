@@ -16,7 +16,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-    <title>{% if page.title %}{{ page.title_prefix }}{{ page.title }}{{ page.title_suffix }} / {% endif %}Amsul</title>
+    {% if page.title %}
+        {% if page.overview_page %}
+            <title>{{ page.title }} / Amsul</title>
+        {% else %}
+            <title>{{ page.title_prefix }}{{ page.title }}{{ page.title_suffix }} / Amsul</title>
+        {% endif %}
+    {% else %}
+        <title>Amsul</title>
+    {% endif %}
 
 
     <link rel="shortcut icon" href="/favicon.ico">
@@ -90,7 +98,11 @@
                         {% if page.date %}
                             <p class="content__subtitle title--dimmed">{{ page.date | date: "%B %d, %Y" }}</p>
                         {% endif %}
-                        <h1 class="title title--thin title--flat">{{ page.title_prefix }}{{ page.title }}{{ page.title_suffix }}</h1>
+                        {% if page.overview_page %}
+                            <h1 class="title title--thin title--flat">{{ page.title }}</h1>
+                        {% else %}
+                            <h1 class="title title--thin title--flat">{{ page.title_prefix }}{{ page.title }}{{ page.title_suffix }}</h1>
+                        {% endif %}
                     </div>
                 {% endif %}
             </div>
@@ -107,7 +119,7 @@
             <div class="content">
                 {% if page.name != "home" %}
                     <div class="content__box content__box--flat">
-                        {% if page.notepad_page and page.notepad_index != true %}
+                        {% if page.notepad_page and page.overview_page != true %}
                             <a class="button-block" href="/notepad">Back to notepad</a>
                         {% else %}
                             <a class="button-block" href="/">Back to home</a>

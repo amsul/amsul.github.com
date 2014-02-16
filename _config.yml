@@ -1,4 +1,4 @@
-exclude: [ 'README.md' ]
+exclude: [ '*.sublime-project', '*.sublime-workspace', 'README.md' ]
 markdown: rdiscount
 permalink: pretty
 tagline: 'Hi, I&rsquo;m Amsul. I develop &amp; design stuff for our interwebs.'

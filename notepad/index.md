@@ -1,5 +1,5 @@
 ---
 layout: notepad
-notepad_index: true
+overview_page: true
 title: Notepad
 ---
