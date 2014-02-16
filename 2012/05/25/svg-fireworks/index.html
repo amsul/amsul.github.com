@@ -1,0 +1,216 @@
+<!doctype html>
+
+<html lang="en">
+
+
+    <meta charset="utf-8">
+
+    <meta name="author" content="Amsul - http://amsul.ca/">
+    <meta name="copyright" content="&copy; Amsul">
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <title>SVG &amp; Fireworks for retina-ready sites / Amsul</title>
+
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,800italic,300,600,800">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <script src="/js/shiv.js"></script>
+
+
+
+    
+
+        <div class="menu">
+            <nav class="menu__nav" id="menu">
+                <div class="content content--flat-bottom">
+                    <a class="menu__button-close" href="#"></a>
+                    <div class="content__box">
+                        <h4 class="title--flat emphasize">Menu</h4>
+                    </div>
+                </div>
+                <div class="content content-freeform content--pad-bottom">
+                    <ul class="list--plain list--flat">
+                        <li class="list__item">
+                            <a class="link--block" href="/notepad">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">My notes on stuff</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link--block" href="https://github.com/amsul?tab=repositories">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">My open source stuff</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link--block" href="/me">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">Me and my other stuff</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <aside class="menu__toggler alignright">
+                <a class="menu__opener button-menu button-menu--inverse" href="#menu"></a>
+                <a class="menu__closer button-menu button-menu--inverse" href="#"></a>
+            </aside>
+        </div> <!-- .menu -->
+
+    
+
+
+    <header class="header header--colored">
+        <div class="content">
+            <div class="content__box content__box--pad-one">
+                
+                    <h1 class="header__wrapper title--base-size title--thin title--flat">
+                        
+                            <a class="title--dimmed header__link" href="/">Hi, I&rsquo;m Amsul.</a>
+                        
+                    </h1>
+                
+                
+                    <div class="header__title aligncenter">
+                        
+                            <p class="content__subtitle title--dimmed">May 25, 2012</p>
+                        
+                        <h1 class="title title--thin title--flat">SVG &amp; Fireworks for retina-ready sites</h1>
+                    </div>
+                
+            </div>
+        </div>
+    </header> <!-- .header -->
+
+
+    <article class="content content--pad-bottom">
+    <div class="content__box content__body">
+
+        
+
+            <p>Developing and designing responsive sites requires a lot of forethought about the UI variations for all viewport sizes. This calls for many considerations and unique challenges at each media-query break point.</p>
+
+<p>On top of varying UI requirements based on screen size, high-density pixel displays have introduced a new challenge: serving images for retina display devices. All sites developed without consideration for high-pixel density displays lose all crispness in images and logos. Now with the new Macbooks going retina, the web is about to get <a href="http://thenextweb.com/dd/2012/06/12/the-web-is-going-to-look-hideous-on-the-new-retina-macbook-pro/">a whole lot fuzzier</a>.</p>
+
+<h3>One way about it..</h3>
+
+<p><a href="http://github.com">Github</a>, as well as many others, go about this with <a href="https://github.com/blog/1135-the-making-of-octicons">icon fonts</a>. This method works <strong>really</strong> well. If you are able to serve custom fonts without <a href="http://paulirish.com/2009/fighting-the-font-face-fout/">FOUT</a>, and only require basic icon styling, then this is the best solution. However, there are some alignment issues to tackle, and handling and creating custom fonts is not the easiest task.</p>
+
+<h3>SVG to the rescue!</h3>
+
+<p>Here&rsquo;s where the <code>.svg</code> format becomes incredibly useful. <strong>S</strong>calable <strong>V</strong>ector <strong>G</strong>raphics contain the mathematical data of the images rather than the pixel data &ndash; which allows them to be infinitely scalable.</p>
+
+<h3>Demo</h3>
+
+<p>For a quick demonstration, here are two Facebook icon images shown at their original sizes of <code>25px × 25px</code>:</p>
+
+<p><figure class="alignleft"><img style="display:inline-block" src="/uploads/2012/05/fb.jpg"><small style="display:block;margin:4px 0 12px;color:#666">JPG - 13kb</small></figure></p>
+
+<div class="alignleft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+
+<p><figure class="alignleft"><img style="display:inline-block" src="/uploads/2012/05/fb.svg"><small style="display:block;margin:4px 0 12px;color:#666">SVG - 1kb</small></figure></p>
+
+<div class="clear"></div>
+
+
+<p>And here are the same images scaled up 800%:</p>
+
+<p><figure class="alignleft"><img style="display:inline-block" width="200" height="200" src="/uploads/2012/05/fb.jpg"><small style="display:block;margin:4px 0 12px;color:#666">JPG - 13kb</small></figure></p>
+
+<div class="alignleft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+
+<p><figure class="alignleft"><img style="display:inline-block" width="200" height="200" src="/uploads/2012/05/fb.svg"><small style="display:block;margin:4px 0 12px;color:#666">SVG - 1kb</small></figure></p>
+
+<div class="clear"></div>
+
+
+<p>The main thing to notice here, other than the obvious infinite scalability, is the difference in file sizes. Since <code>.svg</code> files hold no pixel data, the file sizes are incredibly small: <code>1kb</code> vs <code>13kb</code>. Using <code>.svg</code> removes the need for serving different images based on pixel density and saves a lot of bandwidth.</p>
+
+<h3>SVG, take the wheel</h3>
+
+<p>Support for <code>.svg</code> images on mobile and desktop browsers is <a href="http://caniuse.com/#cats=SVG">surprisingly good</a> and so I feel it&rsquo;s quite safe to use on all my projects from now on.</p>
+
+<h3>Let&rsquo;s make some Fireworks</h3>
+
+<p>Unfortunately, there&rsquo;s no way to export files as <code>.svg</code> in Photoshop and I don&rsquo;t feel comfortable with Illustrator&rsquo;s rulers and grid system for pixel-specific design.</p>
+
+<p>Adobe Fireworks plus the <a href="http://fireworks.abeall.com/extensions/commands/Export/">Export to SVG plugin</a> is the <strong>perfect solution</strong>. Yeah it&rsquo;s kinda dumb that Adobe hasn&rsquo;t developed built-in support for this in Fireworks, but this plugin is extremely simple to install. Once you&rsquo;ve installed the plugin, you will have an option under Commands > Export > Export SVG&hellip; and you&rsquo;re good to go.</p>
+
+
+            
+
+        
+
+    </div>
+</article>
+
+
+    
+
+        <footer class="footer gui-flip">
+            <div class="content">
+                
+                    <div class="content__box content__box--flat">
+                        
+                            <a class="button-block" href="/">Back to home</a>
+                        
+                    </div>
+                
+                <div class="content__box aligncenter">
+                    <ul class="list--plain list--inline">
+                        <li class="list__item">
+                            <a class="button-cube" href="http://twitter.com/amsul_" target="_blank">
+                                <span class="gui-icon gui-icon--twitter"></span>
+                            </a>
+                        </li><!--
+                     --><li class="list__item">
+                            <a class="button-cube" href="http://github.com/amsul" target="_blank">
+                                <span class="gui-icon gui-icon--github"></span>
+                            </a>
+                        </li><!--
+                     --><li class="list__item">
+                            <a class="button-cube" href="mailto:reach@amsul.ca">
+                                <span class="gui-icon gui-icon--email"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>&copy; 2014 Amsul</p>
+                    <p class="peace">&#x270C;</p>
+                    <p class="embrace">Embrace the randomness.</p>
+                </div>
+            </div>
+        </footer> <!-- .footer -->
+
+    
+
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-34739744-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+</html>
+
+

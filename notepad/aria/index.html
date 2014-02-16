@@ -1,0 +1,214 @@
+<!doctype html>
+
+<html lang="en">
+
+
+    <meta charset="utf-8">
+
+    <meta name="author" content="Amsul - http://amsul.ca/">
+    <meta name="copyright" content="&copy; Amsul">
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <title>ARIA / Notepad / Amsul</title>
+
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,800italic,300,600,800">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <script src="/js/shiv.js"></script>
+
+
+
+    
+
+        <div class="menu">
+            <nav class="menu__nav" id="menu">
+                <div class="content content--flat-bottom">
+                    <a class="menu__button-close" href="#"></a>
+                    <div class="content__box">
+                        <h4 class="title--flat emphasize">Menu</h4>
+                    </div>
+                </div>
+                <div class="content content-freeform content--pad-bottom">
+                    <ul class="list--plain list--flat">
+                        <li class="list__item">
+                            <a class="link--block" href="/notepad">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">My notes on stuff</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link--block" href="https://github.com/amsul?tab=repositories">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">My open source stuff</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link--block" href="/me">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">Me and my other stuff</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <aside class="menu__toggler alignright">
+                <a class="menu__opener button-menu button-menu--inverse" href="#menu"></a>
+                <a class="menu__closer button-menu button-menu--inverse" href="#"></a>
+            </aside>
+        </div> <!-- .menu -->
+
+    
+
+
+    <header class="header header--colored">
+        <div class="content">
+            <div class="content__box content__box--pad-one">
+                
+                    <h1 class="header__wrapper title--base-size title--thin title--flat">
+                        
+                            <a class="title--dimmed header__link" href="/">Hi, I&rsquo;m Amsul.</a>
+                        
+                    </h1>
+                
+                
+                    <div class="header__title aligncenter">
+                        
+                        <h1 class="title title--thin title--flat">ARIA / Notepad</h1>
+                    </div>
+                
+            </div>
+        </div>
+    </header> <!-- .header -->
+
+
+    <main class="content  content--pad-bottom">
+    <article class="content__box">
+        
+            <div class="content__body">
+                <h3>Key resources:</h3>
+
+<ul>
+<li><a href="http://www.w3.org/TR/wai-aria/usage">http://www.w3.org/TR/wai-aria/usage</a></li>
+<li><a href="http://www.w3.org/TR/wai-aria/roles">http://www.w3.org/TR/wai-aria/roles</a></li>
+<li><a href="http://www.w3.org/TR/wai-aria/states_and_properties">http://www.w3.org/TR/wai-aria/states_and_properties</a></li>
+</ul>
+
+
+<hr>
+
+
+<h3>Rules of building with ARIA:</h3>
+
+<ol>
+<li>Start by architecting the “landmark” roles.</li>
+<li>Then build the “document structure” roles.</li>
+<li>Finally create individual “widget” roles.</li>
+</ol>
+
+
+<p>* Do NOT use “abstract roles” as they’re reserved for ontology and do nothing within the accessibility tree.</p>
+
+<p><em>Role definitions</em>: <a href="http://www.w3.org/TR/wai-aria/roles#roles_categorization">http://www.w3.org/TR/wai-aria/roles#roles_categorization</a></p>
+
+<hr>
+
+
+<h3>Rules of employing ARIA:</h3>
+
+<ul>
+<li>When a native HTML element/attribute exists, use that instead of ARIA roles, states, or properties.</li>
+<li>Do not change semantics of native elements: eg <code>&lt;h1 role=button&gt;</code>.</li>
+<li>Interactive controls, widgets, etc. that are controlled by click/tap/drag/drop/slide/scroll must also be equivalently controllable via the keyboard.</li>
+<li>The “space” key should alias the action of the “enter” key.</li>
+<li>To pass ARIA validation, the document type is required to be HTML5. It works with other types as well, but to pass validation, make sure to do this.</li>
+</ul>
+
+
+<p><em>Source</em>: <a href="http://blog.paciellogroup.com/2012/06/html5-accessibility-chops-using-aria-notes/">http://blog.paciellogroup.com/2012/06/html5-accessibility-chops-using-aria-notes/</a></p>
+
+<hr>
+
+
+<h3>Things to keep in mind:</h3>
+
+<ul>
+<li>Not all elements need ARIA roles or attributes attached to them: <a href="http://rawgithub.com/w3c/aria-in-html/master/index.html#rec">http://rawgithub.com/w3c/aria-in-html/master/index.html#rec</a>.</li>
+<li>The “presentation” role removes semantics from element: eg <code>&lt;h1 role=presentation&gt;</code> becomes  <code>&lt;&gt;</code>. Descendants retain their semantics – unless if there are specific expected children of the element, such as with <code>table</code>, <code>ul</code>, etc.</li>
+<li>Tabbing order for widgets within widgets goes from parent widget, cascades through descendants until final descendant is reached and then moves on to next parent widget. More on keyboard behavior: <a href="http://www.w3.org/WAI/PF/aria-practices/#aria_ex">http://www.w3.org/WAI/PF/aria-practices/#aria_ex</a>.</li>
+<li>Be careful when <a href="http://rawgithub.com/w3c/aria-in-html/master/index.html#using-aria-role-application">using <code>role=application</code></a> – unless if you really understand <a href="http://www.marcozehe.de/2012/02/06/if-you-use-the-wai-aria-role-application-please-do-so-wisely/">its purpose and mode of use</a>. If you must use “focus” mode, the counter part is “browse” mode, which is triggered by <code>role=document</code>. A good example is Yahoo Mail, which uses <code>application</code> for browsing through mail and <code>document</code> for reading mail.</li>
+</ul>
+
+
+            </div>
+        
+    </article>
+</main>
+
+
+    
+
+        <footer class="footer gui-flip">
+            <div class="content">
+                
+                    <div class="content__box content__box--flat">
+                        
+                            <a class="button-block" href="/notepad">Back to notepad</a>
+                        
+                    </div>
+                
+                <div class="content__box aligncenter">
+                    <ul class="list--plain list--inline">
+                        <li class="list__item">
+                            <a class="button-cube" href="http://twitter.com/amsul_" target="_blank">
+                                <span class="gui-icon gui-icon--twitter"></span>
+                            </a>
+                        </li><!--
+                     --><li class="list__item">
+                            <a class="button-cube" href="http://github.com/amsul" target="_blank">
+                                <span class="gui-icon gui-icon--github"></span>
+                            </a>
+                        </li><!--
+                     --><li class="list__item">
+                            <a class="button-cube" href="mailto:reach@amsul.ca">
+                                <span class="gui-icon gui-icon--email"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>&copy; 2014 Amsul</p>
+                    <p class="peace">&#x270C;</p>
+                    <p class="embrace">Embrace the randomness.</p>
+                </div>
+            </div>
+        </footer> <!-- .footer -->
+
+    
+
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-34739744-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+</html>
+
+
