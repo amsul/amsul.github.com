@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en" class="{% if page.name == "home" %}colorize{% endif %}">
+<html lang="en">
 
 
     <meta charset="utf-8">
@@ -16,10 +16,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-    <title>Amsul{% if page.title %} / {{ page.title }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title_prefix }}{{ page.title }}{{ page.title_suffix }} / {% endif %}Amsul</title>
 
 
     <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,800italic,300,600,800">
     <link rel="stylesheet" href="/css/style.css">
 
 
@@ -27,51 +28,69 @@
 
 
 
-    <noscript>
-        <section id="noscript">
-            <div class="content--noscript">
-                <h3>Dude, your JavaScript is disabled.</h3>
-                <p>It&rsquo;s totally cool &ndash; your experience on this site won&rsquo;t change at all with it enabled. Well&hellip; that&rsquo;s of course except for this message.</p>
-                <p>So in case you&rsquo;re wondering how to switch it back on, <a target="_blank" href="http://www.enable-javascript.com">here&rsquo;s what to do</a>.</p>
-            </div>
-        </section>
-    </noscript>
-
-
     {% unless page.empty_page %}
 
         <div class="menu">
             <nav class="menu__nav" id="menu">
-                <ul class="list--plain">
-                    <li class="list__item"><a class="list__link--block" target="_blank" href="https://github.com/amsul?tab=repositories">my open source stuff</a></li><!--
-                 --><li class="list__item"><a class="list__link--block" href="/me">me and my other stuff</a></li>
-                </ul>
+                <div class="content content--flat-bottom">
+                    <a class="menu__button-close" href="#"></a>
+                    <div class="content__box">
+                        <h4 class="title--flat emphasize">Menu</h4>
+                    </div>
+                </div>
+                <div class="content content-freeform content--pad-bottom">
+                    <ul class="list--plain list--flat">
+                        <li class="list__item">
+                            <a class="link--block" href="/notepad">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">My notes on stuff</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link--block" href="https://github.com/amsul?tab=repositories">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">My open source stuff</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link--block" href="/me">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">Me and my other stuff</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <aside class="menu__toggler alignright">
-                <a class="menu__opener button-cube" href="#menu"><span class="gui-icon gui-icon--down"></span></a>
-                <a class="menu__closer button-cube" href="#"><span class="gui-icon gui-icon--up"></span></a>
+                <a class="menu__opener button-menu{% if page.name != "home" %} button-menu--inverse{% endif %}" href="#menu"></a>
+                <a class="menu__closer button-menu{% if page.name != "home" %} button-menu--inverse{% endif %}" href="#"></a>
             </aside>
         </div> <!-- .menu -->
 
     {% endunless %}
 
 
-    <header class="header{% if page.name != "home" %}--colored{% endif %}">
+    <header class="header{% if page.name != "home" %} header--colored{% endif %}">
         <div class="content">
-            <div class="content__box--header">
+            <div class="content__box content__box--pad-one">
                 {% unless page.empty_page %}
-                    {% if page.name != "home" %}
-                        <h1 class="header__wrapper title--header title--thin"><a class="title--dimmed header__link" href="/">{{ site.tagline | truncatewords: 3 | remove: '...' }}</a></h1>
-                    {% else %}
-                        <h1 class="header__wrapper title--header">{{ site.tagline }}</h1>
-                    {% endif %}
+                    <h1 class="header__wrapper title--base-size title--thin title--flat">
+                        {% if page.name != "home" %}
+                            <a class="title--dimmed header__link" href="/">{{ site.tagline | truncatewords: 3 | remove: '...' }}</a>
+                        {% else %}
+                            {{ site.tagline }}
+                        {% endif %}
+                    </h1>
                 {% endunless %}
-                {% if page.title_block %}
+                {% if page.title %}
                     <div class="header__title aligncenter">
                         {% if page.date %}
-                            <p class="content__date title--dimmed">{{ page.date | date: "%B %d, %Y" }}</p>
+                            <p class="content__subtitle title--dimmed">{{ page.date | date: "%B %d, %Y" }}</p>
                         {% endif %}
-                        <h1 class="content__title">{{ page.title }}</h1>
+                        <h1 class="title title--thin title--flat">{{ page.title_prefix }}{{ page.title }}{{ page.title_suffix }}</h1>
                     </div>
                 {% endif %}
             </div>
@@ -84,30 +103,37 @@
 
     {% unless page.empty_page %}
 
-        <footer class="footer{% if page.name != "home" %} gui-flip{% endif %}">
+        <footer class="footer gui-flip">
             <div class="content">
+                {% if page.name != "home" %}
+                    <div class="content__box content__box--flat">
+                        {% if page.notepad_page and page.notepad_index != true %}
+                            <a class="button-block" href="/notepad">Back to notepad</a>
+                        {% else %}
+                            <a class="button-block" href="/">Back to home</a>
+                        {% endif %}
+                    </div>
+                {% endif %}
                 <div class="content__box aligncenter">
-                    {% if page.name != "home" %}
-                        <div><a class="button-block" href="/">Back to home</a></div>
-                    {% endif %}
                     <ul class="list--plain list--inline">
                         <li class="list__item">
-                            <a class="button-cube button-cube--dark" href="http://twitter.com/amsul_" target="_blank">
+                            <a class="button-cube" href="http://twitter.com/amsul_" target="_blank">
                                 <span class="gui-icon gui-icon--twitter"></span>
                             </a>
                         </li><!--
                      --><li class="list__item">
-                            <a class="button-cube button-cube--dark" href="http://github.com/amsul" target="_blank">
+                            <a class="button-cube" href="http://github.com/amsul" target="_blank">
                                 <span class="gui-icon gui-icon--github"></span>
                             </a>
                         </li><!--
                      --><li class="list__item">
-                            <a class="button-cube button-cube--dark" href="mailto:reach@amsul.ca">
+                            <a class="button-cube" href="mailto:reach@amsul.ca">
                                 <span class="gui-icon gui-icon--email"></span>
                             </a>
                         </li>
                     </ul>
-                    <p>&copy; 2011-{{ site.time | date: "%Y" }} Amsul</p>
+                    <p>&copy; {{ site.time | date: "%Y" }} Amsul</p>
+                    <p class="peace">&#x270C;</p>
                     <p class="embrace">Embrace the randomness.</p>
                 </div>
             </div>

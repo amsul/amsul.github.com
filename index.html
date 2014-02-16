@@ -3,18 +3,31 @@ layout: base
 name: home
 ---
 
-<section class="content--landing">
-    <div class="content__box--landing">
+<main class="content content--landing">
+    <div class="content__box content__box--flat-top">
         {% for post in site.posts %}
-            <h1 class="title title--thin">
-                {% if post.external %}
-                    <a class="title__link link--external" href="{{ post.external_url }}" title="Opens in a new window" target="_blank">{{ post.title }}</a>
-                {% else %}
-                    <a class="title__link" href="{{ post.url }}">{{ post.title }}</a>
-                {% endif %}
-            </h1>
-            <hr class="divider--dark">
+            <h2 class="title title--thin title--flat">
+
+                <a
+                    {% if post.external %}
+                        class="title__link link--external"
+                        href="{{ post.external_url }}"
+                        title="Opens in a new window"
+                        target="_blank"
+                    {% else %}
+                        class="title__link"
+                        href="{{ post.url }}"
+                    {% endif %}
+                    ><!--
+                 --><span class="title__label">{{ post.title }}</span><!--
+                    {% if post.external %}
+                     --><span class="link__icon"></span><!--
+                    {% endif %}
+                 --><small class="title__sub">{{ post.date | date: "%B&nbsp;%d,&nbsp;%Y" }}</small>
+             </a>
+
+            </h2>
         {% endfor %}
     </div>
-</section> <!-- .content--landing -->
+</main>
 

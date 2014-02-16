@@ -1,8 +1,7 @@
-
 .DS_Store
 
-Amsul.ca.sublime-project
+*.sublime-project
 
-Amsul.ca.sublime-workspace
+*.sublime-workspace
 
 _site/*

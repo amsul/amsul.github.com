@@ -1,7 +1,6 @@
 ---
 layout: post
-title_block: true
-title: SVG &amp; Fireworks for retina-ready sites.
+title: SVG &amp; Fireworks for retina-ready sites
 ---
 
 

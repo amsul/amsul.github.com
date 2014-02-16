@@ -1,0 +1,25 @@
+---
+layout: base
+notepad_page: true
+title_suffix: " / Notepad"
+---
+
+<main class="content  content--pad-bottom">
+    <article class="content__box">
+        {% if page.notepad_index %}
+            <h3 class="title--thin">Just some thoughts on&hellip;</h3>
+            <ul class="content__body">
+                {% directory path: notepad exclude: index.md %}
+                    <li>
+                        <a href="/notepad/{{ file.slug }}">{{ file.title }}</a><!--
+                     --><small class="dimmed-extra"> (updated&nbsp;{{ file.date | date: "%b&nbsp;%d,&nbsp;%Y" }})</small>
+                    </li>
+                {% enddirectory %}
+            </ul>
+        {% else %}
+            <div class="content__body">
+                {{ content | emojify }}
+            </div>
+        {% endif %}
+    </article>
+</main>

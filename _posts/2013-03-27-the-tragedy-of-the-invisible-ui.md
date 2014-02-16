@@ -1,7 +1,6 @@
 ---
 layout: post
-title_block: true
-title: The tragedy of the invisible UI.
+title: The tragedy of the invisible UI
 ---
 
 Let&rsquo;s not forget the purpose of designing an interface. Interfaces should be designed to communicate the message of the content, within it&rsquo;s context, most effectively.

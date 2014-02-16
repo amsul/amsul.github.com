@@ -2,7 +2,6 @@
 layout: post
 permalink: /MIT/
 empty_page: true
-title_block: true
 title: MIT License
 ---
 
