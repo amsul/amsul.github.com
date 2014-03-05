@@ -18,7 +18,7 @@
 
     
         
-            <title>Don&rsquo;t be lazy, use HTML labels correctly / Amsul</title>
+            <title>Git / Notepad / Amsul</title>
         
     
 
@@ -97,10 +97,8 @@
                 
                     <div class="header__title aligncenter">
                         
-                            <p class="content__subtitle title--dimmed">December 07, 2012</p>
                         
-                        
-                            <h1 class="title title--thin title--flat">Don&rsquo;t be lazy, use HTML labels correctly</h1>
+                            <h1 class="title title--thin title--flat">Git / Notepad</h1>
                         
                     </div>
                 
@@ -109,26 +107,46 @@
     </header> <!-- .header -->
 
 
-    <article class="content content--pad-bottom">
-    <div class="content__box content__body">
-
+    <main class="content  content--pad-bottom">
+    <article class="content__box">
         
+            <div class="content__body">
+                <p>I find myself repeatedly Googling for some basic Git commands:</p>
 
-            <p>
-                <a
-                    class="link--external"
-                    href="http://blog.goodsense.io/2012/12/07/dont-be-lazy-use-html-labels-correctly"
-                    title="Opens in a new window"
-                    target="_blank"><!--
-                 -->External post<!--
-                 --><span class="link__icon"></span>
-                </a>
-            </p>
+<h3>Reset your local repository to the last committed state (leaves untracked files alone):</h3>
 
+<pre><code>git reset --hard
+</code></pre>
+
+<h3>Remove the last remote commit:</h3>
+
+<pre><code>git push -f origin HEAD^:master
+</code></pre>
+
+<h3>Delete a remote tag:</h3>
+
+<pre><code>git tag -d &lt;tag_name&gt;
+git push origin :refs/tags/&lt;tag_name&gt;
+</code></pre>
+
+<h3>Merge a remote repository into a local copy:</h3>
+
+<pre><code>git pull git://github.com/&lt;user_name&gt;/&lt;repo_name&gt; &lt;remote_branch_name&gt;:&lt;local_branch_name&gt;
+</code></pre>
+
+<h3>Track and merge a remote repository into a local copy:</h3>
+
+<pre><code>git remote add &lt;new_remote_name&gt; git://github.com/&lt;user_name&gt;/&lt;repo_name&gt;
+git fetch &lt;new_remote_name&gt;
+git checkout --track -b &lt;remote_branch_name&gt; &lt;new_remote_name&gt;/&lt;remote_branch_name&gt;
+git checkout &lt;local_branch_name&gt;
+git merge &lt;new_remote_name&gt;/&lt;remote_branch_name&gt;
+</code></pre>
+
+            </div>
         
-
-    </div>
-</article>
+    </article>
+</main>
 
 
     
@@ -138,7 +156,7 @@
                 
                     <div class="content__box content__box--flat">
                         
-                            <a class="button-block" href="/">Back to home</a>
+                            <a class="button-block" href="/notepad">Back to notepad</a>
                         
                     </div>
                 
