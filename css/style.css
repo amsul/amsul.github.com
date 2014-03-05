@@ -899,7 +899,6 @@ code {
     padding: 2px 2px 1px;
     border: 1px solid #e6e9e9;
     background: #f5f8f8;
-    white-space: nowrap;
 
     -webkit-border-radius: 3px;
        -moz-border-radius: 3px;
@@ -907,6 +906,7 @@ code {
 }
 
 pre {
+    white-space: pre;
     overflow-x: auto;
     padding: 1em;
     font-size: 1em;
@@ -941,7 +941,7 @@ blockquote:before {
     content: "“";
     position: absolute;
     left: -40px;
-    top: 0;
+    top: -.125em;
     font-size: 5em;
     font-weight: 600;
     color: #ddd;
