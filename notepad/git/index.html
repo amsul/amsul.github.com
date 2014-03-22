@@ -47,7 +47,7 @@
                         <li class="list__item">
                             <a class="link--block" href="/">
                                 <div class="content">
-                                    <div class="content__box content__box--pad-half">Homepage</div>
+                                    <div class="content__box content__box--pad-half">My homepage</div>
                                 </div>
                             </a>
                         </li>
@@ -90,7 +90,7 @@
                 
                     <h1 class="header__wrapper title--base-size title--thin title--flat">
                         
-                            <a class="title--dimmed header__link" href="/">Hi, I&rsquo;m Amsul.</a>
+                            <a class="title--dimmed header__link" href="/">Hi, I&rsquo;m <b>Amsul</b>.</a>
                         
                     </h1>
                 
@@ -113,34 +113,64 @@
             <div class="content__body">
                 <p>I find myself repeatedly Googling for some basic Git commands:</p>
 
-<h3>Reset your local repository to the last committed state (leaves untracked files alone):</h3>
+<h4>Reset your local repository to the last committed state (leaves untracked files alone):</h4>
 
 <pre><code>git reset --hard
 </code></pre>
 
-<h3>Remove the last remote commit:</h3>
+<br>
+
+
+<h4>Remove the last remote commit:</h4>
 
 <pre><code>git push -f origin HEAD^:master
 </code></pre>
 
-<h3>Delete a remote tag:</h3>
+<br>
+
+
+<h4>Delete a remote tag:</h4>
 
 <pre><code>git tag -d &lt;tag_name&gt;
 git push origin :refs/tags/&lt;tag_name&gt;
 </code></pre>
 
-<h3>Merge a remote repository into a local copy:</h3>
+<br>
+
+
+<h4>Merge a remote repository into a local copy:</h4>
 
 <pre><code>git pull git://github.com/&lt;user_name&gt;/&lt;repo_name&gt; &lt;remote_branch_name&gt;:&lt;local_branch_name&gt;
 </code></pre>
 
-<h3>Track and merge a remote repository into a local copy:</h3>
+<br>
+
+
+<h4>Track and merge a remote repository into a local copy:</h4>
 
 <pre><code>git remote add &lt;new_remote_name&gt; git://github.com/&lt;user_name&gt;/&lt;repo_name&gt;
 git fetch &lt;new_remote_name&gt;
 git checkout --track -b &lt;remote_branch_name&gt; &lt;new_remote_name&gt;/&lt;remote_branch_name&gt;
 git checkout &lt;local_branch_name&gt;
 git merge &lt;new_remote_name&gt;/&lt;remote_branch_name&gt;
+</code></pre>
+
+<br>
+
+
+<h4>Save your uncommitted changes in a named stash:</h4>
+
+<pre><code>git stash save "&lt;stash_name&gt;"
+</code></pre>
+
+<h4>Apply your saved named stash (using regex):</h4>
+
+<pre><code>git stash apply stash^{/&lt;stash_name_matcher&gt;}
+</code></pre>
+
+<h4>Remove a saved stash:</h4>
+
+<pre><code>git stash drop stash@{&lt;stash_index&gt;}
 </code></pre>
 
             </div>
