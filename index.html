@@ -19,7 +19,7 @@ name: home
                         href="{{ post.url }}"
                     {% endif %}
                     ><!--
-                 --><span class="title__label">{{ post.title }}</span><!--
+                 --><span class="title__label">{% if post.x_post %}X-post: {% endif %}{{ post.title }}</span><!--
                     {% if post.external %}
                      --><span class="link__icon"></span><!--
                     {% endif %}
