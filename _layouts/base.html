@@ -51,7 +51,7 @@
                         <li class="list__item">
                             <a class="link--block" href="/">
                                 <div class="content">
-                                    <div class="content__box content__box--pad-half">Homepage</div>
+                                    <div class="content__box content__box--pad-half">My homepage</div>
                                 </div>
                             </a>
                         </li>
@@ -108,7 +108,7 @@
                         {% if page.overview_page %}
                             <h1 class="title title--thin title--flat">{{ page.title }}</h1>
                         {% else %}
-                            <h1 class="title title--thin title--flat">{{ page.title_prefix }}{{ page.title }}{{ page.title_suffix }}</h1>
+                            <h1 class="title title--thin title--flat">{% if page.x_post %}X-post: {% endif %}{{ page.title }}{{ page.title_suffix }}</h1>
                         {% endif %}
                     </div>
                 {% endif %}

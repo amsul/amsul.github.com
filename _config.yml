@@ -1,7 +1,7 @@
 exclude: [ '*.sublime-project', '*.sublime-workspace', 'README.md' ]
 markdown: rdiscount
 permalink: pretty
-tagline: 'Hi, I&rsquo;m Amsul. I develop &amp; design stuff for our interwebs.'
+tagline: 'Hi, I&rsquo;m <b>Amsul</b>. I <b>develop</b> &amp; <b>design</b> stuff for our web.'
 url: http://amsul.ca/
 url_github: https://github.com/amsul/
 emoji_dir: https://github.global.ssl.fastly.net/images/icons/emoji/
