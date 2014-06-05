@@ -18,7 +18,7 @@
 
     
         
-            <title>Three charts are all I need / Amsul</title>
+            <title>On the road to an Ember app / Amsul</title>
         
     
 
@@ -97,10 +97,10 @@
                 
                     <div class="header__title aligncenter">
                         
-                            <p class="content__subtitle title--dimmed">February 07, 2013</p>
+                            <p class="content__subtitle title--dimmed">June 05, 2014</p>
                         
                         
-                            <h1 class="title title--thin title--flat">Three charts are all I need</h1>
+                            <h1 class="title title--thin title--flat">On the road to an Ember app</h1>
                         
                     </div>
                 
@@ -114,16 +114,175 @@
 
         
 
-            <p>
-                <a
-                    class="link--external"
-                    href="http://37signals.com/svn/posts/3388-three-charts-are-all-i-need"
-                    title="Opens in a new window"
-                    target="_blank"><!--
-                 -->External post<!--
-                 --><span class="link__icon"></span>
-                </a>
-            </p>
+            <p>I absolutely love <a href="http://emberjs.com/">Ember.js</a>. The framework is extremely powerful and is able to handle so much boilerplate that developing an Ember app is a real joy.</p>
+
+<p>I always imagined that converting an existing large, “multi-page” site into an Ember app would be a complicated process. But it recently occurred to me that it might be easier than expected&hellip; once we sacrifice the router and temporarily transition through a hybrid Ember site.</p>
+
+<h3>The markup</h3>
+
+<p>Let’s say we have a homepage:</p>
+
+<pre><code>&lt;!-- home.html --&gt;
+&lt;body&gt;
+    &lt;header&gt;&lt;/header&gt;
+    &lt;h1&gt;Homepage&lt;/h1&gt;
+    &lt;footer&gt;
+        &lt;button id="press-me"&gt;Press me!&lt;/button&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>And an about page:</p>
+
+<pre><code>&lt;!-- about.html --&gt;
+&lt;body&gt;
+    &lt;header&gt;&lt;/header&gt;
+    &lt;h1&gt;About&lt;/h1&gt;
+    &lt;footer&gt;
+        &lt;button id="press-me"&gt;Press me!&lt;/button&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>To Ember-ify this, we basically move all the page-specific content into an “index” template within those pages:</p>
+
+<pre><code>&lt;!-- home.html --&gt;
+&lt;body&gt;
+    &lt;script type="text/x-handlebars" data-template-name="index"&gt;
+        &lt;h1&gt;Homepage&lt;/h1&gt;
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+
+<!-- -->
+
+
+<pre><code>&lt;!-- about.html --&gt;
+&lt;body&gt;
+    &lt;script type="text/x-handlebars" data-template-name="index"&gt;
+        &lt;h1&gt;About&lt;/h1&gt;
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p>And move the rest into the application template:</p>
+
+<pre><code>{{!-- application.hbs --}}
+&lt;body&gt;
+    &lt;header&gt;&lt;/header&gt;
+    {{outlet}}
+    &lt;footer&gt;
+        &lt;button id="press-me"&gt;Press me!&lt;/button&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+</code></pre>
+
+<h3>The scripts</h3>
+
+<p>Let’s say our original scripts are something like this:</p>
+
+<pre><code>function init() {
+    $('#press-me').on('click', function() {
+        alert('hi there!')
+    })
+}
+
+// When the document is ready, initialize the scripts.
+$(document).ready(init)
+</code></pre>
+
+<p>In order to let Ember take over, we need to do some setup <em>before</em> initializing the scripts. So we change it to something like this:</p>
+
+<pre><code>function init() {
+    $('#press-me').on('click', function() {
+        alert('hi there!')
+    })
+}
+
+var App = Em.Application.create()
+
+// Disable the router.
+App.Router.reopenClass({
+    location: 'none'
+})
+
+// Once the `index` template of each individual page is
+// inserted into the DOM, initialize the non-Ember scripts.
+App.IndexView = Em.View.extend({
+    didInsertElement: function() {
+        init()
+    }
+})
+</code></pre>
+
+<h3>And that’s pretty much it <img alt="smile" src="https://github.global.ssl.fastly.net/images/icons/emoji/smile.png" class="emoji" /></h3>
+
+<p>We got our old application code working as it was before without having to tweak it. And we can build any new features using the power of Ember views.</p>
+
+<p>However, we obviously don’t want to <strong>not</strong> use the epic Ember router. That would be a tragedy. But that is also the trickier part. It heavily depends on your backend setup and your ability to map your URLs over correctly to the Ember router.</p>
+
+<p>That is out of scope of this post. But this is the first step in getting to a full-fledged Ember app.</p>
+
+<p>Now all this is a great start and all - but until we can completely transition to Ember router powered views, we need to have ways to communicate between our Ember logic and old application logic.</p>
+
+<h3>Communicating from Ember to non-Ember</h3>
+
+<p>This one is pretty obvious. We pass this responsibility on to the <code>ApplicationController</code> or <code>IndexController</code> based on whichever is more suitable for the scenario:</p>
+
+<pre><code>&lt;!-- home.html --&gt;
+&lt;body&gt;
+    &lt;script type="text/x-handlebars" data-template-name="index"&gt;
+        &lt;h1&gt;Homepage&lt;/h1&gt;
+        &lt;button {{action "say-hello"}}&gt;Say hello!&lt;/button&gt;
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+
+<!-- -->
+
+
+<pre><code>App.IndexController = Em.Controller.extend({
+    actions: {
+        'say-hello': function() {
+            Em.$('#press-me').trigger('click')
+        }
+    }
+})
+</code></pre>
+
+<h3>Communicating from non-Ember to Ember</h3>
+
+<p>To do things the other way around, we need to make sure the Ember view we want to communicate with has an explicit ID set on it:</p>
+
+<pre><code>&lt;!-- home.html --&gt;
+&lt;body&gt;
+    &lt;script type="text/x-handlebars" data-template-name="index"&gt;
+        &lt;h1&gt;Homepage&lt;/h1&gt;
+        &lt;button id="some-button"&gt;Trigger Ember action&lt;/button&gt;
+        {{ui-component id="some-ember-component"}}
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+
+<!-- -->
+
+
+<pre><code>$('#some-button').on('click', function() {
+
+    // All Ember views in the DOM are referenced under
+    // the `views` object by the element’s ID.
+    var uiComponent = Em.View.views['some-ember-component']
+
+    // Do whatever you like with uiComponent now!
+})
+</code></pre>
+
+<h3>That’s all there is to it <img alt="+1" src="https://github.global.ssl.fastly.net/images/icons/emoji/+1.png" class="emoji" /></h3>
+
+<p>I’ve used this method in several example apps and it has worked great for me so far. I’d love to hear about how other people have gone about dealing with hybrid sites and issues they’ve come across.</p>
+
+
+            
 
         
 
@@ -137,7 +296,7 @@
             <div class="content">
                 
                     <div class="content__box content__box--flat-top">
-                        <a class="button-block" href="https://twitter.com/intent/tweet?text=@amsul_&url=http%3A%2F%2Famsul.ca%2F2013%2F02%2F07%2Fthree-charts-are-all-i-need%2F" target="_blank">Share your comments/questions</a>
+                        <a class="button-block" href="https://twitter.com/intent/tweet?text=@amsul_&url=http%3A%2F%2Famsul.ca%2F2014%2F06%2F05%2Fon-the-road-to-an-ember-app%2F" target="_blank">Share your comments/questions</a>
                     </div>
                     <div class="content__box content__box--flat">
                         
