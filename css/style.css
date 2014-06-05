@@ -1,7 +1,7 @@
 /*!
  * Author:      Amsul - http://amsul.ca
- * Updated:     15 February, 2014
- * Version:     0.5.0
+ * Updated:     05 June, 2014
+ * Version:     0.5.1
  */
 
 
@@ -856,18 +856,24 @@ input[type=search] {
 
 
 .button-block {
-    background: #f7242b;
-    color: #fff;
+    border: 2px solid #f7242b;
+    background: none;
+    color: #f7241b;
+    font-weight: 600;
     display: block;
     text-align: center;
-    padding: 1em;
-    font-size: 1.25em;
-    max-width: 420px;
+    padding: 0.75em;
+    font-size: 1.125em;
+    max-width: 360px;
     margin: 0 auto;
 
     -webkit-transition: all .15s ease-out;
        -moz-transition: all .15s ease-out;
             transition: all .15s ease-out;
+}
+.button-block:hover {
+    background: #f7241b;
+    color: #fff;
 }
 
 
@@ -1269,7 +1275,7 @@ ol:last-child {
 
 .content {
     margin: 0 auto;
-    max-width: 764px;
+    max-width: 666px;
 }
 .content-freeform {
     max-width: none;
@@ -1318,9 +1324,7 @@ ol:last-child {
             margin-left: .5em;
         }
 
-    .content__body {
-        font-size: 1.125em;
-    }
+    .content__body {}
         .content__body h3 {
             margin: 2em 0 0;
         }
@@ -1417,13 +1421,8 @@ ol:last-child {
     .content--landing {
         text-align: center;
     }
-        .content__body {
-            font-size: 1.25em;
-        }
 
-    .title {
-        font-size: 2em;
-    }
+    .title {}
         .title__sub {
             display: block;
             margin-top: .5em;

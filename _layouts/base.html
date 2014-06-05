@@ -125,6 +125,9 @@
         <footer class="footer gui-flip">
             <div class="content">
                 {% if page.name != "home" %}
+                    <div class="content__box content__box--flat-top">
+                        <a class="button-block" href="https://twitter.com/intent/tweet?text=@amsul_&url={{ "http://amsul.ca" | cgi_escape }}{{ page.url | cgi_escape }}" target="_blank">Share your comments/questions</a>
+                    </div>
                     <div class="content__box content__box--flat">
                         {% if page.notepad_page and page.overview_page != true %}
                             <a class="button-block" href="/notepad">Back to notepad</a>
