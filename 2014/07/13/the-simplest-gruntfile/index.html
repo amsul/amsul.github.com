@@ -18,7 +18,7 @@
 
     
         
-            <title>Of course there is a page fold. Nobody lands scrolling / Amsul</title>
+            <title>The Simplest Gruntfile / Amsul</title>
         
     
 
@@ -97,10 +97,10 @@
                 
                     <div class="header__title aligncenter">
                         
-                            <p class="content__subtitle title--dimmed">December 01, 2012</p>
+                            <p class="content__subtitle title--dimmed">July 13, 2014</p>
                         
                         
-                            <h1 class="title title--thin title--flat">Of course there is a page fold. Nobody lands scrolling</h1>
+                            <h1 class="title title--thin title--flat">The Simplest Gruntfile</h1>
                         
                     </div>
                 
@@ -114,11 +114,168 @@
 
         
 
-            <p>The fold doesn&rsquo;t exist in the <a href="http://webdesign.tutsplus.com/articles/design-theory/designing-for-the-new-fold-web-design-post-monitorism/">traditional sense</a> where there is only one defined &ldquo;fold&rdquo;. But the essence is definitely very real; in that we, as designers, need to create the experiences that invite our visitors to scroll.</p>
+            <p>More often than not, I’ve come across Gruntfiles that are monstrous configuration blocks that are difficult to digest. This is most likely an artifact of how the official guides suggest constructing a Gruntfile, to make it easy for beginners to get started with Grunt.js.</p>
 
-<p>Understand who is visiting and why. Then design an experience that makes them believe: there is no fold.</p>
+<p>However, there is a much cleaner and modular approach we can take by separating the tasks and configurations into their own individual modules. What that ends up as is a tiny Gruntfile whose sole purpose is to load tasks from a directory and initialize them with configurations from another.</p>
+
+<p>Here’s the Gruntfile in it’s entirety:</p>
+
+<pre><code>/**
+ * This Gruntfile is used to import configs and tasks
+ * from the `node_configs` and `node_tasks` folders.
+ */
+
+'use strict';
+
+module.exports = function(grunt) {
+    initTasks(grunt, 'node_tasks')
+    initConfigs(grunt, 'node_configs')
+}
+
+function initTasks(grunt, folderPath) {
+    var pkg = grunt.file.readJSON('package.json')
+    var tasks = pkg.devDependencies
+    delete tasks.grunt
+    for ( var task in tasks ) {
+        grunt.loadNpmTasks(task)
+    }
+    grunt.loadTasks(folderPath)
+}
+
+function initConfigs(grunt, folderPath) {
+    var config = {}
+    grunt.file.expand(folderPath + '/**/*.js').forEach(function(filePath) {
+        var fileName = filePath.split('/').pop().split('.')[0]
+        var fileData = require('./' + filePath)
+        config[fileName] = fileData
+    })
+    grunt.initConfig(config)
+}
+</code></pre>
+
+<h3>The breakdown</h3>
+
+<p>The first four lines are the gist of the work:</p>
+
+<pre><code>module.exports = function(grunt) {
+    initTasks(grunt, 'node_tasks')
+    initConfigs(grunt, 'node_configs')
+}
+</code></pre>
+
+<p>We first initialize tasks from the <code>node_tasks</code> directory and then we initialize configurations for those tasks from the <code>node_configs</code> directory.</p>
+
+<h4><code>initTasks(grunt, folderPath)</code></h4>
+
+<p>Within the <code>initTasks</code> function, we first read the <code>package.json</code> file:</p>
+
+<pre><code>var pkg = grunt.file.readJSON('package.json')
+</code></pre>
+
+<p>...grab the <code>devDependencies</code>, which should only have Grunt tasks<sup><a href="#postscript_1">1</a></sup>:</p>
+
+<pre><code>var tasks = pkg.devDependencies
+delete tasks.grunt
+</code></pre>
+
+<p>...and load the named NPM tasks and our own custom tasks and aliases:</p>
+
+<pre><code>for ( var task in tasks ) {
+    grunt.loadNpmTasks(task)
+}
+grunt.loadTasks(folderPath)
+</code></pre>
+
+<h4><code>initConfigs(grunt, folderPath)</code></h4>
+
+<p>Within the <code>initConfigs</code> function, we create an empty <code>config</code> object and glob through the <code>node_configs</code> directory:</p>
+
+<pre><code>var config = {}
+grunt.file.expand(folderPath + '/**/*.js').forEach(...)
+</code></pre>
+
+<p>...grab each file’s name, which should be the name of the task, and add it to the <code>config</code> object:</p>
+
+<pre><code>var fileName = filePath.split('/').pop().split('.')[0]
+var fileData = require('./' + filePath)
+config[fileName] = fileData
+</code></pre>
+
+<p>...and finally, we initialize the configuration:</p>
+
+<pre><code>grunt.initConfig(config)
+</code></pre>
+
+<h3>Setting up <code>node_configs</code> and <code>node_tasks</code></h3>
+
+<p>These directories should look something like this:</p>
+
+<pre><code>node_configs/
+    ├── autoprefixer.js
+    ├── connect.js
+    ├── handlebars.js
+    ├── jshint.js
+    ├── less.js
+    ├── uglify.js
+    └── watch.js
+node_tasks/
+    ├── aliases.js
+    ├── custom-task.js
+    └── another-custom-task.js
+</code></pre>
+
+<p>Each task gets it’s own configuration file in <code>node_configs</code>:</p>
+
+<pre><code>// node_configs/connect.js
+'use strict';
+var grunt = require('grunt')
+module.exports = {
+    options: {
+        port: grunt.option('port') || 9001
+    },
+    server: {
+        // ...
+    }
+}
+</code></pre>
+
+<p>Each custom task gets it’s own registration file in <code>node_tasks</code>:</p>
+
+<pre><code>// node_tasks/custom-task.js
+'use strict';
+module.exports = function(grunt) {
+    grunt.registerMultiTask('custom-task', 'Make Grunt do something custom', function() {
+        // ...
+    })
+}
+</code></pre>
+
+<p>And all the task aliases, such as the default task, live in <code>node_tasks/aliases.js</code>:</p>
+
+<pre><code>'use strict';
+module.exports = function(grunt) {
+    grunt.registerTask('default', ['less', 'autoprefixer'])
+    grunt.registerTask('server', ['connect', 'watch'])
+}
+</code></pre>
+
+<h3>Brilliant <img alt="bowtie" src="https://github.global.ssl.fastly.net/images/icons/emoji/bowtie.png" class="emoji" /></h3>
+
+<p>I’ve found this to be much more flexible and extremely simple to find your way around all the tasks and configurations for complex build steps.</p>
 
 
+            
+                <hr>
+                <footer class="content__postscript">
+                    <ol>
+                        
+                            <li class="content__postscript-item">
+                                <a class="content__postscript-hook" href="#postscript_1"></a>
+                                <p id="postscript_1">Any dependencies that aren’t Grunt tasks can be listed under `dependencies`, otherwise Grunt will try to load it as a task and fail.</p>
+                            </li>
+                        
+                    </ol>
+                </footer>
             
 
         
@@ -133,7 +290,7 @@
             <div class="content">
                 
                     <div class="content__box content__box--flat-top">
-                        <a class="button-block" href="https://twitter.com/intent/tweet?text=@amsul_&url=http%3A%2F%2Famsul.ca%2F2012%2F12%2F01%2Fpage-fold%2F" target="_blank">Share your comments/questions</a>
+                        <a class="button-block" href="https://twitter.com/intent/tweet?text=@amsul_&url=http%3A%2F%2Famsul.ca%2F2014%2F07%2F13%2Fthe-simplest-gruntfile%2F" target="_blank">Share your comments/questions</a>
                     </div>
                     <div class="content__box content__box--flat">
                         
