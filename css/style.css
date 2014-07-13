@@ -1366,12 +1366,12 @@ ol:last-child {
             .content__postscript-item p {
                 padding-right: 5px;
             }
-            .content__postscript-item p:target {
+            .content__postscript-item:target p {
                 background: #def2ff;
                 color: #000;
                 position: relative;
             }
-                .content__postscript-item p:target:after {
+                .content__postscript-item:target p:after {
                     content: " ";
                     position: absolute;
                     left: -5px;

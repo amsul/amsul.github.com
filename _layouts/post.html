@@ -27,9 +27,11 @@ layout: base
                 <footer class="content__postscript">
                     <ol>
                         {% for postscript in page.postscript %}
-                            <li class="content__postscript-item">
-                                <a class="content__postscript-hook" href="#postscript_{{ forloop.index }}"></a>
-                                <p id="postscript_{{ forloop.index }}">{{ postscript | markdownify | emojify }}</p>
+                            <li class="content__postscript-item" id="postscript_{{ forloop.index }}">
+                                <a class="content__postscript-hook"
+                                    href="#postscript_{{ forloop.index }}"
+                                    name="postscript_{{ forloop.index }}"></a>
+                                {{ postscript | markdownify | emojify }}
                             </li>
                         {% endfor %}
                     </ol>
