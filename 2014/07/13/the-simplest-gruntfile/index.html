@@ -269,9 +269,12 @@ module.exports = function(grunt) {
                 <footer class="content__postscript">
                     <ol>
                         
-                            <li class="content__postscript-item">
-                                <a class="content__postscript-hook" href="#postscript_1"></a>
-                                <p id="postscript_1">Any dependencies that aren’t Grunt tasks can be listed under `dependencies`, otherwise Grunt will try to load it as a task and fail.</p>
+                            <li class="content__postscript-item" id="postscript_1">
+                                <a class="content__postscript-hook"
+                                    href="#postscript_1"
+                                    name="postscript_1"></a>
+                                <p>Any dependencies that aren’t Grunt tasks can be listed under <code>dependencies</code>, otherwise Grunt will try to load it as a task and fail.</p>
+
                             </li>
                         
                     </ol>
