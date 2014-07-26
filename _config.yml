@@ -5,3 +5,5 @@ tagline: 'Hi, I&rsquo;m <b>Amsul</b>. I <b>develop</b> &amp; <b>design</b> stuff
 url: http://amsul.ca/
 url_github: https://github.com/amsul/
 emoji_dir: https://github.global.ssl.fastly.net/images/icons/emoji/
+paginate: 3
+paginate_path: 'page/:num'

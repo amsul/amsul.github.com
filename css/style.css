@@ -1,7 +1,7 @@
 /*!
  * Author:      Amsul - http://amsul.ca
- * Updated:     05 June, 2014
- * Version:     0.5.1
+ * Updated:     26 July, 2014
+ * Version:     0.5.2
  */
 
 
@@ -1254,7 +1254,13 @@ ol:last-child {
                    -moz-transition: all .1s ease-out;
                         transition: all .1s ease-out;
             }
-            .header__link:hover {
+            .header__link--dark {
+                color: #000;
+            }
+            .header__link--dark:hover {
+                color: #0089ec;
+            }
+            .header__link--dimmed:hover {
                 color: #fff;
             }
 

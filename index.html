@@ -5,7 +5,7 @@ name: home
 
 <main class="content content--landing">
     <div class="content__box content__box--flat-top">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
             <h2 class="title title--thin title--flat">
 
                 <a
@@ -30,4 +30,21 @@ name: home
         {% endfor %}
     </div>
 </main>
+
+<aside class="content">
+    <div class="content__box content__box--flat-top aligncenter">
+        <div><!--
+            {% if paginator.previous_page %}
+             --><a class="link--underline" href="{{ paginator.previous_page_path }}">Newer posts</a><!--
+            {% endif %}
+         -->{% if paginator.previous_page and paginator.next_page %}&nbsp; &nbsp; {% endif %}<!--
+            {% if paginator.next_page %}
+             --><a class="link--underline" href="{{ paginator.next_page_path }}">Older posts</a><!--
+            {% endif %}
+     --></div>
+        <p>
+            <small class="dimmed-extra">({{ paginator.page }} of {{ paginator.total_pages }})</small>
+        </p>
+    </div>
+</aside>
 
