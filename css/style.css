@@ -900,25 +900,39 @@ input[type=search] {
    ========================================================================== */
 
 pre,
-code {
+code,
+.highlight {
     font-family: 'Consolas', 'Liberation Mono', monospace;
-    padding: 2px 2px 1px;
-    border: 1px solid #e6e9e9;
-    background: #f5f8f8;
 
     -webkit-border-radius: 3px;
        -moz-border-radius: 3px;
             border-radius: 3px;
 }
 
-pre {
+pre,
+.highlight {
     white-space: pre;
     overflow-x: auto;
+    margin: 1em 0;
     padding: 1em;
     font-size: 1em;
+    background: #1d1f21;
+    color: #c5c8c6;
 }
 
-pre > code {
+code {
+    border: 1px solid #e6e9e9;
+    padding: 2px 2px 1px;
+    background: #f5f8f8;
+}
+
+a pre,
+a code {
+    color: initial;
+}
+
+pre > code,
+.highlight > pre {
     display: table;
     line-height: 1.5;
     border: 0;
@@ -926,10 +940,68 @@ pre > code {
     padding: 0 4.2em 0 0;
 }
 
-a pre,
-a code {
-    color: initial;
+.highlight > pre {
+    margin: 0;
+    overflow: initial;
 }
+
+.highlight > pre > code {
+    padding: 0;
+    display: block;
+}
+
+
+/* comment */
+.highlight .c,
+.highlight .cm,
+.highlight .c1,
+.highlight .cp {
+    color: #707880;
+    font-style: italic;
+}
+/* comment preproc */
+.highlight .cp {
+    color: #de935f;
+}
+/* name tag */
+.highlight .nt {
+    color: #81a2be;
+}
+/* name attribute */
+.highlight .na {
+    color: #f0c674;
+}
+/* name entity */
+.highlight .ni {
+    color: #b294bb;
+}
+/* string */
+.highlight .s,
+.highlight .s1 {
+    color: #b5bd68;
+}
+/* punctuation */
+.highlight .p {
+    color: #707880;
+}
+/* operator */
+.highlight .o {
+    color: #8abeb7;
+}
+/* keyword */
+.highlight .k {
+    color: #b294bb;
+}
+/* keyword declaration */
+.highlight .kd {
+    color: #81a2be;
+}
+/* number integer */
+.highlight .mi {
+    color: #c66;
+}
+
+
 
 
 

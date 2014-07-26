@@ -1,5 +1,7 @@
-exclude: [ '*.sublime-project', '*.sublime-workspace', 'README.md' ]
-markdown: rdiscount
+exclude: ['*.sublime-project', '*.sublime-workspace', 'README.md']
+markdown: redcarpet
+redcarpet:
+    extensions: ['smart', 'autolink', 'strikethrough', 'space_after_headers', 'superscript']
 permalink: pretty
 tagline: 'Hi, I&rsquo;m <b>Amsul</b>. I <b>develop</b> &amp; <b>design</b> stuff for our web.'
 url: http://amsul.ca/
