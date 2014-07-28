@@ -1,0 +1,424 @@
+<!doctype html>
+
+<html lang="en">
+
+
+    <meta charset="utf-8">
+
+    <meta name="author" content="Amsul - http://amsul.ca/">
+    <meta name="copyright" content="&copy; Amsul">
+    
+        <meta name="description" content="CSS files have a much smaller footprint when multiple classes are created for component modifiers and extensions are used across components.">
+    
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@amsul_">
+    <meta name="twitter:domain" content="amsul.ca">
+    <meta name="twitter:creator" content="@amsul_">
+    
+        
+            <meta name="twitter:title" content="Composing leaner CSS with modifiers and extensions / Amsul">
+        
+    
+    
+        <meta name="twitter:description" content="CSS files have a much smaller footprint when multiple classes are created for component modifiers and extensions are used across components.">
+    
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    
+        
+            <title>Composing leaner CSS with modifiers and extensions / Amsul</title>
+        
+    
+
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,800italic,300,600,800">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <script src="/js/shiv.js"></script>
+
+
+
+    
+
+        <div class="menu">
+            <nav class="menu__nav" id="menu">
+                <div class="content content--flat-bottom">
+                    <a class="menu__button-close" href="#"></a>
+                    <div class="content__box">
+                        <h4 class="title--flat emphasize">Menu</h4>
+                    </div>
+                </div>
+                <div class="content content-freeform content--pad-bottom">
+                    <ul class="list--plain list--flat">
+                        <li class="list__item">
+                            <a class="link--block" href="/">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">Home</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link--block" href="/notepad">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">Notepad</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link--block" href="https://github.com/amsul?tab=repositories">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">Projects</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link--block" href="/me">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">Me</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <aside class="menu__toggler alignright">
+                <a class="menu__opener button-menu button-menu--inverse" href="#menu"></a>
+                <a class="menu__closer button-menu button-menu--inverse" href="#"></a>
+            </aside>
+        </div> <!-- .menu -->
+
+    
+
+
+    <header class="header header--colored">
+        <div class="content">
+            <div class="content__box content__box--pad-one">
+                
+                    <h1 class="header__wrapper title--base-size title--thin title--flat">
+                        <a class="header__link header__link--dimmed title--dimmed" href="#menu">
+                            
+                                Hi, I&rsquo;m <b>Amsul</b>.
+                            
+                        </a>
+                    </h1>
+                
+                
+                    <div class="header__title aligncenter">
+                        
+                            <p class="content__subtitle title--dimmed">July 28, 2014</p>
+                        
+                        
+                            <h1 class="title title--thin title--flat">Composing leaner CSS with modifiers and extensions</h1>
+                        
+                    </div>
+                
+            </div>
+        </div>
+    </header> <!-- .header -->
+
+
+    <article class="content">
+    <div class="content__box content__body">
+
+        
+
+            <p>When following <a href="http://bem.info/method/definitions/">BEM naming conventions</a>, people find it odd how verbose the markup can become with class definitions. In an effort to “fix” this, some have suggested using the <code>extend</code> method of preprocessors to copy selectors over to the styles they extend.</p>
+
+<p>However, a problem arises when extending styles <em>within</em> components versus <em>across</em>. To accentuate the difference, I created two demos of basic components that look exactly the same, but use varying approaches.</p>
+
+<h3>Single classes + extend <em>within</em> components (<a href="http://jsbin.com/firipu/1/edit?html,css,output">full example</a>)</h3>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nc">.input</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.input_large</span> <span class="p">{</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">input</span> <span class="n">all</span><span class="p">);</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.input</span><span class="nd">:disabled</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.textarea</span> <span class="p">{</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">input</span> <span class="n">all</span><span class="p">);</span>
+    <span class="k">min-height</span><span class="o">:</span> <span class="m">2em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.textarea_large</span> <span class="p">{</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">textarea</span> <span class="n">all</span><span class="p">);</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">input_large</span> <span class="n">all</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;input_large&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">&quot;textarea&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+<span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">&quot;textarea_large&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+</code></pre></div>
+<p>The markup requires only one class per element since each modifier extends the base styles and each related component extends it’s relative components’ styles.</p>
+
+<p>It seems simple enough so far and the markup is succinct.</p>
+
+<h3>Multiple classes + extend <em>across</em> components (<a href="http://jsbin.com/gubile/1/edit?html,css,output">full example</a>)</h3>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nc">.input</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.input_large</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.input</span><span class="nd">:disabled</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.textarea</span> <span class="p">{</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">input</span> <span class="n">all</span><span class="p">);</span>
+    <span class="k">min-height</span><span class="o">:</span> <span class="m">2em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.textarea_large</span> <span class="p">{</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">input_large</span> <span class="n">all</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;input&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;input input_large&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">&quot;textarea&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+<span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">&quot;textarea textarea_large&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+</code></pre></div>
+<p>Now, we’re only extending styles when we want to share specific properties across components. By passing the responsibility of variation styling over to the markup, we avoid getting caught up in a slew of extensions. As a result, the styles are easier to read and the markup is much more flexible.</p>
+
+<h3>“&hellip;but my markup gets cluttered with too many classes!”</h3>
+
+<p>Yes, potentially. But what about your stylesheets?</p>
+
+<p>When using preprocessors, people tend to ignore the output completely; forgetting that it’s the CSS that’s actually served to and parsed by the browser.</p>
+
+<p>So how much does the output size between the two approaches vary?</p>
+
+<h4>The HTML</h4>
+
+<p>Single classes: <code>6.69 kB</code><br>
+Multiple classes: <code>7.06 kB</code></p>
+
+<p>This is obviously expected – there are more classes in the markup so it’s about 0.05 times larger when using multiple classes.</p>
+
+<h4>The CSS</h4>
+
+<p>Single classes: <code>6.43 kB</code><br>
+Multiple classes: <code>1.89 kB</code></p>
+
+<p><big><img alt="open_mouth" src="https://github.global.ssl.fastly.net/images/icons/emoji/open_mouth.png" class="emoji" /></big>&hellip; yeah, almost 3.5 times larger when using single classes!</p>
+
+<h3>So why’re the resulting CSS sizes so drastically different?</h3>
+
+<p>Well, this is what the CSS for <strong>single classes</strong> looks like (<a href="http://jsbin.com/firipu/2/edit?css">full result</a>):</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nc">.input</span><span class="o">,</span>
+<span class="nc">.input_large</span><span class="o">,</span>
+<span class="nc">.textarea</span><span class="o">,</span>
+<span class="nc">.textarea_large</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.input_large</span><span class="o">,</span>
+<span class="nc">.textarea_large</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.textarea</span><span class="o">,</span>
+<span class="nc">.textarea_large</span> <span class="p">{</span>
+    <span class="k">min-height</span><span class="o">:</span> <span class="m">2em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.input</span><span class="nd">:disabled</span><span class="o">,</span>
+<span class="nc">.input_large</span><span class="nd">:disabled</span><span class="o">,</span>
+<span class="nc">.textarea</span><span class="nd">:disabled</span><span class="o">,</span>
+<span class="nc">.textarea_large</span><span class="nd">:disabled</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>And this is what the CSS for <strong>multiple classes</strong> looks like (<a href="http://jsbin.com/gubile/3/edit?css">full result</a>):</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nc">.input</span><span class="o">,</span>
+<span class="nc">.textarea</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.input_large</span><span class="o">,</span>
+<span class="nc">.textarea_large</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.textarea</span> <span class="p">{</span>
+    <span class="k">min-height</span><span class="o">:</span> <span class="m">2em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.input</span><span class="nd">:disabled</span><span class="o">,</span>
+<span class="nc">.textarea</span><span class="nd">:disabled</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#eee</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>See the problem?</p>
+
+<p>When using a single class, all variations (both within the component and across components) need all the styles of that component applied to them – in addition to the variation’s own styles. For each new declaration, the CSS becomes <em>exponentially</em> larger than using the multiple classes approach.</p>
+
+<p>The additional overhead in the markup is definitely worth the trade-off of having styles with a significantly smaller footprint. If you attempt chasing the single classes rule, your styles are likely to degrade into a barrage of extensions.</p>
+
+<p>However, there <em>are</em> scenarios where the same collection of modifier classes are repeatedly used together. That’s when “aliases” are extremely beneficial.</p>
+
+<h3>Multiple classes aided with aliases<sup><a href="#think_twice">*</a></sup></h3>
+
+<p>Aliases, or convenience classes, are compositions of a collection of modifiers within a component. They’re basically shorthands and do not have any styles of their own.</p>
+
+<p>Buttons are an example of a component that tends to have many variations. And we don’t want to do this for each button composition:</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nc">.button</span> <span class="p">{}</span>
+<span class="nc">.button_rounded</span> <span class="p">{}</span>
+<span class="nc">.button_pointing</span> <span class="p">{}</span>
+<span class="nc">.button_green</span> <span class="p">{}</span>
+<span class="nc">.button_blue</span> <span class="p">{}</span>
+</code></pre></div><div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button button_rounded button_pointing button_green&quot;</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button button_rounded button_pointing button_blue&quot;</span><span class="nt">&gt;</span>Secondary button<span class="nt">&lt;/button&gt;</span>
+</code></pre></div>
+<p>To introduce an “alias”, we need to explicitly mark the class as one. It should strictly behave as an alias to a composition of modifier classes and never have any styles of it’s own.</p>
+
+<p>Here, I’m using two leading leading dashes (<code>--</code>) to denote a class as an alias:</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nc">.button</span> <span class="p">{}</span>
+<span class="nc">.button_rounded</span> <span class="p">{}</span>
+<span class="nc">.button_pointing</span> <span class="p">{}</span>
+<span class="nc">.button_green</span> <span class="p">{}</span>
+<span class="nc">.button_blue</span> <span class="p">{}</span>
+<span class="nc">.--button_primary</span> <span class="p">{</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_rounded</span><span class="p">);</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_pointing</span><span class="p">);</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_green</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.--button_secondary</span> <span class="p">{</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_rounded</span><span class="p">);</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_pointing</span><span class="p">);</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_blue</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button --button_primary&quot;</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button --button_secondary&quot;</span><span class="nt">&gt;</span>Secondary button<span class="nt">&lt;/button&gt;</span>
+</code></pre></div>
+<p>This approach gives us the benefit of both grounds: concise class declarations and a smaller CSS footprint.</p>
+
+<p><a href="https://twitter.com/bensmithett/">Ben Smithett</a> recently <a href="http://bensmithett.com/bem-modifiers-multiple-classes-vs-extend/">wrote about this</a>, suggesting a “one modifier, one state” rule. I wouldn’t go as far as to say one modifier all the time since that can end up in too many <code>extend</code>s and bloat your stylesheets (keep reading below). But the general concept of leveraging multiple classes holds true.</p>
+
+<p><a name="think_twice"></a></p>
+
+<h3>* Think twice about crafting an alias</h3>
+
+<p>Don’t go crazy with aliasing all possible combinations of modifiers. And don’t alias an alias either. That’s the whole point of this post.</p>
+
+<p>This would be extremely bad:</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nc">.button</span> <span class="p">{}</span>
+<span class="nc">.button_large</span> <span class="p">{}</span>
+<span class="nc">.button_small</span> <span class="p">{}</span>
+<span class="nc">.button_rounded</span> <span class="p">{}</span>
+<span class="nc">.button_pointing</span> <span class="p">{}</span>
+<span class="nc">.button_green</span> <span class="p">{}</span>
+<span class="nc">.--button_primary</span> <span class="p">{</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_rounded</span><span class="p">);</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_pointing</span><span class="p">);</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_green</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.--button_primaryLarge</span> <span class="p">{</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.--</span><span class="n">button_primary</span><span class="p">);</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_large</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.--button_primarySmall</span> <span class="p">{</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.--</span><span class="n">button_primary</span><span class="p">);</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_small</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button --button_primary&quot;</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button --button_primaryLarge&quot;</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button --button_primarySmall&quot;</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+</code></pre></div>
+<p>Instead, leverage mutiple classes in your markup:</p>
+<div class="highlight"><pre><code class="css language-css" data-lang="css"><span class="nc">.button</span> <span class="p">{}</span>
+<span class="nc">.button_large</span> <span class="p">{}</span>
+<span class="nc">.button_small</span> <span class="p">{}</span>
+<span class="nc">.button_rounded</span> <span class="p">{}</span>
+<span class="nc">.button_pointing</span> <span class="p">{}</span>
+<span class="nc">.button_green</span> <span class="p">{}</span>
+<span class="nc">.--button_primary</span> <span class="p">{</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_rounded</span><span class="p">);</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_pointing</span><span class="p">);</span>
+    <span class="o">&amp;:</span><span class="n">extend</span><span class="p">(</span><span class="o">.</span><span class="n">button_green</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button --button_primary&quot;</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button --button_primary button_large&quot;</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;button --button_primary button_small&quot;</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+</code></pre></div>
+<p>It’s much more flexible to handle variation styling at the markup level, and future you will thank you for it.</p>
+
+
+            
+
+        
+
+    </div>
+</article>
+
+<aside class="content content--pad-bottom">
+    <div class="content__box content__body" id="disqus_thread"></div>
+</aside>
+<script type="text/javascript">
+    (function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//amsul.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
+
+    
+
+        <footer class="footer gui-flip">
+            <div class="content">
+                
+                    <div class="content__box content__box--flat">
+                        
+                            <a class="button-block" href="/">Back to home</a>
+                        
+                    </div>
+                
+                <div class="content__box aligncenter">
+                    <ul class="list--plain list--inline">
+                        <li class="list__item">
+                            <a class="button-cube" href="http://twitter.com/amsul_" target="_blank">
+                                <span class="gui-icon gui-icon--twitter"></span>
+                            </a>
+                        </li><!--
+                     --><li class="list__item">
+                            <a class="button-cube" href="http://github.com/amsul" target="_blank">
+                                <span class="gui-icon gui-icon--github"></span>
+                            </a>
+                        </li><!--
+                     --><li class="list__item">
+                            <a class="button-cube" href="mailto:reach@amsul.ca">
+                                <span class="gui-icon gui-icon--email"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>&copy; 2014 Amsul</p>
+                    <p class="peace">&#x270C;</p>
+                    <p class="embrace">Embrace the randomness.</p>
+                </div>
+            </div>
+        </footer> <!-- .footer -->
+
+    
+
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-34739744-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+</html>
+
+

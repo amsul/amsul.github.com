@@ -7,6 +7,18 @@
 
     <meta name="author" content="Amsul - http://amsul.ca/">
     <meta name="copyright" content="&copy; Amsul">
+    
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@amsul_">
+    <meta name="twitter:domain" content="amsul.ca">
+    <meta name="twitter:creator" content="@amsul_">
+    
+        
+            <meta name="twitter:title" content="Git / Notepad / Amsul">
+        
+    
+    
 
     <meta name="viewport" content="width=device-width">
     <meta name="HandheldFriendly" content="True">
@@ -89,9 +101,11 @@
             <div class="content__box content__box--pad-one">
                 
                     <h1 class="header__wrapper title--base-size title--thin title--flat">
-                        
-                            <a class="title--dimmed header__link" href="/">Hi, I&rsquo;m <b>Amsul</b>.</a>
-                        
+                        <a class="header__link header__link--dimmed title--dimmed" href="#menu">
+                            
+                                Hi, I&rsquo;m <b>Amsul</b>.
+                            
+                        </a>
                     </h1>
                 
                 
@@ -114,65 +128,44 @@
                 <p>I find myself repeatedly Googling for some basic Git commands:</p>
 
 <h4>Reset your local repository to the last committed state (leaves untracked files alone):</h4>
-
-<pre><code>git reset --hard
-</code></pre>
-
-<br>
-
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git reset --hard
+</code></pre></div>
+<p><br></p>
 
 <h4>Remove the last remote commit:</h4>
-
-<pre><code>git push -f origin HEAD^:master
-</code></pre>
-
-<br>
-
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git push -f origin HEAD^:master
+</code></pre></div>
+<p><br></p>
 
 <h4>Delete a remote tag:</h4>
-
-<pre><code>git tag -d &lt;tag_name&gt;
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git tag -d &lt;tag_name&gt;
 git push origin :refs/tags/&lt;tag_name&gt;
-</code></pre>
-
-<br>
-
+</code></pre></div>
+<p><br></p>
 
 <h4>Merge a remote repository into a local copy:</h4>
-
-<pre><code>git pull git://github.com/&lt;user_name&gt;/&lt;repo_name&gt; &lt;remote_branch_name&gt;:&lt;local_branch_name&gt;
-</code></pre>
-
-<br>
-
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git pull git://github.com/&lt;user_name&gt;/&lt;repo_name&gt; &lt;remote_branch_name&gt;:&lt;local_branch_name&gt;
+</code></pre></div>
+<p><br></p>
 
 <h4>Track and merge a remote repository into a local copy:</h4>
-
-<pre><code>git remote add &lt;new_remote_name&gt; git://github.com/&lt;user_name&gt;/&lt;repo_name&gt;
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git remote add &lt;new_remote_name&gt; git://github.com/&lt;user_name&gt;/&lt;repo_name&gt;
 git fetch &lt;new_remote_name&gt;
 git checkout --track -b &lt;remote_branch_name&gt; &lt;new_remote_name&gt;/&lt;remote_branch_name&gt;
 git checkout &lt;local_branch_name&gt;
 git merge &lt;new_remote_name&gt;/&lt;remote_branch_name&gt;
-</code></pre>
-
-<br>
-
+</code></pre></div>
+<p><br></p>
 
 <h4>Save your uncommitted changes in a named stash:</h4>
-
-<pre><code>git stash save "&lt;stash_name&gt;"
-</code></pre>
-
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git stash save &quot;&lt;stash_name&gt;&quot;
+</code></pre></div>
 <h4>Apply your saved named stash (using regex):</h4>
-
-<pre><code>git stash apply stash^{/&lt;stash_name_matcher&gt;}
-</code></pre>
-
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git stash apply stash^{/&lt;stash_name_matcher&gt;}
+</code></pre></div>
 <h4>Remove a saved stash:</h4>
-
-<pre><code>git stash drop stash@{&lt;stash_index&gt;}
-</code></pre>
-
+<div class="highlight"><pre><code class="text language-text" data-lang="text">git stash drop stash@{&lt;stash_index&gt;}
+</code></pre></div>
             </div>
         
     </article>
@@ -184,9 +177,6 @@ git merge &lt;new_remote_name&gt;/&lt;remote_branch_name&gt;
         <footer class="footer gui-flip">
             <div class="content">
                 
-                    <div class="content__box content__box--flat-top">
-                        <a class="button-block" href="https://twitter.com/intent/tweet?text=@amsul_&url=http%3A%2F%2Famsul.ca%2Fnotepad%2Fgit%2F" target="_blank">Share your comments/questions</a>
-                    </div>
                     <div class="content__box content__box--flat">
                         
                             <a class="button-block" href="/notepad">Back to notepad</a>

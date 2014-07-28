@@ -7,6 +7,18 @@
 
     <meta name="author" content="Amsul - http://amsul.ca/">
     <meta name="copyright" content="&copy; Amsul">
+    
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@amsul_">
+    <meta name="twitter:domain" content="amsul.ca">
+    <meta name="twitter:creator" content="@amsul_">
+    
+        
+            <meta name="twitter:title" content="Infinite scroll responsibly / Amsul">
+        
+    
+    
 
     <meta name="viewport" content="width=device-width">
     <meta name="HandheldFriendly" content="True">
@@ -89,9 +101,11 @@
             <div class="content__box content__box--pad-one">
                 
                     <h1 class="header__wrapper title--base-size title--thin title--flat">
-                        
-                            <a class="title--dimmed header__link" href="/">Hi, I&rsquo;m <b>Amsul</b>.</a>
-                        
+                        <a class="header__link header__link--dimmed title--dimmed" href="#menu">
+                            
+                                Hi, I&rsquo;m <b>Amsul</b>.
+                            
+                        </a>
                     </h1>
                 
                 
@@ -109,7 +123,7 @@
     </header> <!-- .header -->
 
 
-    <article class="content content--pad-bottom">
+    <article class="content">
     <div class="content__box content__body">
 
         
@@ -118,21 +132,21 @@
 
 <p>Yet, time and time again, I come across implementations without an understanding of the impact on the user experience (such as a footer that suddenly <a href="http://jeffcouturier.com/2011/11/infinite-scroll-use-it-well-or-dont-use-it-at-all/">vanishes out of view</a>).</p>
 
-<p>Common solutions to this are adding a time/<a href="http://jeffcouturier.com/2011/11/infinite-scroll-use-it-well-or-dont-use-it-at-all/">distance</a> delay (super unpredictable), using a <a href="http://mattsoave.com/blog/post.php?id=5">sticky footer</a> (yanky on some mobile devices), or using an <a href="http://jasonweaver.name/lab/offcanvas/">off-canvas layout</a> (my preferred method). Or just KISS<sup><a href="#postscript_1">1</a></sup> it and stick with manual progression. There&rsquo;s absolutely nothing wrong with that! Heck, even Google still has pagination<sup><a href="#postscript_2">2</a></sup>.</p>
+<p>Common solutions to this are adding a time/<a href="http://jeffcouturier.com/2011/11/infinite-scroll-use-it-well-or-dont-use-it-at-all/">distance</a> delay (super unpredictable), using a <a href="http://mattsoave.com/blog/post.php?id=5">sticky footer</a> (yanky on some mobile devices), or using an <a href="http://jasonweaver.name/lab/offcanvas/">off-canvas layout</a> (my preferred method). Or just KISS<sup><a href="#postscript_1">1</a></sup> it and stick with manual progression. There&rsquo;s absolutely nothing wrong with that! Heck, even Google still has pagination<sup><a href="#postscript_2">2</a>.</sup></p>
 
 <p>It&rsquo;s just a matter of figuring out how your application is most effective for the people using it &ndash; which is definitely <a href="http://danwin.com/2013/01/infinite-scroll-fail-etsy/">easier said than done</a>.</p>
 
 
             
-                <hr>
                 <footer class="content__postscript">
+                    <h4>Footnotes</h4>
                     <ol>
                         
                             <li class="content__postscript-item" id="postscript_1">
                                 <a class="content__postscript-hook"
                                     href="#postscript_1"
                                     name="postscript_1"></a>
-                                <p><b>K</b>eep <b>I</b>t <b>S</b>imple, <b>S</b>tupid.</p>
+                                <p><strong>K</strong>eep <strong>I</strong>t <strong>S</strong>imple, <strong>S</strong>tupid.</p>
 
                             </li>
                         
@@ -153,15 +167,26 @@
     </div>
 </article>
 
+<aside class="content content--pad-bottom">
+    <div class="content__box content__body" id="disqus_thread"></div>
+</aside>
+<script type="text/javascript">
+    (function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//amsul.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
 
     
 
         <footer class="footer gui-flip">
             <div class="content">
                 
-                    <div class="content__box content__box--flat-top">
-                        <a class="button-block" href="https://twitter.com/intent/tweet?text=@amsul_&url=http%3A%2F%2Famsul.ca%2F2013%2F01%2F08%2Finfinite-scroll-responsibly%2F" target="_blank">Share your comments/questions</a>
-                    </div>
                     <div class="content__box content__box--flat">
                         
                             <a class="button-block" href="/">Back to home</a>

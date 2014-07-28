@@ -7,6 +7,18 @@
 
     <meta name="author" content="Amsul - http://amsul.ca/">
     <meta name="copyright" content="&copy; Amsul">
+    
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@amsul_">
+    <meta name="twitter:domain" content="amsul.ca">
+    <meta name="twitter:creator" content="@amsul_">
+    
+        
+            <meta name="twitter:title" content="The Simplest Gruntfile / Amsul">
+        
+    
+    
 
     <meta name="viewport" content="width=device-width">
     <meta name="HandheldFriendly" content="True">
@@ -89,9 +101,11 @@
             <div class="content__box content__box--pad-one">
                 
                     <h1 class="header__wrapper title--base-size title--thin title--flat">
-                        
-                            <a class="title--dimmed header__link" href="/">Hi, I&rsquo;m <b>Amsul</b>.</a>
-                        
+                        <a class="header__link header__link--dimmed title--dimmed" href="#menu">
+                            
+                                Hi, I&rsquo;m <b>Amsul</b>.
+                            
+                        </a>
                     </h1>
                 
                 
@@ -109,7 +123,7 @@
     </header> <!-- .header -->
 
 
-    <article class="content content--pad-bottom">
+    <article class="content">
     <div class="content__box content__body">
 
         
@@ -119,98 +133,81 @@
 <p>However, there is a much cleaner and modular approach we can take by separating the tasks and configurations into their own individual modules. What that ends up as is a tiny Gruntfile whose sole purpose is to load tasks from a directory and initialize them with configurations from another.</p>
 
 <p>Here’s the Gruntfile in it’s entirety:</p>
+<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="cm">/**</span>
+<span class="cm"> * This Gruntfile is used to import configs and tasks</span>
+<span class="cm"> * from the `node_configs` and `node_tasks` folders.</span>
+<span class="cm"> */</span>
 
-<pre><code>/**
- * This Gruntfile is used to import configs and tasks
- * from the `node_configs` and `node_tasks` folders.
- */
+<span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
 
-'use strict';
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">initTasks</span><span class="p">(</span><span class="nx">grunt</span><span class="p">,</span> <span class="s1">&#39;node_tasks&#39;</span><span class="p">)</span>
+    <span class="nx">initConfigs</span><span class="p">(</span><span class="nx">grunt</span><span class="p">,</span> <span class="s1">&#39;node_configs&#39;</span><span class="p">)</span>
+<span class="p">}</span>
 
-module.exports = function(grunt) {
-    initTasks(grunt, 'node_tasks')
-    initConfigs(grunt, 'node_configs')
-}
+<span class="kd">function</span> <span class="nx">initTasks</span><span class="p">(</span><span class="nx">grunt</span><span class="p">,</span> <span class="nx">folderPath</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">pkg</span> <span class="o">=</span> <span class="nx">grunt</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">readJSON</span><span class="p">(</span><span class="s1">&#39;package.json&#39;</span><span class="p">)</span>
+    <span class="kd">var</span> <span class="nx">tasks</span> <span class="o">=</span> <span class="nx">pkg</span><span class="p">.</span><span class="nx">devDependencies</span>
+    <span class="k">delete</span> <span class="nx">tasks</span><span class="p">.</span><span class="nx">grunt</span>
+    <span class="k">for</span> <span class="p">(</span> <span class="kd">var</span> <span class="nx">task</span> <span class="k">in</span> <span class="nx">tasks</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="nx">task</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="nx">grunt</span><span class="p">.</span><span class="nx">loadTasks</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span>
+<span class="p">}</span>
 
-function initTasks(grunt, folderPath) {
-    var pkg = grunt.file.readJSON('package.json')
-    var tasks = pkg.devDependencies
-    delete tasks.grunt
-    for ( var task in tasks ) {
-        grunt.loadNpmTasks(task)
-    }
-    grunt.loadTasks(folderPath)
-}
-
-function initConfigs(grunt, folderPath) {
-    var config = {}
-    grunt.file.expand(folderPath + '/**/*.js').forEach(function(filePath) {
-        var fileName = filePath.split('/').pop().split('.')[0]
-        var fileData = require('./' + filePath)
-        config[fileName] = fileData
-    })
-    grunt.initConfig(config)
-}
-</code></pre>
-
+<span class="kd">function</span> <span class="nx">initConfigs</span><span class="p">(</span><span class="nx">grunt</span><span class="p">,</span> <span class="nx">folderPath</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="nx">grunt</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">expand</span><span class="p">(</span><span class="nx">folderPath</span> <span class="o">+</span> <span class="s1">&#39;/**/*.js&#39;</span><span class="p">).</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">filePath</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">fileName</span> <span class="o">=</span> <span class="nx">filePath</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">).</span><span class="nx">pop</span><span class="p">().</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="kd">var</span> <span class="nx">fileData</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./&#39;</span> <span class="o">+</span> <span class="nx">filePath</span><span class="p">)</span>
+        <span class="nx">config</span><span class="p">[</span><span class="nx">fileName</span><span class="p">]</span> <span class="o">=</span> <span class="nx">fileData</span>
+    <span class="p">})</span>
+    <span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">(</span><span class="nx">config</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
 <h3>The breakdown</h3>
 
 <p>The first four lines are the gist of the work:</p>
-
-<pre><code>module.exports = function(grunt) {
-    initTasks(grunt, 'node_tasks')
-    initConfigs(grunt, 'node_configs')
-}
-</code></pre>
-
+<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">initTasks</span><span class="p">(</span><span class="nx">grunt</span><span class="p">,</span> <span class="s1">&#39;node_tasks&#39;</span><span class="p">)</span>
+    <span class="nx">initConfigs</span><span class="p">(</span><span class="nx">grunt</span><span class="p">,</span> <span class="s1">&#39;node_configs&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
 <p>We first initialize tasks from the <code>node_tasks</code> directory and then we initialize configurations for those tasks from the <code>node_configs</code> directory.</p>
 
 <h4><code>initTasks(grunt, folderPath)</code></h4>
 
 <p>Within the <code>initTasks</code> function, we first read the <code>package.json</code> file:</p>
-
-<pre><code>var pkg = grunt.file.readJSON('package.json')
-</code></pre>
-
-<p>...grab the <code>devDependencies</code>, which should only have Grunt tasks<sup><a href="#postscript_1">1</a></sup>:</p>
-
-<pre><code>var tasks = pkg.devDependencies
-delete tasks.grunt
-</code></pre>
-
-<p>...and load the named NPM tasks and our own custom tasks and aliases:</p>
-
-<pre><code>for ( var task in tasks ) {
-    grunt.loadNpmTasks(task)
-}
-grunt.loadTasks(folderPath)
-</code></pre>
-
+<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">pkg</span> <span class="o">=</span> <span class="nx">grunt</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">readJSON</span><span class="p">(</span><span class="s1">&#39;package.json&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>&hellip;grab the <code>devDependencies</code>, which should only have Grunt tasks<sup><a href="#postscript_1">1</a>:</sup></p>
+<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">tasks</span> <span class="o">=</span> <span class="nx">pkg</span><span class="p">.</span><span class="nx">devDependencies</span>
+<span class="k">delete</span> <span class="nx">tasks</span><span class="p">.</span><span class="nx">grunt</span>
+</code></pre></div>
+<p>&hellip;and load the named NPM tasks and our own custom tasks and aliases:</p>
+<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="k">for</span> <span class="p">(</span> <span class="kd">var</span> <span class="nx">task</span> <span class="k">in</span> <span class="nx">tasks</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="nx">task</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">grunt</span><span class="p">.</span><span class="nx">loadTasks</span><span class="p">(</span><span class="nx">folderPath</span><span class="p">)</span>
+</code></pre></div>
 <h4><code>initConfigs(grunt, folderPath)</code></h4>
 
 <p>Within the <code>initConfigs</code> function, we create an empty <code>config</code> object and glob through the <code>node_configs</code> directory:</p>
-
-<pre><code>var config = {}
-grunt.file.expand(folderPath + '/**/*.js').forEach(...)
-</code></pre>
-
-<p>...grab each file’s name, which should be the name of the task, and add it to the <code>config</code> object:</p>
-
-<pre><code>var fileName = filePath.split('/').pop().split('.')[0]
-var fileData = require('./' + filePath)
-config[fileName] = fileData
-</code></pre>
-
-<p>...and finally, we initialize the configuration:</p>
-
-<pre><code>grunt.initConfig(config)
-</code></pre>
-
+<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="nx">grunt</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">expand</span><span class="p">(</span><span class="nx">folderPath</span> <span class="o">+</span> <span class="s1">&#39;/**/*.js&#39;</span><span class="p">).</span><span class="nx">forEach</span><span class="p">(...)</span>
+</code></pre></div>
+<p>&hellip;grab each file’s name, which should be the name of the task, and add it to the <code>config</code> object:</p>
+<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">fileName</span> <span class="o">=</span> <span class="nx">filePath</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">).</span><span class="nx">pop</span><span class="p">().</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="kd">var</span> <span class="nx">fileData</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./&#39;</span> <span class="o">+</span> <span class="nx">filePath</span><span class="p">)</span>
+<span class="nx">config</span><span class="p">[</span><span class="nx">fileName</span><span class="p">]</span> <span class="o">=</span> <span class="nx">fileData</span>
+</code></pre></div>
+<p>&hellip;and finally, we initialize the configuration:</p>
+<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">(</span><span class="nx">config</span><span class="p">)</span>
+</code></pre></div>
 <h3>Setting up <code>node_configs</code> and <code>node_tasks</code></h3>
 
 <p>These directories should look something like this:</p>
-
-<pre><code>node_configs/
+<div class="highlight"><pre><code class="text language-text" data-lang="text">node_configs/
     ├── autoprefixer.js
     ├── connect.js
     ├── handlebars.js
@@ -222,51 +219,44 @@ node_tasks/
     ├── aliases.js
     ├── custom-task.js
     └── another-custom-task.js
-</code></pre>
-
+</code></pre></div>
 <p>Each task gets it’s own configuration file in <code>node_configs</code>:</p>
-
-<pre><code>// node_configs/connect.js
-'use strict';
-var grunt = require('grunt')
-module.exports = {
-    options: {
-        port: grunt.option('port') || 9001
-    },
-    server: {
-        // ...
-    }
-}
-</code></pre>
-
+<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="c1">// node_configs/connect.js</span>
+<span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">grunt</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;grunt&#39;</span><span class="p">)</span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">port</span><span class="o">:</span> <span class="nx">grunt</span><span class="p">.</span><span class="nx">option</span><span class="p">(</span><span class="s1">&#39;port&#39;</span><span class="p">)</span> <span class="o">||</span> <span class="mi">9001</span>
+    <span class="p">},</span>
+    <span class="nx">server</span><span class="o">:</span> <span class="p">{</span>
+        <span class="c1">// ...</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 <p>Each custom task gets it’s own registration file in <code>node_tasks</code>:</p>
-
-<pre><code>// node_tasks/custom-task.js
-'use strict';
-module.exports = function(grunt) {
-    grunt.registerMultiTask('custom-task', 'Make Grunt do something custom', function() {
-        // ...
-    })
-}
-</code></pre>
-
+<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="c1">// node_tasks/custom-task.js</span>
+<span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerMultiTask</span><span class="p">(</span><span class="s1">&#39;custom-task&#39;</span><span class="p">,</span> <span class="s1">&#39;Make Grunt do something custom&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// ...</span>
+    <span class="p">})</span>
+<span class="p">}</span>
+</code></pre></div>
 <p>And all the task aliases, such as the default task, live in <code>node_tasks/aliases.js</code>:</p>
-
-<pre><code>'use strict';
-module.exports = function(grunt) {
-    grunt.registerTask('default', ['less', 'autoprefixer'])
-    grunt.registerTask('server', ['connect', 'watch'])
-}
-</code></pre>
-
+<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;less&#39;</span><span class="p">,</span> <span class="s1">&#39;autoprefixer&#39;</span><span class="p">])</span>
+    <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;server&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;connect&#39;</span><span class="p">,</span> <span class="s1">&#39;watch&#39;</span><span class="p">])</span>
+<span class="p">}</span>
+</code></pre></div>
 <h3>Brilliant <img alt="bowtie" src="https://github.global.ssl.fastly.net/images/icons/emoji/bowtie.png" class="emoji" /></h3>
 
 <p>I’ve found this to be much more flexible and extremely simple to find your way around all the tasks and configurations for complex build steps.</p>
 
 
             
-                <hr>
                 <footer class="content__postscript">
+                    <h4>Footnotes</h4>
                     <ol>
                         
                             <li class="content__postscript-item" id="postscript_1">
@@ -286,15 +276,26 @@ module.exports = function(grunt) {
     </div>
 </article>
 
+<aside class="content content--pad-bottom">
+    <div class="content__box content__body" id="disqus_thread"></div>
+</aside>
+<script type="text/javascript">
+    (function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//amsul.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
 
     
 
         <footer class="footer gui-flip">
             <div class="content">
                 
-                    <div class="content__box content__box--flat-top">
-                        <a class="button-block" href="https://twitter.com/intent/tweet?text=@amsul_&url=http%3A%2F%2Famsul.ca%2F2014%2F07%2F13%2Fthe-simplest-gruntfile%2F" target="_blank">Share your comments/questions</a>
-                    </div>
                     <div class="content__box content__box--flat">
                         
                             <a class="button-block" href="/">Back to home</a>

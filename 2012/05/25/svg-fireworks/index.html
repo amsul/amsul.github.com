@@ -7,6 +7,18 @@
 
     <meta name="author" content="Amsul - http://amsul.ca/">
     <meta name="copyright" content="&copy; Amsul">
+    
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@amsul_">
+    <meta name="twitter:domain" content="amsul.ca">
+    <meta name="twitter:creator" content="@amsul_">
+    
+        
+            <meta name="twitter:title" content="SVG &amp; Fireworks for retina-ready sites / Amsul">
+        
+    
+    
 
     <meta name="viewport" content="width=device-width">
     <meta name="HandheldFriendly" content="True">
@@ -89,9 +101,11 @@
             <div class="content__box content__box--pad-one">
                 
                     <h1 class="header__wrapper title--base-size title--thin title--flat">
-                        
-                            <a class="title--dimmed header__link" href="/">Hi, I&rsquo;m <b>Amsul</b>.</a>
-                        
+                        <a class="header__link header__link--dimmed title--dimmed" href="#menu">
+                            
+                                Hi, I&rsquo;m <b>Amsul</b>.
+                            
+                        </a>
                     </h1>
                 
                 
@@ -109,7 +123,7 @@
     </header> <!-- .header -->
 
 
-    <article class="content content--pad-bottom">
+    <article class="content">
     <div class="content__box content__body">
 
         
@@ -130,29 +144,25 @@
 
 <p>For a quick demonstration, here are two Facebook icon images shown at their original sizes of <code>25px × 25px</code>:</p>
 
-<p><figure class="alignleft"><img style="display:inline-block" src="/uploads/2012/05/fb.jpg"><small style="display:block;margin:4px 0 12px;color:#666">JPG - 13kb</small></figure></p>
+<figure class="alignleft"><img style="display:inline-block" src="/uploads/2012/05/fb.jpg"><small style="display:block;margin:4px 0 12px;color:#666">JPG - 13 kB</small></figure>
 
 <div class="alignleft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
 
-
-<p><figure class="alignleft"><img style="display:inline-block" src="/uploads/2012/05/fb.svg"><small style="display:block;margin:4px 0 12px;color:#666">SVG - 1kb</small></figure></p>
+<figure class="alignleft"><img style="display:inline-block" src="/uploads/2012/05/fb.svg"><small style="display:block;margin:4px 0 12px;color:#666">SVG - 1 kB</small></figure>
 
 <div class="clear"></div>
-
 
 <p>And here are the same images scaled up 800%:</p>
 
-<p><figure class="alignleft"><img style="display:inline-block" width="200" height="200" src="/uploads/2012/05/fb.jpg"><small style="display:block;margin:4px 0 12px;color:#666">JPG - 13kb</small></figure></p>
+<figure class="alignleft"><img style="display:inline-block" width="200" height="200" src="/uploads/2012/05/fb.jpg"><small style="display:block;margin:4px 0 12px;color:#666">JPG - 13 kB</small></figure>
 
 <div class="alignleft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
 
-
-<p><figure class="alignleft"><img style="display:inline-block" width="200" height="200" src="/uploads/2012/05/fb.svg"><small style="display:block;margin:4px 0 12px;color:#666">SVG - 1kb</small></figure></p>
+<figure class="alignleft"><img style="display:inline-block" width="200" height="200" src="/uploads/2012/05/fb.svg"><small style="display:block;margin:4px 0 12px;color:#666">SVG - 1 kB</small></figure>
 
 <div class="clear"></div>
 
-
-<p>The main thing to notice here, other than the obvious infinite scalability, is the difference in file sizes. Since <code>.svg</code> files hold no pixel data, the file sizes are incredibly small: <code>1kb</code> vs <code>13kb</code>. Using <code>.svg</code> removes the need for serving different images based on pixel density and saves a lot of bandwidth.</p>
+<p>The main thing to notice here, other than the obvious infinite scalability, is the difference in file sizes. Since <code>.svg</code> files hold no pixel data, the file sizes are incredibly small: <code>1 kB</code> vs <code>13 kB</code>. Using <code>.svg</code> removes the need for serving different images based on pixel density and saves a lot of bandwidth.</p>
 
 <h3>SVG, take the wheel</h3>
 
@@ -162,7 +172,7 @@
 
 <p>Unfortunately, there&rsquo;s no way to export files as <code>.svg</code> in Photoshop and I don&rsquo;t feel comfortable with Illustrator&rsquo;s rulers and grid system for pixel-specific design.</p>
 
-<p>Adobe Fireworks plus the <a href="http://fireworks.abeall.com/extensions/commands/Export/">Export to SVG plugin</a> is the <strong>perfect solution</strong>. Yeah it&rsquo;s kinda dumb that Adobe hasn&rsquo;t developed built-in support for this in Fireworks, but this plugin is extremely simple to install. Once you&rsquo;ve installed the plugin, you will have an option under Commands > Export > Export SVG&hellip; and you&rsquo;re good to go.</p>
+<p>Adobe Fireworks plus the <a href="http://fireworks.abeall.com/extensions/commands/Export/">Export to SVG plugin</a> is the <strong>perfect solution</strong>. Yeah it&rsquo;s kinda dumb that Adobe hasn&rsquo;t developed built-in support for this in Fireworks, but this plugin is extremely simple to install. Once you&rsquo;ve installed the plugin, you will have an option under Commands &gt; Export &gt; Export SVG&hellip; and you&rsquo;re good to go.</p>
 
 
             
@@ -172,15 +182,26 @@
     </div>
 </article>
 
+<aside class="content content--pad-bottom">
+    <div class="content__box content__body" id="disqus_thread"></div>
+</aside>
+<script type="text/javascript">
+    (function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//amsul.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
 
     
 
         <footer class="footer gui-flip">
             <div class="content">
                 
-                    <div class="content__box content__box--flat-top">
-                        <a class="button-block" href="https://twitter.com/intent/tweet?text=@amsul_&url=http%3A%2F%2Famsul.ca%2F2012%2F05%2F25%2Fsvg-fireworks%2F" target="_blank">Share your comments/questions</a>
-                    </div>
                     <div class="content__box content__box--flat">
                         
                             <a class="button-block" href="/">Back to home</a>

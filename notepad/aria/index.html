@@ -7,6 +7,18 @@
 
     <meta name="author" content="Amsul - http://amsul.ca/">
     <meta name="copyright" content="&copy; Amsul">
+    
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@amsul_">
+    <meta name="twitter:domain" content="amsul.ca">
+    <meta name="twitter:creator" content="@amsul_">
+    
+        
+            <meta name="twitter:title" content="ARIA / Notepad / Amsul">
+        
+    
+    
 
     <meta name="viewport" content="width=device-width">
     <meta name="HandheldFriendly" content="True">
@@ -89,9 +101,11 @@
             <div class="content__box content__box--pad-one">
                 
                     <h1 class="header__wrapper title--base-size title--thin title--flat">
-                        
-                            <a class="title--dimmed header__link" href="/">Hi, I&rsquo;m <b>Amsul</b>.</a>
-                        
+                        <a class="header__link header__link--dimmed title--dimmed" href="#menu">
+                            
+                                Hi, I&rsquo;m <b>Amsul</b>.
+                            
+                        </a>
                     </h1>
                 
                 
@@ -116,12 +130,10 @@
 <ul>
 <li><a href="http://www.w3.org/TR/wai-aria/usage">http://www.w3.org/TR/wai-aria/usage</a></li>
 <li><a href="http://www.w3.org/TR/wai-aria/roles">http://www.w3.org/TR/wai-aria/roles</a></li>
-<li><a href="http://www.w3.org/TR/wai-aria/states_and_properties">http://www.w3.org/TR/wai-aria/states_and_properties</a></li>
+<li><a href="http://www.w3.org/TR/wai-aria/states_and_properties">http://www.w3.org/TR/wai-aria/states<em>and</em>properties</a></li>
 </ul>
 
-
 <hr>
-
 
 <h3>Rules of building with ARIA:</h3>
 
@@ -131,13 +143,11 @@
 <li>Finally create individual “widget” roles.</li>
 </ol>
 
-
 <p>* Do NOT use “abstract roles” as they’re reserved for ontology and do nothing within the accessibility tree.</p>
 
 <p><em>Role definitions</em>: <a href="http://www.w3.org/TR/wai-aria/roles#roles_categorization">http://www.w3.org/TR/wai-aria/roles#roles_categorization</a></p>
 
 <hr>
-
 
 <h3>Rules of employing ARIA:</h3>
 
@@ -149,11 +159,9 @@
 <li>To pass ARIA validation, the document type is required to be HTML5. It works with other types as well, but to pass validation, make sure to do this.</li>
 </ul>
 
-
 <p><em>Source</em>: <a href="http://blog.paciellogroup.com/2012/06/html5-accessibility-chops-using-aria-notes/">http://blog.paciellogroup.com/2012/06/html5-accessibility-chops-using-aria-notes/</a></p>
 
 <hr>
-
 
 <h3>Things to keep in mind:</h3>
 
@@ -163,7 +171,6 @@
 <li>Tabbing order for widgets within widgets goes from parent widget, cascades through descendants until final descendant is reached and then moves on to next parent widget. More on keyboard behavior: <a href="http://www.w3.org/WAI/PF/aria-practices/#aria_ex">http://www.w3.org/WAI/PF/aria-practices/#aria_ex</a>.</li>
 <li>Be careful when <a href="http://rawgithub.com/w3c/aria-in-html/master/index.html#using-aria-role-application">using <code>role=application</code></a> – unless if you really understand <a href="http://www.marcozehe.de/2012/02/06/if-you-use-the-wai-aria-role-application-please-do-so-wisely/">its purpose and mode of use</a>. If you must use “focus” mode, the counter part is “browse” mode, which is triggered by <code>role=document</code>. A good example is Yahoo Mail, which uses <code>application</code> for browsing through mail and <code>document</code> for reading mail.</li>
 </ul>
-
 
             </div>
         
@@ -176,9 +183,6 @@
         <footer class="footer gui-flip">
             <div class="content">
                 
-                    <div class="content__box content__box--flat-top">
-                        <a class="button-block" href="https://twitter.com/intent/tweet?text=@amsul_&url=http%3A%2F%2Famsul.ca%2Fnotepad%2Faria%2F" target="_blank">Share your comments/questions</a>
-                    </div>
                     <div class="content__box content__box--flat">
                         
                             <a class="button-block" href="/notepad">Back to notepad</a>
