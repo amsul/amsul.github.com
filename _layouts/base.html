@@ -9,12 +9,6 @@
     <meta name="copyright" content="&copy; Amsul">
     {% if page.meta %}
         <meta name="description" content="{{ page.meta }}">
-    {% else %}
-        {% if page.title %}
-            <meta name="description" content="{{ page.title }}">
-        {% else %}
-            <meta name="description" content="{{ site.tagline | strip_html | truncate: 160 }}">
-        {% endif %}
     {% endif %}
 
     <meta name="twitter:card" content="summary">
