@@ -1,6 +1,6 @@
 /*!
  * Author:      Amsul - http://amsul.ca
- * Updated:     26 July, 2014
+ * Updated:     28 July, 2014
  * Version:     0.5.2
  */
 
@@ -914,13 +914,13 @@ pre,
     white-space: pre;
     overflow-x: auto;
     margin: 1em 0;
-    padding: 1em;
-    font-size: 1em;
+    padding: 1em 1em 0.875em;
     background: #1d1f21;
     color: #c5c8c6;
 }
 
 code {
+    font-size: 0.875em;
     border: 1px solid #e6e9e9;
     padding: 2px 2px 1px;
     background: #f5f8f8;
@@ -975,29 +975,58 @@ pre > code,
 .highlight .ni {
     color: #b294bb;
 }
+/* name class */
+.highlight .nc {
+    color: #f0c674;
+}
+/* name decorator */
+.highlight .nd {
+    color: #de935f;
+}
+/* name built-in */
+.highlight .nb {
+    color: #b294bb;
+}
+/* name function */
+.highlight .nf {
+    color: #cc6666;
+    font-weight: bold;
+    font-style: italic;
+}
 /* string */
 .highlight .s,
-.highlight .s1 {
+.highlight .s1,
+.highlight .sx {
     color: #b5bd68;
 }
 /* punctuation */
 .highlight .p {
     color: #707880;
 }
+.highlight .css .p {
+    color: inherit;
+}
 /* operator */
 .highlight .o {
     color: #8abeb7;
 }
+.highlight .css .o {
+    color: inherit;
+}
 /* keyword */
 .highlight .k {
     color: #b294bb;
+}
+.highlight .css .k {
+    color: inherit;
 }
 /* keyword declaration */
 .highlight .kd {
     color: #81a2be;
 }
 /* number integer */
-.highlight .mi {
+.highlight .mi,
+.highlight .m {
     color: #c66;
 }
 
@@ -1016,10 +1045,10 @@ blockquote {
     position: relative;
 }
 blockquote:before {
-    content: "“";
+    content: "\201C";
     position: absolute;
     left: -40px;
-    top: -.125em;
+    top: -.25em;
     font-size: 5em;
     font-weight: 600;
     color: #ddd;
@@ -1393,12 +1422,12 @@ ol:last-child {
             font-size: .75em;
             margin: .5em 0;
         }
-        .content__subtitle:before {
-            content: "–";
+        .content__subtitle:before,
+        .content__subtitle:after {
+            content: "\2014";
             margin-right: .5em;
         }
         .content__subtitle:after {
-            content: "–";
             margin-left: .5em;
         }
 
@@ -1421,10 +1450,12 @@ ol:last-child {
         }
 
     .content__postscript {
-        font-size: .75em;
+        font-size: .875em;
         font-weight: 100;
         color: #999;
-        margin: 1em 0;
+        border-top: 1px solid #eee;
+        margin-top: 3em;
+        padding-top: 1em;
     }
 
         .content__postscript-item {

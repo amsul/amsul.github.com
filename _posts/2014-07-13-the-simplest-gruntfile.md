@@ -69,7 +69,7 @@ Within the `initTasks` function, we first read the `package.json` file:
 var pkg = grunt.file.readJSON('package.json')
 ```
 
-...grab the `devDependencies`, which should only have Grunt tasks<sup>[1](#postscript_1)</sup>:
+...grab the `devDependencies`, which should only have Grunt tasks^[1](#postscript_1):
 
 ```javascript
 var tasks = pkg.devDependencies

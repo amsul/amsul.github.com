@@ -23,8 +23,8 @@ layout: base
             {{ content | emojify }}
 
             {% if page.postscript %}
-                <hr>
                 <footer class="content__postscript">
+                    <h4>Footnotes</h4>
                     <ol>
                         {% for postscript in page.postscript %}
                             <li class="content__postscript-item" id="postscript_{{ forloop.index }}">
