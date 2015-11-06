@@ -128,28 +128,28 @@
                 <p>I find myself repeatedly Googling for some basic Git commands:</p>
 
 <h4>Reset your local repository to the last committed state (leaves untracked files alone):</h4>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">git reset --hard
+<div class="highlight"><pre><code class="language-text" data-lang="text">git reset --hard
 </code></pre></div>
 <p><br></p>
 
 <h4>Remove the last remote commit:</h4>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">git push -f origin HEAD^:master
+<div class="highlight"><pre><code class="language-text" data-lang="text">git push -f origin HEAD^:master
 </code></pre></div>
 <p><br></p>
 
 <h4>Delete a remote tag:</h4>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">git tag -d &lt;tag_name&gt;
+<div class="highlight"><pre><code class="language-text" data-lang="text">git tag -d &lt;tag_name&gt;
 git push origin :refs/tags/&lt;tag_name&gt;
 </code></pre></div>
 <p><br></p>
 
 <h4>Merge a remote repository into a local copy:</h4>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">git pull git://github.com/&lt;user_name&gt;/&lt;repo_name&gt; &lt;remote_branch_name&gt;:&lt;local_branch_name&gt;
+<div class="highlight"><pre><code class="language-text" data-lang="text">git pull git://github.com/&lt;user_name&gt;/&lt;repo_name&gt; &lt;remote_branch_name&gt;:&lt;local_branch_name&gt;
 </code></pre></div>
 <p><br></p>
 
 <h4>Track and merge a remote repository into a local copy:</h4>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">git remote add &lt;new_remote_name&gt; git://github.com/&lt;user_name&gt;/&lt;repo_name&gt;
+<div class="highlight"><pre><code class="language-text" data-lang="text">git remote add &lt;new_remote_name&gt; git://github.com/&lt;user_name&gt;/&lt;repo_name&gt;
 git fetch &lt;new_remote_name&gt;
 git checkout --track -b &lt;remote_branch_name&gt; &lt;new_remote_name&gt;/&lt;remote_branch_name&gt;
 git checkout &lt;local_branch_name&gt;
@@ -158,13 +158,13 @@ git merge &lt;new_remote_name&gt;/&lt;remote_branch_name&gt;
 <p><br></p>
 
 <h4>Save your uncommitted changes in a named stash:</h4>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">git stash save &quot;&lt;stash_name&gt;&quot;
+<div class="highlight"><pre><code class="language-text" data-lang="text">git stash save &quot;&lt;stash_name&gt;&quot;
 </code></pre></div>
 <h4>Apply your saved named stash (using regex):</h4>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">git stash apply stash^{/&lt;stash_name_matcher&gt;}
+<div class="highlight"><pre><code class="language-text" data-lang="text">git stash apply stash^{/&lt;stash_name_matcher&gt;}
 </code></pre></div>
 <h4>Remove a saved stash:</h4>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">git stash drop stash@{&lt;stash_index&gt;}
+<div class="highlight"><pre><code class="language-text" data-lang="text">git stash drop stash@{&lt;stash_index&gt;}
 </code></pre></div>
             </div>
         
@@ -201,7 +201,7 @@ git merge &lt;new_remote_name&gt;/&lt;remote_branch_name&gt;
                             </a>
                         </li>
                     </ul>
-                    <p>&copy; 2014 Amsul</p>
+                    <p>&copy; 2015 Amsul</p>
                     <p class="peace">&#x270C;</p>
                     <p class="embrace">Embrace the randomness.</p>
                 </div>

@@ -135,7 +135,7 @@
 <h3>The markup</h3>
 
 <p>Let’s say we have a homepage:</p>
-<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="c">&lt;!-- home.html --&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- home.html --&gt;</span>
 <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;header&gt;&lt;/header&gt;</span>
     <span class="nt">&lt;h1&gt;</span>Homepage<span class="nt">&lt;/h1&gt;</span>
@@ -145,7 +145,7 @@
 <span class="nt">&lt;/body&gt;</span>
 </code></pre></div>
 <p>And an about page:</p>
-<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="c">&lt;!-- about.html --&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- about.html --&gt;</span>
 <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;header&gt;&lt;/header&gt;</span>
     <span class="nt">&lt;h1&gt;</span>About<span class="nt">&lt;/h1&gt;</span>
@@ -155,13 +155,13 @@
 <span class="nt">&lt;/body&gt;</span>
 </code></pre></div>
 <p>To Ember-ify this, we basically move all the page-specific content into an “index” template within those pages:</p>
-<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="c">&lt;!-- home.html --&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- home.html --&gt;</span>
 <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/x-handlebars&quot;</span> <span class="na">data-template-name=</span><span class="s">&quot;index&quot;</span><span class="nt">&gt;</span>
         <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Homepage</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
     <span class="nt">&lt;/script&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
-</code></pre></div><div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="c">&lt;!-- about.html --&gt;</span>
+</code></pre></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- about.html --&gt;</span>
 <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/x-handlebars&quot;</span> <span class="na">data-template-name=</span><span class="s">&quot;index&quot;</span><span class="nt">&gt;</span>
         <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">About</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
@@ -169,7 +169,7 @@
 <span class="nt">&lt;/body&gt;</span>
 </code></pre></div>
 <p>And move the rest into the application template:</p>
-<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="c">&lt;!-- application.hbs --&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- application.hbs --&gt;</span>
 <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;header&gt;&lt;/header&gt;</span>
     {{outlet}}
@@ -181,7 +181,7 @@
 <h3>The scripts</h3>
 
 <p>Let’s say our original scripts are something like this:</p>
-<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">init</span><span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">init</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#press-me&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
         <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;hi there!&#39;</span><span class="p">)</span>
     <span class="p">})</span>
@@ -191,7 +191,7 @@
 <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="nx">init</span><span class="p">)</span>
 </code></pre></div>
 <p>In order to let Ember take over, we need to do some setup <em>before</em> initializing the scripts. So we change it to something like this:</p>
-<div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">init</span><span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">init</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#press-me&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
         <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;hi there!&#39;</span><span class="p">)</span>
     <span class="p">})</span>
@@ -225,14 +225,14 @@
 <h3>Communicating from Ember to non-Ember</h3>
 
 <p>This one is pretty obvious. We pass this responsibility on to the <code>ApplicationController</code> or <code>IndexController</code> based on whichever is more suitable for the scenario:</p>
-<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="c">&lt;!-- home.html --&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- home.html --&gt;</span>
 <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/x-handlebars&quot;</span> <span class="na">data-template-name=</span><span class="s">&quot;index&quot;</span><span class="nt">&gt;</span>
         <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Homepage</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
         <span class="o">&lt;</span><span class="nx">button</span> <span class="p">{{</span><span class="nx">action</span> <span class="s2">&quot;say-hello&quot;</span><span class="p">}}</span><span class="o">&gt;</span><span class="nx">Say</span> <span class="nx">hello</span><span class="o">!&lt;</span><span class="err">/button&gt;</span>
     <span class="nt">&lt;/script&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
-</code></pre></div><div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="nx">App</span><span class="p">.</span><span class="nx">IndexController</span> <span class="o">=</span> <span class="nx">Em</span><span class="p">.</span><span class="nx">Controller</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+</code></pre></div><div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">App</span><span class="p">.</span><span class="nx">IndexController</span> <span class="o">=</span> <span class="nx">Em</span><span class="p">.</span><span class="nx">Controller</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
     <span class="nx">actions</span><span class="o">:</span> <span class="p">{</span>
         <span class="s1">&#39;say-hello&#39;</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
             <span class="nx">Em</span><span class="p">.</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#press-me&#39;</span><span class="p">).</span><span class="nx">trigger</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">)</span>
@@ -243,7 +243,7 @@
 <h3>Communicating from non-Ember to Ember</h3>
 
 <p>To do things the other way around, we need to make sure the Ember view we want to communicate with has an explicit ID set on it:</p>
-<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="c">&lt;!-- home.html --&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- home.html --&gt;</span>
 <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/x-handlebars&quot;</span> <span class="na">data-template-name=</span><span class="s">&quot;index&quot;</span><span class="nt">&gt;</span>
         <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Homepage</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
@@ -251,7 +251,7 @@
         <span class="p">{{</span><span class="nx">ui</span><span class="o">-</span><span class="nx">component</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;some-ember-component&quot;</span><span class="p">}}</span>
     <span class="nt">&lt;/script&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
-</code></pre></div><div class="highlight"><pre><code class="javascript language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#some-button&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</code></pre></div><div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#some-button&#39;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 
     <span class="c1">// All Ember views in the DOM are referenced under</span>
     <span class="c1">// the `views` object by the element’s ID.</span>
@@ -316,7 +316,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p>&copy; 2014 Amsul</p>
+                    <p>&copy; 2015 Amsul</p>
                     <p class="peace">&#x270C;</p>
                     <p class="embrace">Embrace the randomness.</p>
                 </div>

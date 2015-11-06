@@ -1,0 +1,450 @@
+<!doctype html>
+
+<html lang="en">
+
+
+    <meta charset="utf-8">
+
+    <meta name="author" content="Amsul - http://amsul.ca/">
+    <meta name="copyright" content="&copy; Amsul">
+    
+        <meta name="description" content="Build tools, like Gulp & Grunt, only add bloat when it comes to complex setups. On the other hand, npm was built for this.">
+    
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@amsul_">
+    <meta name="twitter:domain" content="amsul.ca">
+    <meta name="twitter:creator" content="@amsul_">
+    
+        
+            <meta name="twitter:title" content="&ldquo;Yo dawg, I heard you like build tools&hellip;&rdquo; / Amsul">
+        
+    
+    
+        <meta name="twitter:description" content="Build tools, like Gulp & Grunt, only add bloat when it comes to complex setups. On the other hand, npm was built for this.">
+    
+
+    <meta name="viewport" content="width=device-width">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    
+        
+            <title>&ldquo;Yo dawg, I heard you like build tools&hellip;&rdquo; / Amsul</title>
+        
+    
+
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,800italic,300,600,800">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <script src="/js/shiv.js"></script>
+
+
+
+    
+
+        <div class="menu">
+            <nav class="menu__nav" id="menu">
+                <div class="content content--flat-bottom">
+                    <a class="menu__button-close" href="#"></a>
+                    <div class="content__box">
+                        <h4 class="title--flat emphasize">Menu</h4>
+                    </div>
+                </div>
+                <div class="content content-freeform content--pad-bottom">
+                    <ul class="list--plain list--flat">
+                        <li class="list__item">
+                            <a class="link--block" href="/">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">Home</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link--block" href="/notepad">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">Notepad</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link--block" href="https://github.com/amsul?tab=repositories">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">Projects</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="link--block" href="/me">
+                                <div class="content">
+                                    <div class="content__box content__box--pad-half">Me</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <aside class="menu__toggler alignright">
+                <a class="menu__opener button-menu button-menu--inverse" href="#menu"></a>
+                <a class="menu__closer button-menu button-menu--inverse" href="#"></a>
+            </aside>
+        </div> <!-- .menu -->
+
+    
+
+
+    <header class="header header--colored">
+        <div class="content">
+            <div class="content__box content__box--pad-one">
+                
+                    <h1 class="header__wrapper title--base-size title--thin title--flat">
+                        <a class="header__link header__link--dimmed title--dimmed" href="#menu">
+                            
+                                Hi, I&rsquo;m <b>Amsul</b>.
+                            
+                        </a>
+                    </h1>
+                
+                
+                    <div class="header__title aligncenter">
+                        
+                            <p class="content__subtitle title--dimmed">November 06, 2015</p>
+                        
+                        
+                            <h1 class="title title--thin title--flat">&ldquo;Yo dawg, I heard you like build tools&hellip;&rdquo;</h1>
+                        
+                    </div>
+                
+            </div>
+        </div>
+    </header> <!-- .header -->
+
+
+    <article class="content">
+    <div class="content__box content__body">
+
+        
+
+            <p>When most front-end devs think of npm, they think of package management. They think it&rsquo;s a thing built into Node.js just to help manage dependencies.</p>
+
+<p>And I don&rsquo;t blame them for not knowing any better. Heck, I didn&rsquo;t!</p>
+
+<p>However, recently, I stumbled upon a tweet by an ex-collegue of mine:</p>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Learning <a href="https://twitter.com/gulpjs">@gulpjs</a> has improved my workflow so much! I&rsquo;m realy only using it for vendor prefixing + sass/js sourcemaps on this project but omg</p>&mdash; NataSpooks (@natacoops) <a href="https://twitter.com/natacoops/status/657558536302542848">October 23, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr">&hellip;even those small improvements have changed my world! Thx <a href="https://twitter.com/wesbos">@wesbos</a> for the awesome workshop. 👌</p>&mdash; NataSpooks (@natacoops) <a href="https://twitter.com/natacoops/status/657558904763760640">October 23, 2015</a></blockquote>
+
+<p>To which I replied:</p>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/natacoops">@natacoops</a> <a href="https://twitter.com/wesbos">@wesbos</a> i had my honeymoon phase with build tools like gulp&amp;grunt too! Until i realized this: <a href="https://t.co/vkcrT24VZ9">https://t.co/vkcrT24VZ9</a> 🙌🙌</p>&mdash; amsul (@amsul_) <a href="https://twitter.com/amsul_/status/657583299204882432">October 23, 2015</a></blockquote>
+
+<p>To which Wes Bos replied:</p>
+
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/amsul_">@amsul_</a> <a href="https://twitter.com/natacoops">@natacoops</a> I&rsquo;ve yet to see any complex examples with that. I use it for simple stuff but find gulp much easier to write</p>&mdash; Wes Bos (@wesbos) <a href="https://twitter.com/wesbos/status/657584451531051008">October 23, 2015</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>So, I figured I&rsquo;d take this opportunity to show exactly why I stopped using Gulp.</p>
+
+<p>Actually, not just Gulp, but rather any build tool or task runner on top of Node.js.</p>
+
+<p>But first, let&rsquo;s clear some stuff up:</p>
+
+<ol>
+<li>It is not easy to write with Gulp; streams are anything but trivial. It is only easy to utilize existing Gulp plugins to quickly get up and running.</li>
+<li>Everything that exists in the Gulp ecosystem (and <strong>much</strong> more) already exists in the npm ecosystem, except with stronger community support and faster releases.</li>
+<li>Using npm scripts does <em>not</em> mean needing to learn how to write <code>bash</code>; you can write in JavaScript just as easily. <img alt="bowtie" src="https://github.global.ssl.fastly.net/images/icons/emoji/bowtie.png" class="emoji" /></li>
+</ol>
+
+<h3>&ldquo;What the hell are npm scripts?&rdquo; <img alt="confused" src="https://github.global.ssl.fastly.net/images/icons/emoji/confused.png" class="emoji" /></h3>
+
+<p>If that&rsquo;s your question and you&rsquo;ve used Gulp/Grunt before, I&rsquo;m glad you&rsquo;re here.</p>
+
+<p>In a nutshell, <a href="https://docs.npmjs.com/misc/scripts">npm scripts</a> give you the power to run any script from the command line with a simple:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">npm run &lt;script_name&gt;
+</code></pre></div>
+<p>Y&#39;know, exactly like you&rsquo;d do <code>gulp &lt;task_name&gt;</code>, except without having to install any additional tools.</p>
+
+<p><a href="http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/">Keith Cirkel talks about it plenty in his blog post</a>. So instead of reiterating what he&rsquo;s said, I&rsquo;m going to go through a real-life scenario of project requirements and see how both systems differ in their approach to development and future-friendliness.</p>
+
+<h3>A &ldquo;relatively&rdquo; complex setup</h3>
+
+<p>Here&rsquo;s what my current setup requires:</p>
+
+<ol>
+<li>Preprocess SCSS to CSS</li>
+<li>Preprocess JSX to JS</li>
+<li>Preprocess ES2015 (and beyond) to ES5</li>
+<li>Launch a static server that serves the compiled files from memory</li>
+<li>Watch files for changes to recompile</li>
+<li>Write files to disk only when a separate script is run</li>
+<li>Build and launch an iOS (XCode) and Android (Android Studio) app using the compiled files</li>
+<li>Version bump in <code>package.json</code> and in the iOS and Android configuration files</li>
+<li>Run tests in various environments and instrument files to gather coverage reports</li>
+</ol>
+
+<h4>Requirements 1 - 6: developing, serving, &amp; compiling</h4>
+
+<p>These requirements (or a variation of them) is a very common scenario for web devs these days.</p>
+
+<p>Just a little while ago, you&rsquo;d need a <em>bunch</em> of tools to get all of this set up. Thankfully, the noble Tobias Koppers (and later the community) built <a href="http://webpack.github.io/">webpack</a> for us. <img alt="pray" src="https://github.global.ssl.fastly.net/images/icons/emoji/pray.png" class="emoji" /></p>
+
+<p>If you haven&rsquo;t had the chance to use it yet, I highly suggest you take it for a spin.</p>
+
+<h5>The Gulp way</h5>
+
+<p>Before even getting started with the setup, you need to figure out if a Gulp plugin exists for webpack.</p>
+
+<p>If one exists, you need to evaluate your choices by learning their APIs and comparing which works best (for your scenario) with the webpack API.</p>
+
+<p>If one does not exist, you need to learn how to write Gulp tasks that work with the webpack API.</p>
+
+<p>Either way, you have to learn the webpack API. But instead, you&rsquo;ll spend the majority of your time with Gulp-related activities.</p>
+
+<p>There are several different ways to set up webpack with Gulp. I was going to write out an example, but honestly with the verbosity and various different ways to accomplish things, it&rsquo;s not even worth it.</p>
+
+<p>Instead you can look at the docs by the first Google result for a Gulp-webpack plugin: <a href="https://github.com/shama/webpack-stream">webpack-stream</a>.</p>
+
+<h5>The npm way</h5>
+
+<p>This is the gist of it:</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// scripts/webpack.js</span>
+<span class="kd">var</span> <span class="nx">compiler</span> <span class="o">=</span> <span class="nx">webpack</span><span class="p">(</span><span class="nx">config</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">server</span>   <span class="o">=</span> <span class="k">new</span> <span class="nx">WebpackDevServer</span><span class="p">(</span><span class="nx">compiler</span><span class="p">,</span> <span class="p">{})</span>
+<span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">8000</span><span class="p">,</span> <span class="s1">&#39;localhost&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>You directly learn <a href="http://webpack.github.io/docs/Node.js-api.html">how webpack works on Node.js</a> and you set up an npm script to run it:</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// package.json</span>
+<span class="p">{</span>
+    <span class="s2">&quot;scripts&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;start&quot;</span><span class="o">:</span> <span class="s2">&quot;node ./scripts/webpack.js&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>To write the files to disk instead of launching a webpack-dev-server, you can pass a flag to the script:</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// package.json</span>
+<span class="p">{</span>
+    <span class="s2">&quot;scripts&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;start&quot;</span><span class="o">:</span> <span class="s2">&quot;node ./scripts/webpack.js&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;build&quot;</span><span class="o">:</span> <span class="s2">&quot;npm start -- --build&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>And the script can react to the flag (simplified with <a href="https://github.com/tj/commander.js">Commander.js</a>):</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// scripts/webpack.js</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">program</span><span class="p">.</span><span class="nx">build</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">writeFilesToDisk</span><span class="p">()</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+    <span class="nx">startServer</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Moving on.</p>
+
+<h4>Requirement 7: building and launching native apps</h4>
+
+<p>Before building the native apps with the latest web code, the files are copied from the compiled source into each platform&rsquo;s directory. Then either <a href="https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html"><code>xcodebuild</code></a> or <a href="http://developer.android.com/intl/ko/tools/help/adb.html"><code>adb</code></a> is used to build and launch the respective app on a connected device.</p>
+
+<h5>The Gulp way</h5>
+
+<p>There is definitely no plugin out there to do specifically this. So, now there are two possibilities:</p>
+
+<ol>
+<li>Write a Gulp task that communicates with <code>xcodebuild</code> and <code>adb</code> through their command line APIs.</li>
+<li>Write a Node.js script that communicates with <code>xcodebuild</code> and <code>adb</code> through their command line APIs and exposes an API that enables it to work with Gulp, then write a Gulp task to run the script.</li>
+</ol>
+
+<p>The problem with possibility #1 is that you&rsquo;re tied in with Gulp. Tools should be easy to replace and being bound into one system is at the crux of stagnation when better ways of doing things are realized.</p>
+
+<p>The problem with possibility #2 is that it involves a lot of effort and therefore time. The Node.js script needs to be flexible enough to work with or without Gulp.</p>
+
+<h5>The npm way</h5>
+
+<p>There is no difference here from any other npm script. You directly work with the <code>xcodebuild</code> and <code>adb</code> command line APIs.</p>
+
+<h4>Requirement 8: version bumping</h4>
+
+<p>The version in the <code>package.json</code> file is used to manage the versions in each platform&rsquo;s configuration file. For iOS, that&rsquo;s the project&rsquo;s main <code>.plist</code> file; for Android, that&rsquo;s the <code>AndroidManifest.xml</code> file.</p>
+
+<p>To bridge the gap between native and web code, I currently use <a href="https://cordova.apache.org/">Cordova</a> (although hopefully soon <a href="https://facebook.github.io/react-native/">that won&rsquo;t be the case</a>).</p>
+
+<p>So, to bump the version, I utilize it&rsquo;s internal ability to update the configuration files for each platform and just perform version bumps.</p>
+
+<h5>The Gulp way</h5>
+
+<p>There are several Gulp plugins that help with versioning. However, none of them update the versions in configuration files for iOS or Android apps.</p>
+
+<p>So, you&rsquo;d have to hook into one of the Gulp plugins&rsquo; API to use the updated version and pipe it into another Gulp task. This version would then be passed to a custom Node.js script which would then in turn update the versions in each configuration file.</p>
+
+<h5>The npm way</h5>
+
+<p>Some younger developers (in terms of Node.js experience) don&rsquo;t know that <a href="https://docs.npmjs.com/cli/version">npm actually comes with versioning built in</a>.</p>
+
+<p>To do something custom when the version updates, simply add a <code>version</code> script:</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// package.json</span>
+<span class="p">{</span>
+    <span class="s2">&quot;scripts&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;node ./scripts/version-bump.js&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>And version bump as you normally would with npm:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">npm version 3.2.1
+</code></pre></div>
+<p>The version bumps to <code>3.2.1</code> in <code>package.json</code> and then <code>./scripts/version-bump.js</code> is run. The updated files are then committed and tagged with the bumped version. <img alt="star2" src="https://github.global.ssl.fastly.net/images/icons/emoji/star2.png" class="emoji" /></p>
+
+<h4>Requirement 9: running tests and recording coverage</h4>
+
+<p>I use the <a href="https://mochajs.org/">Mocha</a> testing suite for writing tests.</p>
+
+<p>For quick and easy testing in the browser, I use the Mocha runner launched with <a href="http://webpack.github.io/docs/webpack-dev-server.html">webpack-dev-server</a>.</p>
+
+<p>On the CI (<a href="https://travis-ci.org/">Travis</a>), I use <a href="http://karma-runner.github.io/">Karma</a> to launch <a href="http://phantomjs.org/">PhantomJS</a> as the testing environment where the Mocha suite is run. To instrument the files and record coverage, I use <a href="https://github.com/gotwarlost/istanbul">Istanbul</a> and send the reports over to <a href="http://coveralls.io/">Coveralls</a>.</p>
+
+<h5>The Gulp way</h5>
+
+<p>To run Mocha in the browser, you can utilize the Gulp task that launches your webpack-dev-server.</p>
+
+<p>However, setting up the tools to run on Travis means directly working with these tools. Gulp has nothing to offer.</p>
+
+<p>In fact, this is a quote from Karma&rsquo;s <a href="https://github.com/karma-runner/gulp-karma">official <code>gulp-karma</code> repo</a>:</p>
+
+<blockquote>
+<p>You don&rsquo;t need any gulp plugins to run Karma from the Gulp-based build, use Karma directly</p>
+</blockquote>
+
+<p>Okay, so for Karma and PhantomJS, you&rsquo;d use the npm way, and then wrap that with a Gulp task (instead of an npm script, because y&#39;know&hellip; the hype). And you&rsquo;d use something like <a href="https://github.com/SBoudrias/gulp-istanbul">gulp-istanbul</a> for instrumenting with Istanbul and <a href="https://github.com/markdalgleish/gulp-coveralls">gulp-coveralls</a> for sending reports to Coveralls. <img alt="weary" src="https://github.global.ssl.fastly.net/images/icons/emoji/weary.png" class="emoji" /></p>
+
+<h5>The npm way</h5>
+
+<p>Practically the same - minus the need to wrap everything in a Gulp task. <img alt="relieved" src="https://github.global.ssl.fastly.net/images/icons/emoji/relieved.png" class="emoji" /></p>
+
+<h3>Use tools to build instead of building to use tools</h3>
+
+<p>When using Gulp, or any of it&rsquo;s sibling tools, you start off by learning the Gulp API and it&rsquo;s numerous quirks and differences from other build tools. Then you&rsquo;d get around to solving your actual problem by using the build tool&rsquo;s API that wraps the actual API of the tool you want to use.</p>
+
+<p>The workflow becomes:</p>
+
+<ol>
+<li>Learn how to use Gulp</li>
+<li>Learn how to use npm to the extent of installing packages</li>
+<li><code>npm install gulp --global</code></li>
+<li><code>npm install gulp --save-dev</code></li>
+<li><code>npm install &lt;tool_i_want_to_use&gt;</code></li>
+<li>Write the Gulp task to run the tool I want to use in <code>Gulpfile.js</code></li>
+<li>Run the Gulp task with <code>gulp &lt;task_name&gt;</code></li>
+</ol>
+
+<p>Instead of more directly addressing the problem:</p>
+
+<ol>
+<li>Learn how to utilize npm properly</li>
+<li><code>npm install &lt;tool_i_want_to_use&gt;</code></li>
+<li>Write the npm script that runs the tool in <code>package.json</code></li>
+<li>Run the npm script with <code>npm run &lt;script_name&gt;</code></li>
+</ol>
+
+<p>Not only is the mental model divergent, but you also end up locked in with whatever tool you chose, which opens up the door to the evils of stagnation. <img alt="no_good" src="https://github.global.ssl.fastly.net/images/icons/emoji/no_good.png" class="emoji" /></p>
+
+<p>So, my question to you is&hellip; what exactly is it Gulp has to offer, besides redundancy?</p>
+
+
+            
+                <footer class="content__postscript">
+                    <h4>Footnotes</h4>
+                    <ol>
+                        
+                            <li class="content__postscript-item" id="postscript_1">
+                                <a class="content__postscript-hook"
+                                    href="#postscript_1"
+                                    name="postscript_1"></a>
+                                <p>The power of npm in managing packages has also pushed Bower out of the limelight. It is now a dying project, and rightfully so.</p>
+
+                            </li>
+                        
+                    </ol>
+                </footer>
+            
+
+        
+
+    </div>
+</article>
+
+<aside class="content content--pad-bottom">
+    <div class="content__box content__body" id="disqus_thread"></div>
+</aside>
+<script type="text/javascript">
+    (function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//amsul.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
+
+    
+
+        <footer class="footer gui-flip">
+            <div class="content">
+                
+                    <div class="content__box content__box--flat">
+                        
+                            <a class="button-block" href="/">Back to home</a>
+                        
+                    </div>
+                
+                <div class="content__box aligncenter">
+                    <ul class="list--plain list--inline">
+                        <li class="list__item">
+                            <a class="button-cube" href="http://twitter.com/amsul_" target="_blank">
+                                <span class="gui-icon gui-icon--twitter"></span>
+                            </a>
+                        </li><!--
+                     --><li class="list__item">
+                            <a class="button-cube" href="http://github.com/amsul" target="_blank">
+                                <span class="gui-icon gui-icon--github"></span>
+                            </a>
+                        </li><!--
+                     --><li class="list__item">
+                            <a class="button-cube" href="mailto:reach@amsul.ca">
+                                <span class="gui-icon gui-icon--email"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>&copy; 2015 Amsul</p>
+                    <p class="peace">&#x270C;</p>
+                    <p class="embrace">Embrace the randomness.</p>
+                </div>
+            </div>
+        </footer> <!-- .footer -->
+
+    
+
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-34739744-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+</html>
+
+

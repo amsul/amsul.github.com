@@ -1040,7 +1040,7 @@ pre > code,
    ========================================================================== */
 
 blockquote {
-    padding: .125em 0 .5em 2em;
+    padding: .125em 0 .5em 1em;
     margin: 1.5em 0 1.5em 40px;
     position: relative;
 }
@@ -1433,10 +1433,16 @@ ol:last-child {
 
     .content__body {}
         .content__body h3 {
-            margin: 2em 0 0;
+            margin: 3em 0 0;
         }
         .content__body h3:first-child {
             margin-top: 1em;
+        }
+        .content__body h4 {
+            margin: 2.25em 0 0;
+        }
+        .content__body h4:first-child {
+            margin-top: 1.33em;
         }
         .content__body p {}
         .content__body li {
