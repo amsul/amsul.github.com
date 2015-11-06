@@ -7,7 +7,7 @@ title: ARIA
 
 - [http://www.w3.org/TR/wai-aria/usage](http://www.w3.org/TR/wai-aria/usage)
 - [http://www.w3.org/TR/wai-aria/roles](http://www.w3.org/TR/wai-aria/roles)
-- [http://www.w3.org/TR/wai-aria/states_and_properties](http://www.w3.org/TR/wai-aria/states_and_properties)
+- [http://www.w3.org/TR/wai-aria/states\_and\_properties](http://www.w3.org/TR/wai-aria/states_and_properties)
 
 <hr>
 
