@@ -100,21 +100,21 @@
                 </div>
             </nav>
             <aside class="menu__toggler alignright">
-                <a class="menu__opener button-menu{% if page.name != "home" %} button-menu--inverse{% endif %}" href="#menu"></a>
-                <a class="menu__closer button-menu{% if page.name != "home" %} button-menu--inverse{% endif %}" href="#"></a>
+                <a class="menu__opener button-menu{% if page.id != "home" %} button-menu--inverse{% endif %}" href="#menu"></a>
+                <a class="menu__closer button-menu{% if page.id != "home" %} button-menu--inverse{% endif %}" href="#"></a>
             </aside>
         </div> <!-- .menu -->
 
     {% endunless %}
 
 
-    <header class="header{% if page.name != "home" %} header--colored{% endif %}">
+    <header class="header{% if page.id != "home" %} header--colored{% endif %}">
         <div class="content">
             <div class="content__box content__box--pad-one">
                 {% unless page.empty_page %}
                     <h1 class="header__wrapper title--base-size title--thin title--flat">
-                        <a class="header__link header__link--{% if page.name != "home" %}dimmed title--dimmed{% else %}dark{% endif %}" href="#menu">
-                            {% if page.name != "home" %}
+                        <a class="header__link header__link--{% if page.id != "home" %}dimmed title--dimmed{% else %}dark{% endif %}" href="#menu">
+                            {% if page.id != "home" %}
                                 {{ site.tagline | truncatewords: 3 | remove: '...' }}
                             {% else %}
                                 {{ site.tagline }}
@@ -146,7 +146,7 @@
 
         <footer class="footer gui-flip">
             <div class="content">
-                {% if page.name != "home" %}
+                {% if page.id != "home" %}
                     <div class="content__box content__box--flat">
                         {% if page.notepad_page and page.overview_page != true %}
                             <a class="button-block" href="/notepad">Back to notepad</a>
