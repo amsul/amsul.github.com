@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<article class="content">
+<article class="content content--pad-bottom">
     <div class="content__box content__body">
 
         {% if page.external %}
@@ -42,16 +42,3 @@ layout: base
 
     </div>
 </article>
-
-<aside class="content content--pad-bottom">
-    <div class="content__box content__body" id="disqus_thread"></div>
-</aside>
-<script type="text/javascript">
-    (function() {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//amsul.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
