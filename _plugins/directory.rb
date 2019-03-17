@@ -91,7 +91,13 @@ module Jekyll
             'last'    => (index == length - 1)
           }
 
-          result << render_all(@nodelist, context)
+          result << nodelist.map{|n|
+            if n.respond_to? :render
+              n.render(context)
+            else
+              n
+            end
+          }.join("")
         end
       end
       result
