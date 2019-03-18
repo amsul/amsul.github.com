@@ -1,7 +1,7 @@
 /*!
  * Author:      Amsul - http://amsul.ca
- * Updated:     28 July, 2014
- * Version:     0.5.2
+ * Updated:     17 March, 2019
+ * Version:     0.5.3
  */
 
 
@@ -1497,7 +1497,44 @@ ol:last-child {
                     z-index: -1;
                 }
 
+.home-content {
+    background-color: #111;
+    text-align: center;
 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .home-content__text,
+    .home-content__text a {
+        font-size: 1.25em;
+        color: #fff;
+    }
+    .home-content__text a {
+        font-weight: 600;
+    }
+    .home-content__text a:hover {
+        text-decoration: underline;
+    }
+    .home-content__peace {
+        color: #fff;
+        font-family: Peace, "Zapf Dingbats", dingbats;
+        font-size: 1.5em;
+
+        -webkit-font-smoothing: antialiased;
+    }
+    .home-content__embrace {
+        color: #111;
+        height: 0;
+        margin: 0;
+        font-size: 0.5em;
+    }
 
 
 

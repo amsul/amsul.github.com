@@ -1,8 +1,8 @@
 Hello fellow, human! So nice of you to drop by :)
 
-I'm Amsul (http://twitter.com/amsul_)
+I'm Amsul (https://twitter.com/amsul_)
 
-I generated this static site using jekyll (http://jekyllrb.com)
-I used Sublime Text to code everything (http://sublimetext.com)
-And Mou for touching up my markdown posts (http://mouapp.com)
-I also hosted and open sourced this site on Github (http://github.com/amsul/amsul.github.com)
+I generated this static site using jekyll (https://jekyllrb.com)
+I used Sublime Text to code everything (https://sublimetext.com)
+And Mou for touching up my markdown posts (https://mouapp.com)
+I also hosted and open sourced this site on Github (https://github.com/amsul/amsul.github.com)
